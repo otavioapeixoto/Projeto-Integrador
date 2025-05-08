@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: #f2e9cf;
+    background-color: #FFEAD8;
 }
 header{
     top: 0;
@@ -11,10 +12,10 @@ header{
     width: 100%;
 }
 .cabe{
-    background-color: #63240b;
+    background-color: #FFEAD8;
     overflow: auto;
-    border-top: 10px solid #ecd8a3;
-    border-bottom: solid 1px #ecd8a3;
+    border-top: 10px solid #402401;
+    border-bottom: solid 1px #402401;
 }
 .logo{
     float: left;
@@ -24,9 +25,9 @@ header{
 }
 h1{
     float: left;
-    font-family: "Pacifico", cursive;
+    font-family: "Averia Serif Libre", serif;
     font-size: 55px;
-    color: #ecd8a3;
+    color: #402401;
     padding: 15px 55px;
 }
 .redes{
@@ -41,12 +42,12 @@ h1{
     cursor: pointer;
 }
 .menu{
-    background-color: #ecd8a3;
+    background-color: #402401;
     width: 100%;
     height: 30px;
     font-family: "Gamja Flower", sans-serif;
     font-size: 15px;
-    border-bottom: solid 1px #ecd8a3;
+    border-bottom: solid 1px #402401;
 }
 .menu ul{
     padding: 0;
@@ -54,8 +55,8 @@ h1{
     margin: auto;
 }
 .menu ul li{          
-    background-color: #ecd8a3;
-    color: #63240b;
+    background-color: #402401;
+    color: #FFEAD8;
     float: left;
     width: 200px;
     height: 30px;
@@ -66,20 +67,20 @@ h1{
 }
 .a{
     text-decoration: none;
-    color: #63240b;
-    background-color: #ecd8a3;
+    color: #FFEAD8;
+    background-color: #402401;
     padding: 6.2px 31.625px;
-    border-bottom: solid 1px #ecd8a3;
+    border-bottom: solid 1px #402401;
 }
 .a:hover{
     text-decoration: none;
-    color: #ecd8a3;
-    background-color: #63240b;
+    color: #402401;
+    background-color: #FFEAD8;
     padding: 6.2px 31.625px;
 }
 .menu ul li:hover{
-    background-color:#63240b;
-    color: #ecd8a3;
+    background-color:#FFEAD8;
+    color: #402401;
 }
 .menu ul ul{
     display: none;
@@ -91,7 +92,7 @@ h1{
     background-color:#341306; 
 }
 footer{
-    background-color: #ecd8a3;
+    background-color: #FFEAD8;
     color: #341306;
     text-align: center;
     padding: 15px;
