@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,19 +23,19 @@ header{
     float: left;
     width: 80px;
     height: 80px;
-    padding: 15px 40px;
+    padding: 15px 0px 15px 40px;
 }
 h1{
     float: left;
     font-family: "Averia Serif Libre", serif;
-    font-size: 55px;
+    font-size: 64px;
     color: #402401;
-    padding: 15px 55px;
+    line-height: 77px;
+    padding: 15px 327px;
 }
 .redes{
     float: right;
-    margin: 40px 0px;
-    margin-right: 40px;
+    margin: 40px 40px 40px 0px;
 }
 .redes img{
     height: 25px;
@@ -45,20 +47,20 @@ h1{
     background-color: #402401;
     width: 100%;
     height: 30px;
-    font-family: "Gamja Flower", sans-serif;
+    font-family: "Averia Serif Libre", serif;
     font-size: 15px;
     border-bottom: solid 1px #402401;
 }
 .menu ul{
     padding: 0;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 .menu ul li{          
     background-color: #402401;
     color: #FFEAD8;
     float: left;
-    width: 200px;
+    width: 220px;
     height: 30px;
     display: inline-block;
     text-align: center;
@@ -69,7 +71,7 @@ h1{
     text-decoration: none;
     color: #FFEAD8;
     background-color: #402401;
-    padding: 6.2px 31.625px;
+    padding: 6.2px 37.125px;
     border-bottom: solid 1px #402401;
 }
 .a:hover{
@@ -89,23 +91,103 @@ h1{
     display: block;
 }
 .menu ul ul li:hover{
-    background-color:#341306; 
+    background-color:#FFEAD8;
+    height: 28px;
+    width: 218px;
+    border: solid 1px #402401;
 }
-footer{
+.infos_geral{
+    width: 100%;
+    background-color: #402401;
+    font-family: "Comfortaa", sans-serif;
+    color: #FFEAD8;
+}
+.navegaçao, .contato, .email{
+    display: inline-block;
+    width: 25%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.navegaçao{
+    margin-left: 3%;
+    margin-right: 4.6%;
+    position: relative;
+    bottom: 7px;
+}
+.contato{
+    margin-left: 4.6%;
+    margin-right: 4.6%;
+    position: relative;
+    bottom: 9px;
+}
+.email{
+    margin-left: 4.6%;
+    margin-right: 3%;
+}
+.infos_geral h2{
+    font-family: "Averia Serif Libre", serif;
+    font-size: 35px;
+}
+.container{
     background-color: #FFEAD8;
-    color: #341306;
+    color: #402401;
+    padding: 50px;
+    margin-top: 25px;
+    height: 150px;
+    align-content: center;
+}
+.container a{
+    color: #402401;
+    text-decoration: none;
+}
+.container a:hover{
+    color: #402401;
+    text-decoration: none;
+    text-shadow: 1px 0px #402401;
+}
+.container p{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.container img{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
+}
+.contato p{
+    display: inline-block;
+}
+.container input{
+    width: 310px;
+    height: 30px;
+    margin-bottom: 15px;
+    border: #402401 solid 1px;
+    background-color: #FFEAD8;
+    font-family: "Comfortaa", sans-serif;
+    color: #402401;
+    padding: 5px;
+}
+.container button{
+    width: 100%;
+    padding: 10px;
+    background-color: #402401;
+    color: #FFEAD8;
+    font-family: "Comfortaa", sans-serif;
+    border: solid 1px #402401;
+
+}
+.container button:hover{
+    background-color: #FFEAD8;
+    color: #402401;
+    cursor: pointer;
+
+
+}
+.direitos{
+    background-color: #FFEAD8;
+    color: #402401;
+    font-family: "Comfortaa", sans-serif;
     text-align: center;
-    padding: 15px;
-    font-family: "Pacifico", cursive;
-    border-top: 5px solid  #341306;
-    margin-top: 50px;
-}
-table{
-    padding: 20px 0px;
-   margin: auto;
-}
-.formul{
-    width: 90%;
-    margin: auto;
-       padding: 10px;
+    padding: 25px;
 }
