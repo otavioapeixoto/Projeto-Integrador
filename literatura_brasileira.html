@@ -1,17 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Literatura Brasileira</title>
     <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        table h3 {
+            color: #402401;
+            font-size: 30px;
+            font-family: "Averia Serif Libre", serif;
+            text-align: center;
+            padding: 15px 0px;
+            width: 735px;
+        }
+
+        .tab_geral {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .separaçao {
+            width: 100px;
+        }
+
+        .destaques {
+            background-color: #00AFC1;
+            width: 735px;
+            border-radius: 25px;
+        }
+
+        .margem_bottom {
+            margin-bottom: 40px;
+        }
+
+        .livro1,
+        .livro2,
+        .livro3 {
+            border-radius: 20px;
+            background-color: #FFEAD8;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .livro1 {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
+        .livro3 {
+            margin-left: 15px;
+            margin-right: 20px;
+        }
+
+        .destaques h4 {
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color: #00AFC1;
+        }
+
+        .destaques div div {
+            font-size: 15px;
+            height: 310px;
+        }
+
+        .destaques img {
+            border-radius: 15px;
+        }
+
+        hr{
+            background-color: #402401;
+            height: 2px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .destaques h5 {
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 7px;
+            margin-top: 5px;
+        }
+
+        .emprestado {
+            background-color: #402401;
+            color: #00AFC1;
+        }
+
+        .n_emprestado {
+            background-color: #00AFC1;
+            color: #402401;
+        }
+
+        .borda {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .acervo_completo table {
+            background-color: #00AFC1;
+            width: 100%;
+            display: block;
+        }
+
+        .acervo_completo td {
+            background-color: #00AFC1;
+        }
+
+        .acervo_completo td div {
+            background-color: #FFEAD8;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .acervo_completo p{
+            height: 75px;
+            width: 120px;
+            font-size: 13px;
+            text-align: center;
+        }
+        .acervo_completo p b{
+            color: #00AFC1;
+            font-size: 14px;
+        }
+        .acervo_completo img{
+            width: 135px;
+            height: 180px;
+            border-radius: 15px;
+        }
+        .acervo_completo h5{
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 
 </head>
+
 <body>
     <header>
         <div class="cabe">
-            <img src="img/logo2.png" class="logo"> 
+            <img src="img/logo2.png" class="logo">
             <h1>BIBLIOTECA SCRP</h1>
             <div class="redes">
                 <a href=""><img src="img/LogoFace.svg"></a>
@@ -21,200 +170,469 @@
         </div>
         <nav class="menu">
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a> 
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a>
                     <ul>
-                        <a href="famosos_tiktok.html"><li>Famosinhos do TikTok</li></a>
-                        <a href="novidades_biblioteca.html"><li>Novidades Biblioteca</li></a>
-                        <a href="literatura_brasileira.html"><li>Literatura Brasileira</li></a>
-                        <a href="literatura_estrangeira.html"><li>Literatura Estrangeira</li></a>
-                        <a href="literatura_vestibular.html"><li>Literatura Vestibular</li></a>
+                        <a href="famosos_tiktok.html">
+                            <li>Famosinhos do TikTok</li>
+                        </a>
+                        <a href="novidades_biblioteca.html">
+                            <li>Novidades Biblioteca</li>
+                        </a>
+                        <a href="literatura_brasileira.html">
+                            <li>Literatura Brasileira</li>
+                        </a>
+                        <a href="literatura_estrangeira.html">
+                            <li>Literatura Estrangeira</li>
+                        </a>
+                        <a href="literatura_vestibular.html">
+                            <li>Literatura Vestibular</li>
+                        </a>
                     </ul>
                 </li>
-                <a href="produtos_literarios.html"><li>Produtos Literários</li></a>
-                <a href="divulga_escritores.html"><li>Divulgação Escritores</li></a>
-                <a href="assinatura_membros.html"><li>Assinatura Membros</li></a>
+                <a href="produtos_literarios.html">
+                    <li>Produtos Literários</li>
+                </a>
+                <a href="divulga_escritores.html">
+                    <li>Divulgação Escritores</li>
+                </a>
+                <a href="assinatura_membros.html">
+                    <li>Assinatura Membros</li>
+                </a>
             </ul>
         </nav>
     </header>
     <main>
-        <section align="center">
-         <h2>Destaques da Literatura Brasileira:</h2>
-         <hr width="380">
-         <table align="center" border="0" cellpadding="0" cellspacing="0">
-            <tr>
+        <section>
+            <img src="img/banner_ind.png" width="100%" class="banner">
+            <h2>Destaques da Literatura Brasileira:</h2>
+            <table class="tab_geral">
+                <tr>
+                    <td>
+                        <h3>Um pouco sobre nossas páginas:</h3>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <h3>Destaques:</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="destaques">
+                            <tr>
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/LITBR_TortoArado.jpg" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Torto Arado</h4>
+                                            <p>Itamar Vieira Junior<br>
+                                                Nas profundezas do sertão baiano, duas irmãs descobrem um segredo
+                                                escondido na velha mala de sua avó. A partir daí, suas vidas se
+                                                entrelaçam ainda mais em uma narrativa marcada por tradições ancestrais,
+                                                laços familiares e a luta pela sobrevivência em um Brasil rural marcado
+                                                por injustiças e resistência.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/LITBR_VidaInvisívelEurídiceGusmão.jpg" width="200" height="270">
+                                        <div>
+                                            <h4>A Vida Invisível de Eurídice Gusmão</h4>
+                                            <p>Martha Batalha<br>
+                                                No Rio de Janeiro dos anos 1940 e 1950, Eurídice e Guida são duas irmãs
+                                                cujos destinos se distanciam após uma decisão inesperada. Enquanto Guida
+                                                foge de casa para viver um grande amor, Eurídice permanece, sufocada
+                                                pelos limites impostos à mulher da época.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/LITBR_QuartoDespejo.jpg" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Quarto de Despejo: Diário de uma Favelada</h4>
+                                            <p>Carolina Maria de Jesus<br>
+                                                Em seu diário, a autora narra a rotina dura e comovente de uma mulher
+                                                negra moradora da favela do Canindé, em São Paulo. Entre a coleta de
+                                                papel para alimentar os filhos e reflexões sobre desigualdade, Carolina
+                                                registra com autenticidade o Brasil das periferias na década de 1950.
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <table class="destaques">
+                            <tr>
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/LITBR_VidasSecas.jpg" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Vidas Secas</h4>
+                                            <p>Graciliano Ramos<br>
+                                                A saga de Fabiano, Sinhá Vitória e seus filhos revela a luta de uma
+                                                família de retirantes em meio à seca e à miséria do sertão nordestino. O
+                                                romance retrata a pobreza extrema e a luta pela dignidade, expondo a
+                                                dura realidade social de um Brasil desigual e esquecido.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/LITBR_CapitaesAreia.jpg" width="200" height="270">
+                                        <div>
+                                            <h4>Capitães da Areia</h4>
+                                            <p>Jorge Amado<br>
+                                                Um grupo de meninos abandonados vive de pequenos crimes nas ruas de
+                                                Salvador nos anos 1930. Liderados por Pedro Bala, eles formam uma
+                                                verdadeira comunidade de sobrevivência, enfrentando a repressão policial
+                                                e a falta de oportunidades. Um retrato emocionante e crítico dos
+                                                marginalizados no Brasil.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/LITBR_Cortiço.jpg" width="200" height="270"><br>
+                                        <div>
+                                            <h4>O Cortiço</h4>
+                                            <p>Aluísio Azevedo<br>
+                                                Ambientado em um cortiço do Rio de Janeiro no século XIX, o romance
+                                                apresenta a vida de imigrantes, negros e trabalhadores pobres em um
+                                                espaço de convivência intensa e conflitos sociais. A história revela a
+                                                luta por ascensão social, o preconceito racial e as tensões de uma
+                                                sociedade em transformação.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>
+                        <h3>Contemporâneos:</h3>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <h3>Clássicos:</h3>
+                    </td>
+                </tr>
                 <td>
-                   <table border="1" cellpadding="5" cellspacing="0" width="600">
-                        <caption><h3>Empréstimos Populares:</h3></caption>
+                    <table class="destaques margem_bottom">
                         <tr>
-                            <td><img src="img/LITBR_TortoArado.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_VidaInvisívelEurídiceGusmão.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_QuartoDespejo.jpg" width="200" height="270"></td>
-                        </tr>
-                        <tr align="justify">
-                            <td><b>Torto Arado</b><br>Itamar Vieira Junior<br>
-                                Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha mala de sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada por tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil rural marcado por injustiças e resistência.
-                                <hr>Emprestado</td>
-
-                            <td><b>A Vida Invisível de Eurídice Gusmão</b><br>Martha Batalha<br>
-                                No Rio de Janeiro dos anos 1940 e 1950, Eurídice e Guida são duas irmãs cujos destinos se distanciam após uma decisão inesperada. Enquanto Guida foge de casa para viver um grande amor, Eurídice permanece, sufocada pelos limites impostos à mulher da época.
-                                <hr>Não Emprestado</td>
-
-                            <td><b>Quarto de Despejo: Diário de uma Favelada</b><br>Carolina Maria de Jesus<br>
-                                Em seu diário, a autora narra a rotina dura e comovente de uma mulher negra moradora da favela do Canindé, em São Paulo. Entre a coleta de papel para alimentar os filhos e reflexões sobre desigualdade, Carolina registra com autenticidade o Brasil das periferias na década de 1950.
-                                <hr>Emprestado</td>            
-                        </tr>
-                    </table> 
-                </td>
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </td>
-                <td>
-                    <table border="1" cellpadding="5" cellspacing="0" width="600">
-                        <caption><h3>Histórias que Retratam o Brasil:</h3></caption>
-                        <tr>
-                            <td><img src="img/LITBR_VidasSecas.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_CapitaesAreia.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_Cortiço.jpg" width="200" height="270"></td>
-                        </tr>
-                        <tr align="justify">
-                            <td><b>Vidas Secas</b><br>Graciliano Ramos<br>
-                                A saga de Fabiano, Sinhá Vitória e seus filhos revela a luta de uma família de retirantes em meio à seca e à miséria do sertão nordestino. O romance retrata a pobreza extrema e a luta pela dignidade, expondo a dura realidade social de um Brasil desigual e esquecido.<br>&nbsp;
-                                <hr>Emprestado</td>
-
-                            <td><b>Capitães da Areia</b><br>Jorge Amado<br>
-                                Um grupo de meninos abandonados vive de pequenos crimes nas ruas de Salvador nos anos 1930. Liderados por Pedro Bala, eles formam uma verdadeira comunidade de sobrevivência, enfrentando a repressão policial e a falta de oportunidades. Um retrato emocionante e crítico dos marginalizados no Brasil.
-                                <hr>Não Emprestado</td>
-
-                            <td><b>O Cortiço</b><br>Aluísio Azevedo<br>
-                                Ambientado em um cortiço do Rio de Janeiro no século XIX, o romance apresenta a vida de imigrantes, negros e trabalhadores pobres em um espaço de convivência intensa e conflitos sociais. A história revela a luta por ascensão social, o preconceito racial e as tensões de uma sociedade em transformação.
-                                <hr>Emprestado</td>            
+                            <td>
+                                <div class="livro1">
+                                    <img src="img/LITBR_TudoRio.jpg" width="200" height="270"><br>
+                                    <div>
+                                        <h4>Tudo É Rio</h4>
+                                        <p>Carla Madeira<br>
+                                            Dalva, uma prostituta marcada pelo abandono, e Lucy, uma mulher atormentada
+                                            pelo ciúme, se veem
+                                            presas em uma relação inesperada com Venâncio, um homem dividido entre a
+                                            culpa e o desejo. Com uma
+                                            narrativa intensa, o livro aborda amor, perda e redenção, explorando as
+                                            dores e os encontros que
+                                            mudam vidas.</p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro2">
+                                    <img src="img/LITBR_DeusMeChamarNaoVou.jpg" width="200" height="270">
+                                    <div>
+                                        <h4>Se Deus Me Chamar Não Vou</h4>
+                                        <p>Mariana Salomão<br>
+                                            João é um menino de 11 anos que lida com a iminente morte do avô, o bullying
+                                            escolar e os medos
+                                            típicos da infância com humor e doçura. Em um diário repleto de reflexões,
+                                            ele questiona o sentido
+                                            da vida e da morte, revelando a profundidade dos sentimentos infantis com
+                                            leveza e sensibilidade.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="n_emprestado">Não Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro3">
+                                    <img src="img/LITBR_PequenaCoreografiaAdeus.jpg" width="200" height="270"><br>
+                                    <div>
+                                        <h4>A Pequena Coreografia do Adeus</h4>
+                                        <p>Aline Bei<br>
+                                            Julia é uma jovem que foge de casa em busca de um novo começo após uma
+                                            infância marcada pela
+                                            violência e pela ausência de afeto. Em uma narrativa poética e delicada, ela
+                                            explora os caminhos
+                                            para a reconstrução de sua identidade e a esperança de encontrar
+                                            pertencimento no mundo.</p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </td>
-            </tr>
-            <tr>
+                <td class="separaçao"></td>
                 <td>
-                   <table border="1" cellpadding="5" cellspacing="0" width="600">
-                        <caption><h3>Contemporâneos:</h3></caption>
+                    <table class="destaques margem_bottom">
                         <tr>
-                            <td><img src="img/LITBR_TudoRio.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_DeusMeChamarNaoVou.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_PequenaCoreografiaAdeus.jpg" width="200" height="270"></td>
-                        </tr>
-                        <tr align="justify">
-                            <td><b>Tudo É Rio</b><br>Carla Madeira<br>
-                                Dalva, uma prostituta marcada pelo abandono, e Lucy, uma mulher atormentada pelo ciúme, se veem presas em uma relação inesperada com Venâncio, um homem dividido entre a culpa e o desejo. Com uma narrativa intensa, o livro aborda amor, perda e redenção, explorando as dores e os encontros que mudam vidas.
-                                <hr>Emprestado</td>
-
-                            <td><b>Se Deus Me Chamar Não Vou</b><br>Mariana Salomão<br>
-                                João é um menino de 11 anos que lida com a iminente morte do avô, o bullying escolar e os medos típicos da infância com humor e doçura. Em um diário repleto de reflexões, ele questiona o sentido da vida e da morte, revelando a profundidade dos sentimentos infantis com leveza e sensibilidade.
-                                <hr>Não Emprestado</td>
-
-                            <td><b>A Pequena Coreografia do Adeus</b><br>Aline Bei<br>
-                                Julia é uma jovem que foge de casa em busca de um novo começo após uma infância marcada pela violência e pela ausência de afeto. Em uma narrativa poética e delicada, ela explora os caminhos para a reconstrução de sua identidade e a esperança de encontrar pertencimento no mundo.<br>&nbsp;
-                                <hr>Emprestado</td>            
-                        </tr>
-                    </table> 
-                </td>
-                <td>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </td>
-                <td>
-                    <table border="1" cellpadding="5" cellspacing="0" width="600">
-                        <caption><h3>Clássicos:</h3></caption>
-                        <tr>
-                            <td><img src="img/ACB_DomCasmurro.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_MemoriasPostumas.jpg" width="200" height="270"></td>
-                            <td><img src="img/LITBR_Iracema.jpg" width="200" height="270"></td>
-                        </tr>
-                        <tr align="justify">
-                            <td><b><small>Dom Casmurro</small></b><br>Machado de Assis<br>
-                                Bentinho, narrador desconfiado e melancólico, relembra sua história de amor com Capitu, marcada pela suspeita de traição. Em um enredo psicológico sutil, o romance questiona a confiabilidade do narrador e discute temas como ciúmes, memória e verdade, tornando-se um dos maiores clássicos da literatura brasileira.
-                                <hr>Emprestado</td>
-
-                            <td><b>Memórias Póstumas de Brás Cubas</b><br>Machado de Assis<br>
-                                Após a morte, Brás Cubas decide narrar sua vida com um olhar sarcástico e crítico. Sem pudor, ele revela sua trajetória de egoísmo, privilégios e fracassos, desafiando convenções literárias e expondo as hipocrisias da sociedade carioca do século XIX com ironia mordaz.<br>&nbsp;
-                                <hr>Não Emprestado</td>
-
-                            <td><b>Iracema</b><br>José de Alencar<br>
-                                A história de amor entre Iracema, uma jovem indígena da tribo dos tabajaras, e Martim, um guerreiro português, simboliza o encontro de culturas que deu origem ao povo brasileiro. O romance mistura lirismo e idealização, exaltando a beleza da natureza e o mito fundacional do Brasil.<br>&nbsp;
-                                <hr>Emprestado</td>            
+                            <td>
+                                <div class="livro1">
+                                    <img src="img/ACB_DomCasmurro.jpg" width="200" height="270"><br>
+                                    <div>
+                                        <h4>Dom Casmurro</h4>
+                                        <p>Machado de Assis<br>
+                                            Bentinho, narrador desconfiado e melancólico, relembra sua história de amor
+                                            com Capitu, marcada pela suspeita de traição. Em um enredo psicológico
+                                            sutil, o romance questiona a confiabilidade do narrador e discute temas como
+                                            ciúmes, memória e verdade, tornando-se um dos maiores clássicos da
+                                            literatura brasileira.</p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro2">
+                                    <img src="img/LITBR_MemoriasPostumas.jpg" width="200" height="270">
+                                    <div>
+                                        <h4>Memórias Póstumas de Brás Cubas</h4>
+                                        <p>Machado de Assis<br>
+                                            Após a morte, Brás Cubas decide narrar sua vida com um olhar sarcástico e
+                                            crítico. Sem pudor, ele revela sua trajetória de egoísmo, privilégios e
+                                            fracassos, desafiando convenções literárias e expondo as hipocrisias da
+                                            sociedade carioca do século XIX com ironia mordaz.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="n_emprestado">Não Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro3">
+                                    <img src="img/LITBR_Iracema.jpg" width="200" height="270"><br>
+                                    <div>
+                                        <h4>Iracema</h4>
+                                        <p>José de Alencar<br>
+                                            A história de amor entre Iracema, uma jovem indígena da tribo dos tabajaras,
+                                            e Martim, um guerreiro português, simboliza o encontro de culturas que deu
+                                            origem ao povo brasileiro. O romance mistura lirismo e idealização,
+                                            exaltando a beleza da natureza e o mito fundacional do Brasil.</p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
                         </tr>
                     </table>
                 </td>
-            </tr>
-        </table>
-        <br>
-        <hr>
-       </section>
-       <section align="center">
-        <h2>Acervo Completo:</h2>
-        <table border="1" align="center" cellpadding="5" cellspacing="15" width="1366">
-            <tr>
-                <td><img src="img/LITBR_GrandeSertao.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_Macunaima.png" width="150" height="200"></td>
-                <td><img src="img/LITBR_Mayombe.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_HoraDaEstrela.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_OsSertoes.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_AutoDaCompadecida.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_TempoVento.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_Clarissa.jpg" width="150" height="200"></td>
-            </tr>
-            <tr align="left">
-                <td><b>Grande Sertão: Veredas</b><br>João Guimarães Rosa<br><hr>Emprestado</td>
-                <td><b>Macunaíma </b><br>Mário de Andrade<br><hr>Emprestado</td>
-                <td><b>Mayombe</b><br>Pepetela<br><hr>Emprestado</td>
-                <td><b>A Hora da Estrela</b><br>Clarice Lispector<br><hr>Emprestado</td>
-                <td><b>Os Sertões</b><br>Euclides da Cunha<br><hr>Emprestado</td>
-                <td><b>O Auto da Compadecida</b><br>Ariano Suassuna<br><hr>Emprestado</td>
-                <td><b>O Tempo e o Vento</b><br>Erico Verissimo<br><hr>Emprestado</td>
-                <td><b>Clarissa</b><br>Erico Verissimo<br><hr>Emprestado</td>
-            </tr>
-            <tr>
-                <td><img src="img/LITBR_MarMorto.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_GabrielaCravoCanela.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_Moreninha.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_MemóriasSargentoMilícias.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_InsubmissasLágrimasMulheres.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_PonciaVicencio.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_ElesEramMuitosCavalos.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_FilhoEterno.jpg" width="150" height="200"></td>
-            </tr>
-            <tr align="left">
-                <td><b>Mar Morto</b><br>Jorge Amado<br><hr>Emprestado</td>
-                <td><b>Gabriela, Cravo e Canela</b><br>Jorge Amado<br><hr>Emprestado</td>
-                <td><b>A Moreninha</b><br>Joaquim Manuel de Macedo<br><hr>Emprestado</td>
-                <td><b>Memórias de um Sargento de Milícias</b><br>Manuel Antônio de Almeida<br><hr>Emprestado</td>
-                <td><b>Insubmissas Lágrimas de Mulheres</b><br>Conceição Evaristo<br><hr>Emprestado</td>
-                <td><b>Ponciá Vicêncio</b><br>Conceição Evaristo<br><hr>Emprestado</td>
-                <td><b>Eles Eram Muitos Cavalos</b><br>Luiz Ruffato<br><hr>Emprestado</td>
-                <td><b>O Filho Eterno</b><br>Cristovão Tezza<br><hr>Emprestado</td>
-            </tr>
-            <tr>
-                <td><img src="img/LITBR_SolCabeça.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_CançõesParaNinarAdultos.png" width="150" height="200"></td>
-                <td><img src="img/LITBR_AvessoPele.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_SobrevivendoNoInferno.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_QuarentaDias.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_AntesMundoAcabe.jpg" width="150" height="200"></td>
-                <td><img src="img/LITBR_ACabeçaSanto.png" width="150" height="200"></td>
-                <td><img src="img/LITBR_AsMeninas.jpg" width="150" height="200"></td>
-            </tr>
-            <tr align="left">
-                <td><b>O Sol na Cabeça</b><br>Geovani Martins<br><hr>Emprestado</td>
-                <td><b>Canções para Ninar Adultos</b><br>Daniel Munduruku<br><hr>Emprestado</td>
-                <td><b>O Avesso da Pele</b><br>Jeferson Tenório<br><hr>Emprestado</td>
-                <td><b>Sobrevivendo no Inferno</b><br>Racionais MC’s (livro)<br><hr>Emprestado</td>
-                <td><b>Quarenta Dias</b><br>Maria Valéria Rezende<br><hr>Emprestado</td>
-                <td><b>Antes que o Mundo Acabe</b><br>Marcelo Carneiro da Cunha<br><hr>Emprestado</td>
-                <td><b>A Cabeça do Santo</b><br>Socorro Acioli<br><hr>Emprestado</td>
-                <td><b>As Meninas</b><br>Lygia Fagundes Telles<br><hr>Emprestado</td>
-            </tr>
-        </table>
-        <br>
-        <hr>
-       </section>
+                </tr>
+            </table>
+        </section>
+        <section class="acervo_completo">
+            <h2 class="borda">Acervo Completo:</h2>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_GrandeSertao.jpg">
+                            <p><b>Grande Sertão: Veredas</b><br>João Guimarães Rosa<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Macunaima.png">
+                            <p><b>Macunaíma </b><br>Mário de Andrade<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Mayombe.jpg">
+                            <p><b>Mayombe</b><br>Pepetela<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_HoraDaEstrela.jpg">
+                            <p><b>A Hora da Estrela</b><br>Clarice Lispector<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_OsSertoes.jpg">
+                            <p><b>Os Sertões</b><br>Euclides da Cunha<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AutoDaCompadecida.jpg">
+                            <p><b>O Auto da Compadecida</b><br>Ariano Suassuna<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_TempoVento.jpg">
+                            <p><b>O Tempo e o Vento</b><br>Erico Verissimo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Clarissa.jpg">
+                            <p><b>Clarissa</b><br>Erico Verissimo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_MarMorto.jpg">
+                            <p><b>Mar Morto</b><br>Jorge Amado<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_GabrielaCravoCanela.jpg">
+                            <p><b>Gabriela, Cravo e Canela</b><br>Jorge Amado<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Moreninha.jpg">
+                            <p><b>A Moreninha</b><br>Joaquim Manuel de Macedo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_MemóriasSargentoMilícias.jpg">
+                            <p><b>Memórias de um Sargento de Milícias</b><br>Manuel Antônio<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_InsubmissasLágrimasMulheres.jpg">
+                            <p><b>Insubmissas Lágrimas de Mulheres</b><br>Conceição Evaristo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_PonciaVicencio.jpg">
+                            <p><b>Ponciá Vicêncio</b><br>Conceição Evaristo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_ElesEramMuitosCavalos.jpg">
+                            <p><b>Eles Eram Muitos Cavalos</b><br>Luiz Ruffato<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_FilhoEterno.jpg">
+                            <p><b>O Filho Eterno</b><br>Cristovão Tezza<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_SolCabeça.jpg">
+                            <p><b>O Sol na Cabeça</b><br>Geovani Martins<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_CançõesParaNinarAdultos.png">
+                            <p><b>Canções para Ninar Adultos</b><br>Daniel Munduruku<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AvessoPele.jpg">
+                            <p><b>O Avesso da Pele</b><br>Jeferson Tenório<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_SobrevivendoNoInferno.jpg">
+                            <p><b>Sobrevivendo no Inferno</b><br>Racionais MC’s (livro)<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_QuarentaDias.jpg">
+                            <p><b>Quarenta Dias</b><br>Maria Valéria Rezende<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AntesMundoAcabe.jpg">
+                            <p><b>Antes que o Mundo Acabe</b><br>Marcelo Carneiro da Cunha<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_ACabeçaSanto.png">
+                            <p><b>A Cabeça do Santo</b><br>Socorro Acioli<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AsMeninas.jpg">
+                            <p><b>As Meninas</b><br>Lygia Fagundes Telles<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer>
         <div class="infos_geral">
@@ -255,4 +673,5 @@
         </div>
     </footer>
 </body>
+
 </html>

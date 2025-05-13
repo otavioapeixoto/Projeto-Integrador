@@ -7,6 +7,9 @@
 }
 body{
     background-color: #FFEAD8;
+    font-family: "Comfortaa", sans-serif;
+    color: #402401;
+    text-align: justify;
 }
 header{
     top: 0;
@@ -185,4 +188,7 @@ h1{
     font-family: "Comfortaa", sans-serif;
     text-align: center;
     padding: 25px;
+}
+.banner{
+    display: block;
 }
