@@ -42,6 +42,11 @@
             width: 735px;
             border-radius: 25px;
         }
+
+        .margem_bottom {
+            margin-bottom: 40px;
+        }
+
         .livro1,
         .livro2,
         .livro3 {
@@ -79,7 +84,7 @@
             border-radius: 15px;
         }
 
-        .destaques hr {
+        hr{
             background-color: #402401;
             height: 2px;
             border: none;
@@ -102,6 +107,51 @@
         .n_emprestado {
             background-color: #00AFC1;
             color: #402401;
+        }
+
+        .borda {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .acervo_completo table {
+            background-color: #00AFC1;
+            width: 100%;
+            display: block;
+        }
+
+        .acervo_completo td {
+            background-color: #00AFC1;
+        }
+
+        .acervo_completo td div {
+            background-color: #FFEAD8;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .acervo_completo p{
+            height: 75px;
+            width: 120px;
+            font-size: 13px;
+            text-align: center;
+        }
+        .acervo_completo p b{
+            color: #00AFC1;
+            font-size: 14px;
+        }
+        .acervo_completo img{
+            width: 135px;
+            height: 180px;
+            border-radius: 15px;
+        }
+        .acervo_completo h5{
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
         }
     </style>
 
@@ -289,7 +339,7 @@
                     </td>
                 </tr>
                 <td>
-                    <table class="destaques2">
+                    <table class="destaques margem_bottom">
                         <tr>
                             <td>
                                 <div class="livro1">
@@ -349,7 +399,7 @@
                 </td>
                 <td class="separaçao"></td>
                 <td>
-                    <table class="destaques2">
+                    <table class="destaques margem_bottom">
                         <tr>
                             <td>
                                 <div class="livro1">
@@ -404,120 +454,184 @@
                 </tr>
             </table>
         </section>
-        <section>
-            <h2>Acervo Completo:</h2>
+        <section class="acervo_completo">
+            <h2 class="borda">Acervo Completo:</h2>
             <table>
                 <tr>
-                    <td><img src="img/LITBR_GrandeSertao.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_Macunaima.png" width="150" height="200"></td>
-                    <td><img src="img/LITBR_Mayombe.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_HoraDaEstrela.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_OsSertoes.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_AutoDaCompadecida.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_TempoVento.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_Clarissa.jpg" width="150" height="200"></td>
-                </tr>
-                <tr>
-                    <td><b>Grande Sertão: Veredas</b><br>João Guimarães Rosa<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_GrandeSertao.jpg">
+                            <p><b>Grande Sertão: Veredas</b><br>João Guimarães Rosa<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Macunaíma </b><br>Mário de Andrade<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Macunaima.png">
+                            <p><b>Macunaíma </b><br>Mário de Andrade<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Mayombe</b><br>Pepetela<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Mayombe.jpg">
+                            <p><b>Mayombe</b><br>Pepetela<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>A Hora da Estrela</b><br>Clarice Lispector<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_HoraDaEstrela.jpg">
+                            <p><b>A Hora da Estrela</b><br>Clarice Lispector<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Os Sertões</b><br>Euclides da Cunha<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_OsSertoes.jpg">
+                            <p><b>Os Sertões</b><br>Euclides da Cunha<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>O Auto da Compadecida</b><br>Ariano Suassuna<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AutoDaCompadecida.jpg">
+                            <p><b>O Auto da Compadecida</b><br>Ariano Suassuna<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>O Tempo e o Vento</b><br>Erico Verissimo<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_TempoVento.jpg">
+                            <p><b>O Tempo e o Vento</b><br>Erico Verissimo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Clarissa</b><br>Erico Verissimo<br>
-                        <hr>Emprestado
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="img/LITBR_MarMorto.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_GabrielaCravoCanela.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_Moreninha.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_MemóriasSargentoMilícias.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_InsubmissasLágrimasMulheres.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_PonciaVicencio.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_ElesEramMuitosCavalos.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_FilhoEterno.jpg" width="150" height="200"></td>
-                </tr>
-                <tr>
-                    <td><b>Mar Morto</b><br>Jorge Amado<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Gabriela, Cravo e Canela</b><br>Jorge Amado<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>A Moreninha</b><br>Joaquim Manuel de Macedo<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Memórias de um Sargento de Milícias</b><br>Manuel Antônio de Almeida<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Insubmissas Lágrimas de Mulheres</b><br>Conceição Evaristo<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Ponciá Vicêncio</b><br>Conceição Evaristo<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Eles Eram Muitos Cavalos</b><br>Luiz Ruffato<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>O Filho Eterno</b><br>Cristovão Tezza<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Clarissa.jpg">
+                            <p><b>Clarissa</b><br>Erico Verissimo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
                 </tr>
                 <tr>
-                    <td><img src="img/LITBR_SolCabeça.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_CançõesParaNinarAdultos.png" width="150" height="200"></td>
-                    <td><img src="img/LITBR_AvessoPele.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_SobrevivendoNoInferno.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_QuarentaDias.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_AntesMundoAcabe.jpg" width="150" height="200"></td>
-                    <td><img src="img/LITBR_ACabeçaSanto.png" width="150" height="200"></td>
-                    <td><img src="img/LITBR_AsMeninas.jpg" width="150" height="200"></td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_MarMorto.jpg">
+                            <p><b>Mar Morto</b><br>Jorge Amado<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_GabrielaCravoCanela.jpg">
+                            <p><b>Gabriela, Cravo e Canela</b><br>Jorge Amado<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_Moreninha.jpg">
+                            <p><b>A Moreninha</b><br>Joaquim Manuel de Macedo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_MemóriasSargentoMilícias.jpg">
+                            <p><b>Memórias de um Sargento de Milícias</b><br>Manuel Antônio<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_InsubmissasLágrimasMulheres.jpg">
+                            <p><b>Insubmissas Lágrimas de Mulheres</b><br>Conceição Evaristo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_PonciaVicencio.jpg">
+                            <p><b>Ponciá Vicêncio</b><br>Conceição Evaristo<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_ElesEramMuitosCavalos.jpg">
+                            <p><b>Eles Eram Muitos Cavalos</b><br>Luiz Ruffato<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <img src="img/LITBR_FilhoEterno.jpg">
+                            <p><b>O Filho Eterno</b><br>Cristovão Tezza<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
-                    <td><b>O Sol na Cabeça</b><br>Geovani Martins<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_SolCabeça.jpg">
+                            <p><b>O Sol na Cabeça</b><br>Geovani Martins<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Canções para Ninar Adultos</b><br>Daniel Munduruku<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_CançõesParaNinarAdultos.png">
+                            <p><b>Canções para Ninar Adultos</b><br>Daniel Munduruku<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>O Avesso da Pele</b><br>Jeferson Tenório<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AvessoPele.jpg">
+                            <p><b>O Avesso da Pele</b><br>Jeferson Tenório<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Sobrevivendo no Inferno</b><br>Racionais MC’s (livro)<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_SobrevivendoNoInferno.jpg">
+                            <p><b>Sobrevivendo no Inferno</b><br>Racionais MC’s (livro)<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Quarenta Dias</b><br>Maria Valéria Rezende<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_QuarentaDias.jpg">
+                            <p><b>Quarenta Dias</b><br>Maria Valéria Rezende<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>Antes que o Mundo Acabe</b><br>Marcelo Carneiro da Cunha<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AntesMundoAcabe.jpg">
+                            <p><b>Antes que o Mundo Acabe</b><br>Marcelo Carneiro da Cunha<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>A Cabeça do Santo</b><br>Socorro Acioli<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_ACabeçaSanto.png">
+                            <p><b>A Cabeça do Santo</b><br>Socorro Acioli<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
-                    <td><b>As Meninas</b><br>Lygia Fagundes Telles<br>
-                        <hr>Emprestado
+                    <td>
+                        <div>
+                            <img src="img/LITBR_AsMeninas.jpg">
+                            <p><b>As Meninas</b><br>Lygia Fagundes Telles<br></p>
+                            <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
                     </td>
                 </tr>
             </table>
-            <br>
-            <hr>
         </section>
     </main>
     <footer>
@@ -525,34 +639,20 @@
             <div class="navegaçao">
                 <h2>Navegue pelo site:</h2>
                 <div class="container">
-                    <a href="index.html">
-                        <p>Home</p>
-                    </a>
-                    <a href="acervo_biblioteca.html">
-                        <p>Acervo da Biblioteca</p>
-                    </a>
-                    <a href="produtos_literarios.html">
-                        <p>Produtos Literários</p>
-                    </a>
-                    <a href="divulga_escritores.html">
-                        <p>Divulgação Escritores</p>
-                    </a>
-                    <a href="assinatura_membros.html">
-                        <p>Assinatura de Membros</p>
-                    </a>
+                    <a href="index.html"><p>Home</p></a>
+                    <a href="acervo_biblioteca.html"><p>Acervo da Biblioteca</p></a>
+                    <a href="produtos_literarios.html"><p>Produtos Literários</p></a>
+                    <a href="divulga_escritores.html"><p>Divulgação Escritores</p></a>
+                    <a href="assinatura_membros.html"><p>Assinatura de Membros</p></a>
                 </div>
             </div>
             <div class="contato">
                 <h2>Contato:</h2>
                 <div class="container">
-                    <img src="img/IconEndereço.svg">
-                    <p>Rua Emídio Piedade, 238 - Centro</p><br>
-                    <img src="img/IconTelefone.svg">
-                    <p>(14) 3332-2303</p><br>
-                    <img src="img/IconEmail.svg">
-                    <p>bibliotecascrp@gmail.com</p><br>
-                    <img src="img/IconHorário.svg">
-                    <p>Seg a sex, 8h às 17h30</p><br>
+                    <img src="img/IconEndereço.svg"><p>Rua Emídio Piedade, 238 - Centro</p><br>
+                    <img src="img/IconTelefone.svg"><p>(14) 3332-2303</p><br>
+                    <img src="img/IconEmail.svg"><p>bibliotecascrp@gmail.com</p><br>
+                    <img src="img/IconHorário.svg"><p>Seg a sex, 8h às 17h30</p><br>
                 </div>
             </div>
             <div class="email">
@@ -563,13 +663,13 @@
                         <input type="email" placeholder="Email">
                         <button type="submit">Quero Assinar!</button>
                     </form>
-
+                                                       
                 </div>
             </div>
         </div>
         <div class="direitos">
             <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
-            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
+            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>    
         </div>
     </footer>
 </body>
