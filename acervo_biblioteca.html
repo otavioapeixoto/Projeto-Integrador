@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,187 @@
     <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
+        
+        main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        table h3 {
+            color: #402401;
+            font-size: 30px;
+            font-family: "Averia Serif Libre", serif;
+            text-align: center;
+            padding: 15px 0px;
+            width: 735px;
+            text-align: center;
+
+        }
+
+        .tab_geral {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .separaçao {
+            width: 100px;
+        }
+
+        .destaques {
+            background-color: #00AFC1;
+            width: 735px;
+            border-radius: 25px;
+        }
+
+        .margem_bottom {
+            margin-bottom: 40px;
+        }
+
+        .livro1,
+        .livro2,
+        .livro3 {
+            border-radius: 20px;
+            background-color: #FFEAD8;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .livro1 {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
+        .livro3 {
+            margin-left: 15px;
+            margin-right: 20px;
+        }
+
+        .destaques h4 {
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color: #00AFC1;
+        }
+
+        .destaques div div {
+            font-size: 15px;
+            height: 310px;
+        }
+
+        .destaques img {
+            border-radius: 15px;
+        }
+
+        hr {
+            background-color: #402401;
+            height: 2px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .destaques h5 {
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 7px;
+            margin-top: 5px;
+        }
+
+        .emprestado {
+
+            background-color: #402401;
+            color: #00AFC1;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .n_emprestado {
+            background-color: #00AFC1;
+            color: #402401;
+        }
+        
+        
+        .borda {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+
+
+        .tabela_principal {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #00AFC1;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            text-align: center;
+        }
+
+        .seção1,
+        .seção2,
+        .seção3,
+        .seção4,
+        .seção5 {
+            border-radius: 20px;
+            background-color: #FFEAD8;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+            height: 450px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .seção1 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .seção5 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .separaçao1 {
+            background-color: #FFEAD8;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            width: 100%;
+        }
+
+        .botão{
+            background-color: #00AFC1;
+            color:#402401;
+            font-family: "Averia Serif Libre", serif;
+            font-size: 18px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; 
+            width: 100%;
+        }
+
+    
+    
     </style>
 </head>
 
@@ -14,7 +196,7 @@
     <!--ABERTURA CABEÇALHO-->
     <header>
         <div class="cabe">
-            <img src="img/logo2.png" class="logo"> 
+            <img src="img/logo2.png" class="logo">
             <h1>BIBLIOTECA SCRP</h1>
             <div class="redes">
                 <a href=""><img src="img/LogoFace.svg"></a>
@@ -24,159 +206,346 @@
         </div>
         <nav class="menu">
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a> 
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a>
                     <ul>
-                        <a href="famosos_tiktok.html"><li>Famosinhos do TikTok</li></a>
-                        <a href="novidades_biblioteca.html"><li>Novidades Biblioteca</li></a>
-                        <a href="literatura_brasileira.html"><li>Literatura Brasileira</li></a>
-                        <a href="literatura_estrangeira.html"><li>Literatura Estrangeira</li></a>
-                        <a href="literatura_vestibular.html"><li>Literatura Vestibular</li></a>
+                        <a href="famosos_tiktok.html">
+                            <li>Famosinhos do TikTok</li>
+                        </a>
+                        <a href="novidades_biblioteca.html">
+                            <li>Novidades Biblioteca</li>
+                        </a>
+                        <a href="literatura_brasileira.html">
+                            <li>Literatura Brasileira</li>
+                        </a>
+                        <a href="literatura_estrangeira.html">
+                            <li>Literatura Estrangeira</li>
+                        </a>
+                        <a href="literatura_vestibular.html">
+                            <li>Literatura Vestibular</li>
+                        </a>
                     </ul>
                 </li>
-                <a href="produtos_literarios.html"><li>Produtos Literários</li></a>
-                <a href="divulga_escritores.html"><li>Divulgação Escritores</li></a>
-                <a href="assinatura_membros.html"><li>Assinatura Membros</li></a>
+                <a href="produtos_literarios.html">
+                    <li>Produtos Literários</li>
+                </a>
+                <a href="divulga_escritores.html">
+                    <li>Divulgação Escritores</li>
+                </a>
+                <a href="assinatura_membros.html">
+                    <li>Assinatura Membros</li>
+                </a>
             </ul>
         </nav>
     </header>
     <!--ABERTURA PRINCIPAL-->
+
     <main>
+        <img src="img/banner_ind.png" width="100%" class="banner">
+        <h2>Seleções da Biblioteca:</h2>
+
+
         <!--Navegação entre as páginas dentro do acervo-->
-        <section align="center">
-            <h2>Seleções da Biblioteca:</h2>
-            <table border="1" align="center" cellpadding="5" cellspacing="15" width="1200">
+        <div class="tabela_principal">
+            <h2 class="separaçao1"></h2>
+            <table>
                 <tr>
-                    <td><img src="img/Icone_FamosinhosTiktok.svg" width="200" height="200"></td>
-                    <td><img src="img/Icone_Novidades.svg" width="200" height="200"></td>
-                    <td><img src="img/Icone_LiteraturaBrasileira.svg" width="200" height="200"></td>
-                    <td><img src="img/Icone_LiteraturaEstrangeira.svg" width="200" height="200"></td>
-                    <td><img src="img/Icone_LiteraturaVestibular.svg" width="200" height="200"></td>
+                    <td>
+                        <div class="seção1">
+                            <img src="img/FAMOSOS DO TIKTOK2.png" width="200" height="200"><br>
+                            <div>
+                                <h4>Mais Sobre Aqui:</h4>
+                                <p> <br>Os livros que estão bombando no TikTok estão aqui! Confira as leituras que
+                                    conquistaram a
+                                    atenção da galera nas redes sociais e mergulhe nas histórias que todo mundo está
+                                    comentando. <br></p>
+                            </div><br>
+                            <h5><a href="famosos_tiktok.html"><button class="botão">Descubra os Livros <br><b>Clicando
+                                aqui!</b></button></a></h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="seção1">
+                            <img src="img/NOVIDADES DA BIBLIOTECA.png" width="200" height="200"><br>
+                            <div>
+                                <h4>Mais Sobre Aqui:</h4>
+                                <p> <br>Fique por dentro das últimas aquisições da biblioteca. Descubra livros recém-chegados
+                                    que
+                                    vão te surpreender com novas histórias, temas e abordagens literá<rias class="br"></rias></p>
+                            </div><br><br>
+                            <h5><a href="novidades_biblioteca.html"><button class="botão">Descubra os Livros
+                                <br><b>Clicando aqui!</b></button></a></h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="seção1">
+                            <img src="img/LITERATURA BRASILEIRA.png" width="200" height="200"><br>
+                            <div>
+                                <h4>Mais Sobre Aqui:</h4>
+                                <p><br>Explore o vasto mundo da literatura brasileira! Desde os clássicos até as obras
+                                    contemporâneas, nossa seleção traz grandes nomes e histórias que marcaram nossa
+                                    cultura e
+                                    história.</p>
+                            </div><br><br>
+                            <h5><a href="literatura_brasileira.html"><button class="botão">Descubra os Livros
+                                <br><b>Clicando aqui!</b></button></a></h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="seção1">
+                            <img src="img/LITERATURA ESTRANGEIRA.png" width="200" height="200"><br>
+                            <div>
+                                <h4>Mais Sobre Aqui:</h4>
+                                <p><br>Viaje para além das fronteiras com a literatura estrangeira. De autores premiados a
+                                    obras
+                                    que conquistaram leitores ao redor do mundo, temos títulos que vão enriquecer sua
+                                    experiência de leitura.</p>
+                            </div><br>
+                            <h5><a href="literatura_estrangeira.html"><button class="botão">Descubra os Livros
+                                <br><b>Clicando aqui!</b></button></a></h5>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="seção1">
+                            <img src="img/LITERATURA VESTIBULAR.png" width="200" height="200"><br>
+                            <div>
+                                <h4>Mais Sobre Aqui:</h4>
+                                <p><br>Preparando-se para o vestibular? Nossa seleção de livros essenciais vai te ajudar a
+                                    se
+                                    preparar para as provas. Não deixe de conferir as obras que são recorrentes nos
+                                    exames e nas
+                                    leituras obrigatórias.</p>
+                            </div><br>
+                            <h5><a href="literatura_vestibular.html"><button class="botão">Descubra os Livros
+                                <br><b>Clicando aqui!</b></button></a></h5>
+
+                        </div>
+                    </td>
+                    <td>
+                    </td>
                 </tr>
-                <tr>
-                    <td><div align="justify">Os livros que estão bombando no TikTok estão aqui! Confira as leituras que conquistaram a atenção da galera nas redes sociais e mergulhe nas histórias que todo mundo está comentando.</div><hr><a href="famosos_tiktok.html"><button align="center">Descubra os Livros <br><b>Clicando aqui!</b></button></a></td>
-                    <td><div align="justify">Fique por dentro das últimas aquisições da biblioteca. Descubra livros recém-chegados que vão te surpreender com novas histórias, temas e abordagens literárias.</div><hr><a href="novidades_biblioteca.html"><button align="center">Descubra os Livros <br><b>Clicando aqui!</b></button></a></td>
-                    <td><div align="justify">Explore o vasto mundo da literatura brasileira! Desde os clássicos até as obras contemporâneas, nossa seleção traz grandes nomes e histórias que marcaram nossa cultura e história.</div><hr><a href="literatura_brasileira.html"><button align="center">Descubra os Livros <br><b>Clicando aqui!</b></button></a></td>
-                    <td><div align="justify">Viaje para além das fronteiras com a literatura estrangeira. De autores premiados a obras que conquistaram leitores ao redor do mundo, temos títulos que vão enriquecer sua experiência de leitura.</div><hr><a href="literatura_estrangeira.html"><button align="center">Descubra os Livros <br><b>Clicando aqui!</b></button></a></td>
-                    <td><div align="justify">Preparando-se para o vestibular? Nossa seleção de livros essenciais vai te ajudar a se preparar para as provas. Não deixe de conferir as obras que são recorrentes nos exames e nas leituras obrigatórias.</div><hr><a href="literatura_vestibular.html"><button align="center">Descubra os Livros <br><b>Clicando aqui!</b></button></a></td>
-                </tr>
+
             </table>
-            <hr>
-        </section>
+            <h2 class="separaçao1"></h2>
+        </div>
+        <!--FIM da navegação entre as páginas dentro do acervo-->
+
+
+
         <!--Destaques do Mês-->
-        <section align="center">
-            <h2>Conheça os Destaques do Mês:</h2>
+        <section>
             <hr width="350">
-            <table align="center" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                    <td>
-                       <table border="1" cellpadding="5" cellspacing="0" width="600">
-                        <!--Empréstimos Populares-->
-                            <caption><h3>Empréstimos Populares:</h3></caption>
-                            <tr>
-                                <td><img src="img/ACB_Alquimista.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_CulpaDasEstrelas.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_PoderDoHábito.jpg" width="200" height="270"></td>
-                            </tr>
-                            <tr align="justify">
-                                <td><b>O Alquimista</b><br>Paulo Coelho<br>
-                                    Santiago, um jovem pastor espanhol, sonha com um tesouro escondido nas pirâmides do Egito. Sua jornada em busca de realização pessoal e espiritualidade o leva a entender que o verdadeiro tesouro está no autoconhecimento e na capacidade de seguir os próprios sonhos.
-                                    <hr>Emprestado</td>
+            <h2>Conheça os Destaques do Mês:</h2>
+            </td>
+            <section>
+                <table class="tab_geral">
+                    <tr>
+                        <td>
+                            <h3>Empréstimos Populares:</h3>
+                        </td>
+                        <td class="separaçao"></td>
+                        <td>
+                            <h3>Reservas Recomendadas</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="destaques">
+                                <tr>
+                                    <td>
+                                        <div class="livro1">
+                                            <img src="img/ACB_Alquimista.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>O Alquimista</h4>
+                                                <p>Paulo Coelho<br>
+                                                    Santiago, um jovem pastor espanhol, sonha com um tesouro escondido nas pirâmides do Egito. Sua jornada em busca de realização pessoal e espiritualidade o leva a entender que o verdadeiro tesouro está no autoconhecimento e na capacidade de seguir os próprios sonhos.                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro2">
+                                            <img src="img/ACB_CulpaDasEstrelas.jpg" width="200" height="270">
+                                            <div>
+                                                <h4>A Culpa é das Estrelas</h4>
+                                                <p>John Green<br>
+                                                    Hazel Grace, uma adolescente com câncer, conhece Augustus Waters em um grupo de apoio. Juntos, vivem uma história de amor intensa e transformadora, lidando com a finitude da vida e as complexidades dos sentimentos enquanto enfrentam a doença.
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="n_emprestado">Não Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro3">
+                                            <img src="img/ACB_PoderDoHábito.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>O Poder do Hábito</h4>
+                                                <p>Charles Duhigg<br>
+                                    Este livro explora como os hábitos moldam nossas vidas, tanto no nível pessoal quanto organizacional. Duhigg apresenta uma análise de como nossos cérebros formam padrões automáticos e como podemos reprogramá-los para alcançar nossos objetivos.
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
 
-                                <td><b>A Culpa é das Estrelas</b><br>John Green<br>
-                                    Hazel Grace, uma adolescente com câncer, conhece Augustus Waters em um grupo de apoio. Juntos, vivem uma história de amor intensa e transformadora, lidando com a finitude da vida e as complexidades dos sentimentos enquanto enfrentam a doença.<br>&nbsp;<br>&nbsp;
-                                    <hr>Não Emprestado</td>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="separaçao"></td>
+                        <td>
+                            <table class="destaques">
+                                <tr>
+                                    <td>
+                                        <div class="livro1">
+                                            <img src="img/ACB_1984.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>1984</h4>
+                                                <p> George Orwell<br>
+                                                Winston Smith vive em uma sociedade totalitária sob o controle do Partido, que vigia todos os aspectos da vida. Ele começa a questionar o regime e a buscar a verdade, mas logo se vê em um dilema mortal sobre a liberdade e o controle. Uma reflexão profunda sobre a vigilância e a manipulação da realidade.
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro2">
+                                            <img src="img/ACB_Hobbit.jpg"width="200" height="270">
+                                            <div>
+                                                <h4>O Hobbit</h4>
+                                                <p>J.R.R. Tolkien<br>
+                                                    Bilbo Bolseiro, um hobbit tranquilo, é arrastado para uma aventura extraordinária com anões e um mago, em busca de um tesouro guardado por um dragão. Ao longo da jornada, ele enfrenta perigos e se descobre mais corajoso do que jamais imaginou.
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="n_emprestado">Não Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro3">
+                                            <img src="img/ACB_VantagensDeInvisivel.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>As Vantagens de Ser Invisível</h4>
+                                                <p>Stephen Chbosky<br>
+                                                    Charlie é um adolescente tímido e introvertido que, após um ano difícil, encontra novos amigos e começa a explorar os altos e baixos da vida adolescente. O livro aborda temas como amizade, amor, saúde mental e a busca por identidade, tudo sob uma perspectiva honesta e emocionante
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Coleção Especial</h3>
+                        </td>
+                        <td class="separaçao"></td>
+                        <td>
+                            <h3>Empréstimos para Crianças e Jovens:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table class="destaques">
+                                <tr>
+                                    <td>
+                                        <div class="livro1">
+                                            <img src="img/ACB_DomCasmurro.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>Dom Casmurro</h4>
+                                                <p>Machado de Assis<br>
+                                                    Bentinho narra a história de seu amor platônico por Capitu e suas dúvidas sobre a fidelidade dela. A obra é um estudo psicológico e filosófico sobre ciúmes, confiança e as limitações da visão humana sobre a verdade, mantendo uma atmosfera de mistério.
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro2">
+                                            <img src="img/ACB_GrandeGatsby.jpg" width="200" height="270">
+                                            <div>
+                                                <h4>O Grande Gatsby</h4>
+                                                <p>F. Scott Fitzgerald<br>
+                                                    Ambientado na década de 1920, o romance segue Nick Carraway, que se torna amigo de Jay Gatsby, um milionário misterioso que vive para recuperar o amor de Daisy Buchanan. A história reflete sobre a busca incessante por riqueza, amor e a farsa do "sonho americano".
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="n_emprestado">Não Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro3">
+                                            <img src="img/ACB_Frakenstein.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>Frakenstein</h4>
+                                                <p>Mary Shelley<br>
+                                                    Victor Frankenstein, um jovem cientista, cria um monstro a partir de partes de cadáveres, mas ao abandoná-lo, gera uma série de tragédias. A obra é uma reflexão sobre a responsabilidade da criação e os limites da ciência, além de explorar temas como a solidão e a busca por aceitação.
+                                                </div>
+                                            <hr>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
 
-                                <td><b>O Poder do Hábito</b><br>Charles Duhigg<br>
-                                    Este livro explora como os hábitos moldam nossas vidas, tanto no nível pessoal quanto organizacional. Duhigg apresenta uma análise de como nossos cérebros formam padrões automáticos e como podemos reprogramá-los para alcançar nossos objetivos.<br>&nbsp;<br>&nbsp;
-                                    <hr>Emprestado</td>            
-                            </tr>
-                        </table> 
-                    </td>
-                    <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </td>
-                    <td>
-                        <table border="1" cellpadding="5" cellspacing="0" width="600">
-                            <!--Reservas Recomendadas-->
-                            <caption><h3>Reservas Recomendadas:</h3></caption>
-                            <tr>
-                                <td><img src="img/ACB_1984.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_Hobbit.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_VantagensDeInvisivel.jpg" width="200" height="270"></td>
-                            </tr>
-                            <tr align="justify">
-                                <td><b>1984</b><br>George Orwell<br>
-                                    Winston Smith vive em uma sociedade totalitária sob o controle do Partido, que vigia todos os aspectos da vida. Ele começa a questionar o regime e a buscar a verdade, mas logo se vê em um dilema mortal sobre a liberdade e o controle. Uma reflexão profunda sobre a vigilância e a manipulação da realidade.
-                                    <hr>Emprestado</td>
-
-                                <td><b>O Hobbit</b><br>J.R.R. Tolkien<br>
-                                    Bilbo Bolseiro, um hobbit tranquilo, é arrastado para uma aventura extraordinária com anões e um mago, em busca de um tesouro guardado por um dragão. Ao longo da jornada, ele enfrenta perigos e se descobre mais corajoso do que jamais imaginou.<br>&nbsp;<br>&nbsp;
-                                    <hr>Não Emprestado</td>
-
-                                <td><b><small>As Vantagens de Ser Invisível</small></b><br>Stephen Chbosky<br>
-                                    Charlie é um adolescente tímido e introvertido que, após um ano difícil, encontra novos amigos e começa a explorar os altos e baixos da vida adolescente. O livro aborda temas como amizade, amor, saúde mental e a busca por identidade, tudo sob uma perspectiva honesta e emocionante
-                                    <hr>Emprestado</td>            
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                       <table border="1" cellpadding="5" cellspacing="0" width="600">
-                        <!--Coleção Especial-->
-                            <caption><h3>Coleção Especial:</h3></caption>
-                            <tr>
-                                <td><img src="img/ACB_DomCasmurro.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_GrandeGatsby.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_Frakenstein.jpg" width="200" height="270"></td>
-                            </tr>
-                            <tr align="justify">
-                                <td><b>Dom Casmurro</b><br>Machado de Assis<br>
-                                    Bentinho narra a história de seu amor platônico por Capitu e suas dúvidas sobre a fidelidade dela. A obra é um estudo psicológico e filosófico sobre ciúmes, confiança e as limitações da visão humana sobre a verdade, mantendo uma atmosfera de mistério.<br>&nbsp;
-                                    <hr>Emprestado</td>
-
-                                <td><b>O Grande Gatsby</b><br>F. Scott Fitzgerald<br>
-                                    Ambientado na década de 1920, o romance segue Nick Carraway, que se torna amigo de Jay Gatsby, um milionário misterioso que vive para recuperar o amor de Daisy Buchanan. A história reflete sobre a busca incessante por riqueza, amor e a farsa do "sonho americano".
-                                    <hr>Não Emprestado</td>
-
-                                <td><b>Frankenstein</b><br>Mary Shelley<br>
-                                    Victor Frankenstein, um jovem cientista, cria um monstro a partir de partes de cadáveres, mas ao abandoná-lo, gera uma série de tragédias. A obra é uma reflexão sobre a responsabilidade da criação e os limites da ciência, além de explorar temas como a solidão e a busca por aceitação
-                                    <hr>Emprestado</td>            
-                            </tr>
-                        </table> 
-                    </td>
-                    <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </td>
-                    <td>
-                        <table border="1" cellpadding="5" cellspacing="0" width="600">
-                            <!--Empréstimos para Crianças e Jovens-->
-                            <caption><h3>Empréstimos para Crianças e Jovens:</h3></caption>
-                            <tr>
-                                <td><img src="img/ACB_HarryPotter.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_PequenoPríncipe.jpg" width="200" height="270"></td>
-                                <td><img src="img/ACB_DiarioBanana.jpg" width="200" height="270"></td>
-                            </tr>
-                            <tr align="justify">
-                                <td><b><small>Harry Potter e a Pedra Filosofal</small></b><br>J.K. Rowling<br>
-                                    Quando Harry descobre que é um bruxo e recebe uma carta para estudar na Escola de Magia de Hogwarts, sua vida muda para sempre. Com novos amigos e desafios, Harry aprende sobre amizade, coragem e, acima de tudo, sobre o poder do amor e do sacrifício.
-                                    <hr>Emprestado</td>
-
-                                <td><b>O Pequeno Príncipe</b><br>Antoine de Saint-Exupéry<br>
-                                    Um piloto perdido no deserto encontra um pequeno príncipe que lhe conta sobre suas viagens por diferentes planetas. Cada planeta e cada personagem que ele encontra trazem lições sobre a vida, amor e os valores mais importantes, ensinando que o essencial é invisível aos olhos.
-                                    <hr>Não Emprestado</td>
-
-                                <td><b>Diário de um Banana</b><br>Jeff Kinney<br>
-                                    Greg Heffley registra as confusões e os dilemas de sua vida como um adolescente tentando se encaixar na escola, enquanto lida com sua família, amigos e as dificuldades típicas dessa fase da vida. O livro é uma mistura de comédia e reflexão sobre a adolescência.
-                                    <hr>Emprestado</td>            
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <hr>
-        </section>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="separaçao"></td>
+                        <td>
+                            <table class="destaques">
+                                <tr>
+                                    <td>
+                                        <div class="livro1">
+                                            <img src="img/ACB_HarryPotter.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>Harry Potter</h4>
+                                                <p> J.K. Rowling<br>
+                                                    Quando Harry descobre que é um bruxo e recebe uma carta para estudar na Escola de Magia de Hogwarts, sua vida muda para sempre. Com novos amigos e desafios, Harry aprende sobre amizade, coragem e, acima de tudo, sobre o poder do amor e do sacrifício.
+                                            </div>
+                                            <hr>
+                                            </p>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro2">
+                                            <img src="img/ACB_PequenoPríncipe.jpg" width="200" height="270">
+                                            <div>
+                                                <h4>O Pequeno Príncipe</h4>
+                                                <p>Antoine de Saint-Exupéry<br>
+                                                    Um piloto perdido no deserto encontra um pequeno príncipe que lhe conta sobre suas viagens por diferentes planetas. Cada planeta e cada personagem que ele encontra trazem lições sobre a vida, amor e os valores mais importantes, ensinando que o essencial é invisível aos olhos.
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="n_emprestado">Não Emprestado</h5>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="livro3">
+                                            <img src="img/ACB_DiarioBanana.jpg" width="200" height="270"><br>
+                                            <div>
+                                                <h4>Diário de um Banana </h4>
+                                                <p>Jeff Kinney<br>
+                                                    Greg Heffley registra as confusões e os dilemas de sua vida como um adolescente tentando se encaixar na escola, enquanto lida com sua família, amigos e as dificuldades típicas dessa fase da vida. O livro é uma mistura de comédia e reflexão sobre a adolescência.
+                                                </p>
+                                            </div>
+                                            <hr>
+                                            <h5 class="emprestado">Emprestado</h5>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
     </main>
     <!--ABERTURA RODAPÉ-->
     <footer>
@@ -184,20 +553,34 @@
             <div class="navegaçao">
                 <h2>Navegue pelo site:</h2>
                 <div class="container">
-                    <a href="index.html"><p>Home</p></a>
-                    <a href="acervo_biblioteca.html"><p>Acervo da Biblioteca</p></a>
-                    <a href="produtos_literarios.html"><p>Produtos Literários</p></a>
-                    <a href="divulga_escritores.html"><p>Divulgação Escritores</p></a>
-                    <a href="assinatura_membros.html"><p>Assinatura de Membros</p></a>
+                    <a href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <a href="acervo_biblioteca.html">
+                        <p>Acervo da Biblioteca</p>
+                    </a>
+                    <a href="produtos_literarios.html">
+                        <p>Produtos Literários</p>
+                    </a>
+                    <a href="divulga_escritores.html">
+                        <p>Divulgação Escritores</p>
+                    </a>
+                    <a href="assinatura_membros.html">
+                        <p>Assinatura de Membros</p>
+                    </a>
                 </div>
             </div>
             <div class="contato">
                 <h2>Contato:</h2>
                 <div class="container">
-                    <img src="img/IconEndereço.svg"><p>Rua Emídio Piedade, 238 - Centro</p><br>
-                    <img src="img/IconTelefone.svg"><p>(14) 3332-2303</p><br>
-                    <img src="img/IconEmail.svg"><p>bibliotecascrp@gmail.com</p><br>
-                    <img src="img/IconHorário.svg"><p>Seg a sex, 8h às 17h30</p><br>
+                    <img src="img/IconEndereço.svg">
+                    <p>Rua Emídio Piedade, 238 - Centro</p><br>
+                    <img src="img/IconTelefone.svg">
+                    <p>(14) 3332-2303</p><br>
+                    <img src="img/IconEmail.svg">
+                    <p>bibliotecascrp@gmail.com</p><br>
+                    <img src="img/IconHorário.svg">
+                    <p>Seg a sex, 8h às 17h30</p><br>
                 </div>
             </div>
             <div class="email">
@@ -208,13 +591,13 @@
                         <input type="email" placeholder="Email">
                         <button type="submit">Quero Assinar!</button>
                     </form>
-                                                       
+
                 </div>
             </div>
         </div>
         <div class="direitos">
             <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
-            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>    
+            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
         </div>
     </footer>
 </body>

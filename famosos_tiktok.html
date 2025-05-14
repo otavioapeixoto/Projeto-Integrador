@@ -4,15 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Famosinhos do Tiktok</title>
+    <title>Famosos do Tiktok</title>
     <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        table h3 {
+            color: #402401;
+            font-size: 30px;
+            font-family: "Averia Serif Libre", serif;
+            text-align: center;
+            padding: 15px 0px;
+            width: 735px;
+        }
+
+        .tab_geral {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .separaçao {
+            width: 100px;
+        }
+
+        .destaques {
+            background-color: #00AFC1;
+            width: 735px;
+            border-radius: 25px;
+        }
+
+        .livro1,
+        .livro2,
+        .livro3 {
+            border-radius: 20px;
+            background-color: #FFEAD8;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .livro1 {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
+        .livro3 {
+            margin-left: 15px;
+            margin-right: 20px;
+        }
+
+        .destaques h4 {
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color: #00AFC1;
+        }
+
+        .destaques div div {
+            font-size: 15px;
+            height: 310px;
+        }
+
+        .destaques img {
+            border-radius: 15px;
+        }
+
+        .destaques hr {
+            background-color: #402401;
+            height: 2px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .destaques h5 {
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 7px;
+            margin-top: 5px;
+        }
+
+        .emprestado {
+            background-color: #402401;
+            color: #00AFC1;
+        }
+
+        .n_emprestado {
+            background-color: #00AFC1;
+            color: #402401;
+        }
+
+        .borda {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .acervo_completo table {
+            background-color: #00AFC1;
+            width: 100%;
+            display: block;
+        }
+
+        .acervo_completo td {
+            background-color: #00AFC1;
+        }
+
+        .acervo_completo td div {
+            background-color: #FFEAD8;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .acervo_completo p {
+            height: 75px;
+            width: 120px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .acervo_completo p b {
+            color: #00AFC1;
+            font-size: 14px;
+        }
+
+        .acervo_completo img {
+            width: 135px;
+            height: 180px;
+            border-radius: 15px;
+        }
+
+        .acervo_completo h5 {
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 
 </head>
+
 <body>
     <header>
         <div class="cabe">
-            <img src="img/logo2.png" class="logo"> 
+            <img src="img/logo2.png" class="logo">
             <h1>BIBLIOTECA SCRP</h1>
             <div class="redes">
                 <a href=""><img src="img/LogoFace.svg"></a>
@@ -22,95 +170,173 @@
         </div>
         <nav class="menu">
             <ul>
-                <a href="index.html"><li>Home</li></a>
-                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a> 
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a>
                     <ul>
-                        <a href="famosos_tiktok.html"><li>Famosinhos do TikTok</li></a>
-                        <a href="novidades_biblioteca.html"><li>Novidades Biblioteca</li></a>
-                        <a href="literatura_brasileira.html"><li>Literatura Brasileira</li></a>
-                        <a href="literatura_estrangeira.html"><li>Literatura Estrangeira</li></a>
-                        <a href="literatura_vestibular.html"><li>Literatura Vestibular</li></a>
+                        <a href="famosos_tiktok.html">
+                            <li>Famosinhos do TikTok</li>
+                        </a>
+                        <a href="novidades_biblioteca.html">
+                            <li>Novidades Biblioteca</li>
+                        </a>
+                        <a href="literatura_brasileira.html">
+                            <li>Literatura Brasileira</li>
+                        </a>
+                        <a href="literatura_estrangeira.html">
+                            <li>Literatura Estrangeira</li>
+                        </a>
+                        <a href="literatura_vestibular.html">
+                            <li>Literatura Vestibular</li>
+                        </a>
                     </ul>
                 </li>
-                <a href="produtos_literarios.html"><li>Produtos Literários</li></a>
-                <a href="divulga_escritores.html"><li>Divulgação Escritores</li></a>
-                <a href="assinatura_membros.html"><li>Assinatura Membros</li></a>
+                <a href="produtos_literarios.html">
+                    <li>Produtos Literários</li>
+                </a>
+                <a href="divulga_escritores.html">
+                    <li>Divulgação Escritores</li>
+                </a>
+                <a href="assinatura_membros.html">
+                    <li>Assinatura Membros</li>
+                </a>
             </ul>
         </nav>
     </header>
-    <tbody>
-        <section align="center">
-            <!-- Destaques dos famosos do TikTok -->
-            <h2>Destaques dos famosos do TikTok:</h2>
-            <hr width="380">
-            <table align="center" border="0" cellpadding="0" cellspacing="0">
+    <main>
+        <section>
+            <img src="img/banner_ind.png" width="100%" class="banner">
+            <h2>Destaques dos Famosos do Tiktok:</h2>
+            <table class="tab_geral">
                 <tr>
                     <td>
-                        <!-- Tabela de livros mais emprestados -->
-                        <table border="1" cellpadding="5" cellspacing="0">
-                            <caption>
-                                <h3>Mais emprestados:</h3>
-                            </caption>
+                        <h3>Mais emprestados:</h3>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <h3>Romance</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="destaques">
                             <tr>
-                                <td><img src="img/capalivro1.JPEG" width="200" height="270"></td>
-                                <td><img src="img/capalivro2.JPEG" width="200" height="270"></td>
-                                <td><img src="img/capalivro3.JPEG" width="200" height="270"></td>
-                            </tr>
-                            <tr align="left">
-                                <td><b>A Canção de Aquiles</b><br>de Madeline Miller<br>A história é uma reinterpretação
-                                    do mito grego de Aquiles e Pátroclo, focando no amor entre os dois heróis durante a
-                                    Guerra de Troia. A narrativa explora temas de destino, amizade e o custo da
-                                    imortalidade, criando uma história emocionalmente profunda e épica.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/capalivro1.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4> A Canção de Aquiles</h4>
+                                            <p>Madeline Miller<br>
+                                                A história é uma reinterpretação
+                                                do mito grego de Aquiles e Pátroclo, focando no amor entre os dois
+                                                heróis durante a
+                                                Guerra de Troia. A narrativa explora temas de destino, amizade e o custo
+                                                da
+                                                imortalidade, criando uma história emocionalmente profunda e épica.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>Seis de Corvos</b><br>de Leigh Bardugo<br>Em uma cidade dominada pela corrupção e
-                                    crime, seis criminosos com habilidades especiais são recrutados para uma missão
-                                    impossível. Com personagens complexos e uma trama cheia de ação e reviravoltas, o
-                                    livro mergulha em temas de lealdade, traição e sobrevivência.
-                                    <hr>Não Emprestado
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/capalivro2.JPEG" width="200" height="270">
+                                        <div>
+                                            <h4>Seis Corvos</h4>
+                                            <p>Leigh Bardugo<br>
+                                                Em uma cidade dominada pela corrupção e
+                                                crime, seis criminosos com habilidades especiais são recrutados para uma
+                                                missão
+                                                impossível. Com personagens complexos e uma trama cheia de ação e
+                                                reviravoltas, o
+                                                livro mergulha em temas de lealdade, traição e sobrevivência.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>Romper o Círculo</b><br>de Colleen Hoover<br>Lily Bloom, uma jovem que enfrenta
-                                    um passado difícil e traumático, se envolve com um homem encantador, mas com um
-                                    segredo sombrio. O livro aborda questões de abuso emocional, superação e o poder da
-                                    escolha, gerando discussões poderosas sobre relacionamentos e autossuficiência.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/capalivro3.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Romper o Círculo</h4>
+                                            <p>Collen Hoover<br>
+                                                Lily Bloom, uma jovem que enfrenta
+                                                um passado difícil e traumático, se envolve com um homem encantador, mas
+                                                com um
+                                                segredo sombrio. O livro aborda questões de abuso emocional, superação e
+                                                o poder da
+                                                escolha, gerando discussões poderosas sobre relacionamentos e
+                                                autossuficiência.
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+
                                 </td>
                             </tr>
                         </table>
                     </td>
+                    <td class="separaçao"></td>
                     <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </td>
-                    <td>
-                        <!-- Tabela de livros de romance -->
-                        <table border="1" cellpadding="5" cellspacing="0">
-                            <caption>
-                                <h3>Romance:</h3>
-                            </caption>
+                        <table class="destaques">
                             <tr>
-                                <td><img src="img/capalivro4.JPEG" width="200" height="270"></td>
-                                <td><img src="img/capalivro5.JPEG" width="200" height="270"></td>
-                                <td><img src="img/capalivro6.JPEG" width="200" height="270"></td>
-                            </tr>
-                            <tr align="left">
-                                <td><b>Uma Corte de Rosas e Espinhos</b><br> de Sarah J. Maas<br>Feyre, uma jovem
-                                    caçadora, é levada para um reino mágico cheio de segredos e perigos após matar uma
-                                    criatura faérica. Ao lado de um misterioso e encantador fae, ela precisa lidar com
-                                    traições, magia e um amor proibido, tudo em um cenário fantástico que mistura
-                                    romance e ação.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/capalivro4.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Uma Corte de Rosas e Espinhos</h4>
+                                            <p> Sarah J. Maas<br>Feyre, uma jovem
+                                                caçadora, é levada para um reino mágico cheio de segredos e perigos após
+                                                matar uma
+                                                criatura faérica. Ao lado de um misterioso e encantador fae, ela precisa
+                                                lidar com
+                                                traições, magia e um amor proibido, tudo em um cenário fantástico que
+                                                mistura
+                                                romance e ação.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>Quarta Asa</b><br> de Rebecca Yarros<br>Este romance combina drama, fantasia e um
-                                    toque de romance, explorando a jornada de personagens que enfrentam dificuldades
-                                    emocionais enquanto lidam com uma missão de vida ou morte. A história se desenrola
-                                    com desafios, segredos e revelações que envolvem o leitor a cada página.
-                                    <hr>Não Emprestado
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/capalivro5.JPEG" width="200" height="270">
+                                        <div>
+                                            <h4>A Quarta Asa</h4>
+                                            <p>Rebecca Yarros<br>
+                                                ste romance combina drama, fantasia e um
+                                                toque de romance, explorando a jornada de personagens que enfrentam
+                                                dificuldades
+                                                emocionais enquanto lidam com uma missão de vida ou morte. A história se
+                                                desenrola
+                                                com desafios, segredos e revelações que envolvem o leitor a cada página.
+
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>A Hipótese do Amor</b><br> de Ali Hazelwood<br>A história gira em torno de uma
-                                    cientista, Olive, que, para enganar uma amiga, entra em um relacionamento falso com
-                                    o charmoso Adam. A trama mistura comédia romântica e ciência, enquanto eles começam
-                                    a se conhecer e a desenvolver um amor genuíno, em meio a um cenário acadêmico.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/capalivro6.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Hipotese do Amor</h4>
+                                            <p>Ali Hazelwood<br>
+                                                A história gira em torno de uma
+                                                cientista, Olive, que, para enganar uma amiga, entra em um
+                                                relacionamento falso com
+                                                o charmoso Adam. A trama mistura comédia romântica e ciência, enquanto
+                                                eles começam
+                                                a se conhecer e a desenvolver um amor genuíno, em meio a um cenário
+                                                acadêmico.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
@@ -118,220 +344,379 @@
                 </tr>
                 <tr>
                     <td>
-                        <!-- Tabela de livros de ficção -->
-                        <table border="1" cellpadding="5" cellspacing="0">
-                            <caption>
-                                <h3>Ficção:</h3>
-                            </caption>
+                        <h3>Ficção</h3>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <h3>Suspense:</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="destaques">
                             <tr>
-                                <td><img src="img/capalivro7.JPEG" width="200" height="270"></td>
-                                <td><img src="img/capalivro8.jpg" width="200" height="270"></td>
-                                <td><img src="img/capalivro9.JPEG" width="200" height="270"></td>
-                            </tr>
-                            <tr align="left">
-                                <td><b>A Vida Invisível de Addie LaRue</b><br> de V.E. Schwab<br>Addie LaRue faz um
-                                    pacto com um demônio para ser livre, mas, como consequência, ela é esquecida por
-                                    todos que encontra. Ela vive por séculos, sem ser lembrada por ninguém, até que,
-                                    finalmente, um dia, alguém se lembra dela. O livro explora temas de identidade,
-                                    desejo de imortalidade e a solidão que acompanha o tempo.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/capalivro7.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4>A Vida Invisível de Addie LaRueos</h4>
+                                            <p>V.E. Schwab<br>
+                                                Addie LaRue faz um
+                                                pacto com um demônio para ser livre, mas, como consequência, ela é
+                                                esquecida por
+                                                todos que encontra. Ela vive por séculos, sem ser lembrada por ninguém,
+                                                até que,
+                                                finalmente, um dia, alguém se lembra dela. O livro explora temas de
+                                                identidade,
+                                                desejo de imortalidade e a solidão que acompanha o tempo.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>Os Sete Maridos de Evelyn Hugo</b><br> de Taylor Jenkins Reid<br>Evelyn Hugo, uma
-                                    atriz lendária de Hollywood, decide contar sua história para a jornalista Monique.
-                                    Ao longo de suas revelações, Evelyn compartilha sua vida de amores, escândalos e sua
-                                    busca pela verdadeira felicidade, explorando a complexidade das escolhas que fazemos
-                                    ao longo da vida.
-                                    <hr>Não Emprestado
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/capalivro8.jpg" width="200" height="270">
+                                        <div>
+                                            <h4> Os Sete Maridos de Evelyn Hugo</h4>
+                                            <p>Taylor Jenkins Reid<br>
+                                                Evelyn Hugo, uma
+                                                atriz lendária de Hollywood, decide contar sua história para a
+                                                jornalista Monique.
+                                                Ao longo de suas revelações, Evelyn compartilha sua vida de amores,
+                                                escândalos e sua
+                                                busca pela verdadeira felicidade, explorando a complexidade das escolhas
+                                                que fazemos
+                                                ao longo da vida.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>Um de Nós Está Mentindo</b><br>de Karen M. McManus<br>Na escola de Bayview, cinco
-                                    estudantes se envolvem em uma investigação de assassinato após um dos alunos ser
-                                    encontrado morto. Cada um dos cinco tem um segredo, e o suspense cresce conforme os
-                                    mistérios se desenrolam, deixando o leitor em suspense até a última página.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/capalivro9.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Um de Nós Está Mentindo</h4>
+                                            <p>Karen M. McManus<br>Na escola de Bayview, cinco
+                                                estudantes se envolvem em uma investigação de assassinato após um dos
+                                                alunos ser
+                                                encontrado morto. Cada um dos cinco tem um segredo, e o suspense cresce
+                                                conforme os
+                                                mistérios se desenrolam, deixando o leitor em suspense até a última
+                                                página.
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+
                                 </td>
                             </tr>
                         </table>
                     </td>
+                    <td class="separaçao"></td>
                     <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </td>
-                    <td>
-                        <!-- Tabela de livros de suspense -->
-                        <table border="1" cellpadding="5" cellspacing="0">
-                            <caption>
-                                <h3>Suspense:</h3>
-                            </caption>
+                        <table class="destaques">
                             <tr>
-                                <td><img src="img/capalivro13.JPEG" width="200" height="270"></td>
-                                <td><img src="img/capalivro12.JPEG" width="200" height="270"></td>
-                                <td><img src="img/capalivro11.JPEG" width="200" height="270"></td>
-                            </tr>
-                            <tr align="left">
-                                <td><b>Mentirosos</b><br>de E. Lockhart<br>Cadence, a protagonista, retorna à ilha da
-                                    família após um acidente que a deixou com amnésia. À medida que ela tenta lembrar o
-                                    que aconteceu, segredos obscuros e revelações sobre sua família emergem, revelando
-                                    uma tragédia com um impacto profundo em seu passado.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/capalivro13.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Mentirosos</h4>
+                                            <p> E. Lockhart<br>Cadence, a protagonista, retorna à ilha da
+                                                família após um acidente que a deixou com amnésia. À medida que ela
+                                                tenta lembrar o
+                                                que aconteceu, segredos obscuros e revelações sobre sua família emergem,
+                                                revelando
+                                                uma tragédia com um impacto profundo em seu passado.
+                                        </div>
+                                        </p>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>O Homem de Giz</b><br>de C.J. Tudor<br>Em 1986, Eddie e seus amigos se comunicam
-                                    através de figuras de giz, mas quando um corpo é encontrado, eles percebem que seus
-                                    jogos inocentes podem ter consequências muito mais sombrias. A história alterna
-                                    entre o passado e o presente, revelando mistérios e segredos perturbadores, enquanto
-                                    Eddie tenta descobrir a verdade por trás dos eventos que marcaram sua infância.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/capalivro12.JPEG" width="200" height="270">
+                                        <div>
+                                            <h4>O Homem de Giz</h4>
+                                            <p>.J. Tudor<br>
+                                                Em 1986, Eddie e seus amigos se comunicam
+                                                através de figuras de giz, mas quando um corpo é encontrado, eles
+                                                percebem que seus
+                                                jogos inocentes podem ter consequências muito mais sombrias. A história
+                                                alterna
+                                                entre o passado e o presente, revelando mistérios e segredos
+                                                perturbadores. </p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
                                 </td>
-                                <td><b>Farsa de Amor a Espanhola</b><br>de Elena Armas<br>Este romance de suspense
-                                    mistura elementos de romance e mistério, seguindo a história de uma mulher que se vê
-                                    em um relacionamento complicado e um grande mistério envolvendo um homem misterioso.
-                                    Ao longo da trama, a tensão aumenta à medida que segredos e mentiras são
-                                    desvendados.
-                                    <hr>Emprestado
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/capalivro11.JPEG" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Farsa de Amor a Espanhola</h4>
+                                            <p>Elena Armas<br>
+                                                Este romance de suspense
+                                                mistura elementos de romance e mistério, seguindo a história de uma
+                                                mulher que se vê
+                                                em um relacionamento complicado e um grande mistério envolvendo um homem
+                                                misterioso.
+                                                Ao longo da trama, a tensão aumenta à medida que segredos e mentiras são
+                                                desvendados. </p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
                                 </td>
                             </tr>
                         </table>
                     </td>
                 </tr>
             </table>
-            <br>
-            <hr>
-        </section>
-        <section align="center">
-            <!-- Acervo completo -->
-            <h2>Acervo Completo:</h2>
-            <table border="1" align="center" cellpadding="5" cellspacing="15" width="150" height="200">
-                <tr>
-                    <td><img src="img/capatiktok1.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok2.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok3.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok4.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok5.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok6.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok7.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok8.JPEG" width="150" height="200"></td>
-                </tr>
-                <tr align="left">
-                    <td><b>Enquanto Não te Encontro</b><br>Pedro Rhuas<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Um Milhão de Finais Felizes</b><br>Vitor Martins<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Quinze dias</b><br>Vitor Martins<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>A Cinderela está Morta</b><br>Kalynn Bayron<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Vantagens de Ser Invisível</b><br>Stephen Chbosky<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Os Dois Morrem no Final</b><br>Adam Silvera<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>A Culpa é das Estrelas</b><br>John Green<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Aristóteles e Dante</b><br>Benjamin Alire Sáenz<br>
-                        <hr>Emprestado
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="img/capatiktok9.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capatiktok10.jpg" width="150" height="200"></td>
-                    <td><img src="img/capatiktok11.jpg" width="150" height="200"></td>
-                    <td><img src="img/capatiktok12.jpg" width="150" height="200"></td>
-                    <td><img src="img/capatiktok17.jfif" width="150" height="200"></td>
-                    <td><img src="img/capatiktok14.jpg" width="150" height="200"></td>
-                    <td><img src="img/capatiktok15.jfif" width="150" height="200"></td>                
-                </tr>
-                <tr align="left">
-                    <td><b>O Sol Também é uma Estrela</b><br>Nicola Yoon<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Relatos de Um Gato Viajante</b><br>Hiro Arikawa<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>1984</b><br>George Orwell<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Sombra e Ossos</b><br>Leigh Bardugo<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Confissão</b><br>Colleen Hoover<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Sem Amor</b><br>Alice Oseman<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Rádio Silêncio</b><br>Alice Oseman<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Um Ano Solitário</b><br>Alice Oseman<br>
-                        <hr>Emprestado
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="img/capalivro13.JPEG" width="150" height="200"></td>
-                    <td><img src="img/capalivro20.jfif" width="150" height="200"></td>
-                    <td><img src="img/capalivro21.jfif" width="150" height="200"></td>
-                    <td><img src="img/capalivro22.jpg" width="150" height="200"></td>
-                    <td><img src="img/capalivro23.jpg" width="150" height="200"></td>
-                    <td><img src="img/capalivro24.jfif"width="150" height="200"></td>
-                    <td><img src="img/capalivro25.jfif" width="150" height="200"></td>
-                    <td><img src="img/capalivro26.jpg" width="150" height="200"></td>
-                </tr>
-                <tr align="left">
-                    <td><b>Mentirosos</b><br>E. Lockhart<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Por Lugares Incríveis</b><br>Jennifer Niven<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Cidades de Papel</b><br>John Green<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>O Amor Não é Obvio</b><br>Elayne Baeta<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Sombria e Solitária Maldição</b><br>Brigid Kemmerer<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Conectadas</b><br>Clara Alves<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>A biblioteca da meia-noite</b><br>Matt Haig<br>
-                        <hr>Emprestado
-                    </td>
-                    <td><b>Bem-vindos à Livraria Hyunam-dong</b><br>Hwang Bo-reum<br>
-                        <hr>Emprestado
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <hr>
-        </section>
-    </tbody>
-    <!--final do acervo-->
+            <section class="acervo_completo">
+                <h2 class="borda">Acervo Completo:</h2>
+                <!--1° linha do acervo-->
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok1.JPEG">
+                                <p><b>Enquanto Não te Encontro</b><br> Pedro Rhuas<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok2.JPEG">
+                                <p><b>Um Milhão de Finais Felizes </b><br>Vitor Martins<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok3.JPEG">
+                                <p><b>Quinze Dias</b><br>Vitor Martins<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok4.JPEG">
+                                <p><b>Cinderela Está Morta</b><br>Kalynn Bayron<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok5.JPEG">
+                                <p><b>As Vantagens de Ser Invisível</b><br>Stephen Chbosky<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok6.JPEG">
+                                <p><b>Os Dois Morrem no Final</b><br>Adam Silvera<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok7.JPEG">
+                                <p><b>A Culpa é das Estrelas</b><br>John Green<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok8.JPEG">
+                                <p><b>Aristóteles e Dante</b><br>Benjamin Alire Sáenz<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                    </tr> <!-- FIM da 1° linha do acervo-->
+
+
+                    <tr> <!--2° linha do acervo-->
+                        <td>
+                            <div>
+                                <img src="img/capatiktok9.JPEG">
+                                <p><b>O Sol Também é Uma Estrela</b><br>Nicola Yoon<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok.JPEG">
+                                <p><b>Relatos de Um Gato Viajante</b><br>Hiro Arikawa<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok10.jpg">
+                                <p><b>1984</b><br>George Orwell<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok11.jpg">
+                                <p><b>Sombra e Ossos</b><br>Leigh Bardugo<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok12.jpg">
+                                <p><b>Confissão</b><br>Colleen Hoover<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok17.jfif">
+                                <p><b>Sem Amor</b><br>Alice Oseman<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok14.jpg">
+                                <p><b>Rádio Silencio</b><br>Alice Oseman<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capatiktok15.jfif">
+                                <p><b>Um Ano Solitário</b><br>Alice Oseman<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                    </tr> <!-- FIM da 2° linha do acervo-->
+
+
+                    <tr> <!--3° linha do acervo-->
+                        <td>
+                            <div>
+                                <img src="img/capalivro13.JPEG">
+                                <p><b>Mentirosos</b><br>E. Lockhart<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capalivro20.jfif">
+                                <p><b>Por Lugares Incríveis</b><br>Jennifer Niven<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capalivro21.jfif">
+                                <p><b> Cidade de Papel</b><br>John Green<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capalivro22.jpg">
+                                <p><b>O Amor Não é Obvio</b><br>Elayne Baeta<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capalivro23.jpg">
+                                <p><b>Sombria e Solitária Maldição</b><br>Brigid Kemmerer<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capalivro24.jfif">
+                                <p><b>Conectadas</b><br>Clara Alves<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capalivro25.jfif">
+                                <p><b>A biblioteca da meia-noite</b><br>Matt Haig<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="img/capalivro26.jpg">
+                                <p><b>Bem-vindos à Livraria Hyunam-dong</b><br>Hwang Bo-reum<br></p>
+                                <hr>
+                                <h5 class="emprestado">Emprestado</h5>
+                            </div>
+                        </td>
+                    </tr> <!-- FIM da 3° linha do acervo-->
+                </table>
+            </section>
+    </main>
     <footer>
         <div class="infos_geral">
             <div class="navegaçao">
                 <h2>Navegue pelo site:</h2>
                 <div class="container">
-                    <a href="index.html"><p>Home</p></a>
-                    <a href="acervo_biblioteca.html"><p>Acervo da Biblioteca</p></a>
-                    <a href="produtos_literarios.html"><p>Produtos Literários</p></a>
-                    <a href="divulga_escritores.html"><p>Divulgação Escritores</p></a>
-                    <a href="assinatura_membros.html"><p>Assinatura de Membros</p></a>
+                    <a href="index.html">
+                        <p>Home</p>
+                    </a>
+                    <a href="acervo_biblioteca.html">
+                        <p>Acervo da Biblioteca</p>
+                    </a>
+                    <a href="produtos_literarios.html">
+                        <p>Produtos Literários</p>
+                    </a>
+                    <a href="divulga_escritores.html">
+                        <p>Divulgação Escritores</p>
+                    </a>
+                    <a href="assinatura_membros.html">
+                        <p>Assinatura de Membros</p>
+                    </a>
                 </div>
             </div>
             <div class="contato">
                 <h2>Contato:</h2>
                 <div class="container">
-                    <img src="img/IconEndereço.svg"><p>Rua Emídio Piedade, 238 - Centro</p><br>
-                    <img src="img/IconTelefone.svg"><p>(14) 3332-2303</p><br>
-                    <img src="img/IconEmail.svg"><p>bibliotecascrp@gmail.com</p><br>
-                    <img src="img/IconHorário.svg"><p>Seg a sex, 8h às 17h30</p><br>
+                    <img src="img/IconEndereço.svg">
+                    <p>Rua Emídio Piedade, 238 - Centro</p><br>
+                    <img src="img/IconTelefone.svg">
+                    <p>(14) 3332-2303</p><br>
+                    <img src="img/IconEmail.svg">
+                    <p>bibliotecascrp@gmail.com</p><br>
+                    <img src="img/IconHorário.svg">
+                    <p>Seg a sex, 8h às 17h30</p><br>
                 </div>
             </div>
             <div class="email">
@@ -342,13 +727,13 @@
                         <input type="email" placeholder="Email">
                         <button type="submit">Quero Assinar!</button>
                     </form>
-                                                       
+
                 </div>
             </div>
         </div>
         <div class="direitos">
             <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
-            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>    
+            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
         </div>
     </footer>
 </body>
