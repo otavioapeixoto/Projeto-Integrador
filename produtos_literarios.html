@@ -6,6 +6,97 @@
     <title>Produtos Literários</title>
     <link rel="shortcut icon" href="img/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #FFEAD8;
+            margin: 0;
+            padding: 0;
+        }
+        .banner-produtos {
+            width: 100vw;
+            max-width: 100vw;
+            min-width: 100vw;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 0 0 25px 25px;
+            margin: 0 auto 0 auto;
+            display: block;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+        main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        .produtos_completo table {
+            background-color: #FF741D;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 25px;
+            border-collapse: separate;
+            border-spacing: 0 20px;
+        }
+        .produtos_completo td {
+            background-color: #FFEAD8;
+            border-radius: 20px;
+            padding: 15px;
+            border: 3px solid #FF741D;
+            vertical-align: top;
+            text-align: center;
+        }
+        .produtos_completo img {
+            width: 135px;
+            height: 135px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .produtos_completo p {
+            font-size: 14px;
+            margin: 0 0 8px 0;
+            color: #402401;
+            font-family: "Averia Serif Libre", serif;
+            font-weight: bold;
+        }
+        .produtos_completo .preco {
+            display: inline-block;
+            background: #FF741D;
+            color: #FFEAD8;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 7px;
+            padding: 6px 18px;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+        .produtos_completo hr {
+            background-color: #FF741D;
+            height: 2px;
+            border: none;
+            border-radius: 5px;
+            width: 80%;
+            margin: 10px auto;
+        }
+        @media (max-width: 1100px) {
+            .produtos_completo table, .produtos_completo tr, .produtos_completo td {
+                display: block;
+                width: 100%;
+                max-width: 350px;
+                margin: 0 auto 20px auto;
+            }
+            .produtos_completo table {
+                background: none;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,115 +128,81 @@
         </nav>
     </header>
 
-    <!-- Conteúdo principal da página -->
-    <tbody>
-        <h1 align="center">PRODUTOS LITERÁRIOS</h1>
-        <hr width="310" align="center">
-        
-        <!-- Tabela de produtos -->
-        <table border="1" align="center" cellpadding="5" cellspacing="15">
-            <!-- Linha de imagens -->
-            <tr>
-                <td align="center">
-                    <img src="img/P1.jpg" alt="Produto 1" width="200" height="200">
-                </td>
-                <td align="center">
-                    <img src="img/P2.jpg" alt="Produto 2" width="230" height="200">
-                </td>
-                <td align="center">
-                    <img src="img/P3.jpg" alt="Produto 3" width="200" height="200">
-                </td>
-                <td align="center">
-                    <img src="img/P4.jpg" alt="Produto 4" width="240" height="220">
-                </td>
-                <td align="center">
-                    <img src="img/P5.jpg" alt="Produto 5" width="170" height="220">
-                </td>
-                
-            </tr>
-            <!-- Linha de títulos e valores -->
-            <tr align="left">
-                <td>
-                    <b>Botton do Solar</b>
-                    <hr>       
-                    R$4,90
-                </td>
-                <td>
-                    <b>Mini Ecobag “Palavra Literária”</b>
-                    <hr>
-                    R$19,90
-                </td>
-                <td>
-                    <b>Meia O Auto Da Compadecida</b>
-                    <hr>
-                    R$ 34,90
-                </td>
-                <td>
-                    <b>Marcador de Páginas</b>
-                    <hr>
-                    R$8,00
-                </td>
-                <td>
-                    <b>Caneca Purrfect Library</b>
-                    <hr>
-                    R$ 59,90
-                </td>
-               
-            </tr>
-        </table>
+    <main>
+        <section>
+            <img src="img/banner_ind.png" width="100%" class="banner">
+            <h2>Produtos Literários</h2>
+        </section>
+        <section class="produtos_completo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/P1.jpg" alt="Produto 1">
+                        <p>Botton do Solar</p>
+                        <hr>
+                        <span class="preco">R$4,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P2.jpg" alt="Produto 2">
+                        <p>Mini Ecobag “Palavra Literária”</p>
+                        <hr>
+                        <span class="preco">R$19,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P3.jpg" alt="Produto 3">
+                        <p>Meia O Auto Da Compadecida</p>
+                        <hr>
+                        <span class="preco">R$34,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P4.png" alt="Produto 4">
+                        <p>Marcador de Páginas</p>
+                        <hr>
+                        <span class="preco">R$8,00</span>
+                    </td>
+                    <td>
+                        <img src="img/P5.png" alt="Produto 5">
+                        <p>Caneca Biblioteca da Meia-Noite</p>
+                        <hr>
+                        <span class="preco">R$59,90</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/P6.jpeg" alt="Produto 6">
+                        <p>Kit Literário "Heartstopper"</p>
+                        <hr>
+                        <span class="preco">R$29,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P7.jpg" alt="Produto 7">
+                        <p>Camiseta Pequeno Príncipe</p>
+                        <hr>
+                        <span class="preco">R$59,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P8.png" alt="Produto 8">
+                        <p>Chaveiro Fridoca</p>
+                        <hr>
+                        <span class="preco">R$19,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P9.jpg" alt="Produto 9">
+                        <p>Nécessaire Clarice Lispector</p>
+                        <hr>
+                        <span class="preco">R$29,00</span>
+                    </td>
+                    <td>
+                        <img src="img/P10.jpg" alt="Produto 10">
+                        <p>Cartão - Dom Quixote</p>
+                        <hr>
+                        <span class="preco">R$9,90</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
 
-        <table border="1" align="center" cellpadding="5" cellspacing="15">
-            <!-- Linha de imagens -->
-            <tr>
-                <td align="center">
-                    <img src="img/P6.jpeg" alt="Produto 6" width="200" height="200">
-                </td>
-                <td align="center">
-                    <img src="img/P7.jpg" alt="Produto 7" width="230" height="200">
-                </td>
-                <td align="center">
-                    <img src="img/P8.jpg" alt="Produto 8" width="180" height="200">
-                </td>
-                <td align="center">
-                    <img src="img/P9.jpg" alt="Produto 9" width="240" height="220">
-                </td>
-                <td align="center">
-                    <img src="img/P10.jpg" alt="Produto 10" width="170" height="220">
-                </td>
-                
-            </tr>
-            <!-- Linha de títulos e valores -->
-            <tr align="left">
-                <td>
-                    <b>Kit Literário "Heartstopper"</b>
-                    <hr>       
-                    R$29,90
-                </td>
-                <td>
-                    <b>Camiseta Pequeno Príncipe </b>
-                    <hr>
-                    R$59,90
-                </td>
-                <td>
-                    <b>Chaveiro Fridoca</b>
-                    <hr>
-                    R$ 19,90
-                </td>
-                <td>
-                    <b>Nécessaire Clarice Lispector</b>
-                    <hr>
-                    R$29,00
-                </td>
-                <td>
-                    <b>Cartão - Dom Quixote</b>
-                    <hr>
-                    R$ 9,90
-                </td>
-               
-            </tr>
-        </table>
-        <hr>
-    </tbody>
     <footer>
         <div class="infos_geral">
             <div class="navegaçao">
@@ -175,7 +232,6 @@
                         <input type="email" placeholder="Email">
                         <button type="submit">Quero Assinar!</button>
                     </form>
-                                                       
                 </div>
             </div>
         </div>
@@ -186,4 +242,3 @@
     </footer>
 </body>
 </html>
-<!-- Dhavy -->
