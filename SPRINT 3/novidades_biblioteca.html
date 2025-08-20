@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novidades da Biblioteca </title>
+    <link rel="shortcut icon" href="img/Logo Biblioteca Sem Fundo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        table h3 {
+            color: #402401;
+            font-size: 30px;
+            font-family: "Averia Serif Libre", serif;
+            text-align: center;
+            padding: 15px 0px;
+            width: 735px;
+        }
+
+        .tab_geral {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .separaçao {
+            width: 100px;
+        }
+
+        .destaques {
+            background-color: #00AFC1;
+            width: 735px;
+            border-radius: 25px;
+        }
+
+        .margem_bottom {
+            margin-bottom: 40px;
+        }
+
+        .livro1,
+        .livro2,
+        .livro3 {
+            border-radius: 20px;
+            background-color: #FFEAD8;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        .livro1 {
+            margin-left: 20px;
+            margin-right: 15px;
+        }
+
+        .livro3 {
+            margin-left: 15px;
+            margin-right: 20px;
+        }
+
+        .destaques h4 {
+            text-align: center;
+            font-size: 15px;
+            padding-bottom: 5px;
+            text-align: center;
+            color: #00AFC1;
+        }
+
+        .destaques div div {
+            font-size: 15px;
+            height: 310px;
+        }
+
+        .destaques img {
+            border-radius: 15px;
+        }
+
+        hr{
+            background-color: #402401;
+            height: 2px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .destaques h5 {
+            text-align: center;
+            font-size: 15px;
+            padding: 5px;
+            border-radius: 7px;
+            margin-top: 5px;
+        }
+
+        .emprestado {
+            background-color: #402401;
+            color: #00AFC1;
+        }
+
+        .n_emprestado {
+            background-color: #00AFC1;
+            color: #402401;
+        }
+
+        .borda {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        .acervo_completo table {
+            background-color: #00AFC1;
+            width: 100%;
+            display: block;
+        }
+
+        .acervo_completo td {
+            background-color: #00AFC1;
+        }
+
+        .acervo_completo td div {
+            background-color: #FFEAD8;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        .acervo_completo p{
+            height: 75px;
+            width: 120px;
+            font-size: 13px;
+            text-align: center;
+        }
+        .acervo_completo p b{
+            color: #00AFC1;
+            font-size: 14px;
+        }
+        .acervo_completo img{
+            width: 135px;
+            height: 180px;
+            border-radius: 15px;
+        }
+        .acervo_completo h5{
+            margin-top: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="cabe">
+            <img src="img/Logo Biblioteca.svg" class="logo">
+            <h1>BIBLIOTECA SCRP</h1>
+            <div class="redes">
+                <a href=""><img src="img/LogoFace.svg"></a>
+                <a href=""><img src="img/LogoInsta.svg"></a>
+                <a href=""><img src="img/LogoWhats.svg"></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a>
+                    <ul>
+                        <a href="famosos_tiktok.html">
+                            <li>Famosinhos do TikTok</li>
+                        </a>
+                        <a href="novidades_biblioteca.html">
+                            <li>Novidades Biblioteca</li>
+                        </a>
+                        <a href="literatura_brasileira.html">
+                            <li>Literatura Brasileira</li>
+                        </a>
+                        <a href="literatura_estrangeira.html">
+                            <li>Literatura Estrangeira</li>
+                        </a>
+                        <a href="literatura_vestibular.html">
+                            <li>Literatura Vestibular</li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="produtos_literarios.html">
+                    <li>Produtos Literários</li>
+                </a>
+                <a href="divulga_escritores.html">
+                    <li>Divulgação Escritores</li>
+                </a>
+                <a href="assinatura_membros.html">
+                    <li>Assinatura Membros</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <img src="img/banner_ind.png" width="100%" class="banner">
+            <h2>Novidades da Biblioteca:</h2>
+            <table class="tab_geral">
+                <tr>
+                    <td>
+                        <h3>Mais emprestados:</h3>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <h3>Romance:</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table class="destaques">
+                            <tr>
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/LE1.jpg " width="200" height="270"><br>
+                                        <div>
+                                            <h4>Um Conto de Duas Cidades </h4>
+                                            <p>Charles Dickens <br>
+                                                Nas profundezas do sertão baiano, duas irmãs descobrem um segredo
+                                                escondido na velha mala de sua avó. A partir daí, suas vidas se
+                                                entrelaçam ainda mais em uma narrativa marcada por tradições ancestrais,
+                                                laços familiares e a luta pela sobrevivência em um Brasil rural marcado
+                                                por injustiças e resistência.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/LE3.jpg " width="200" height="270">
+                                        <div>
+                                            <h4>O Senhor dos Anéis </h4>
+                                            <p>J. R. R. Tolkien <br>
+                                                No Rio de Janeiro dos anos 1940 e 1950, Eurídice e Guida são duas irmãs
+                                                cujos destinos se distanciam após uma decisão inesperada. Enquanto Guida
+                                                foge de casa para viver um grande amor, Eurídice permanece, sufocada
+                                                pelos limites impostos à mulher da época.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/LE2.jpg " width="200" height="270"><br>
+                                        <div>
+                                            <h4>O Pequeno Príncipe </h4>
+                                            <p>Antoine de Saint-Exupéry <br>
+                                                Em seu diário, a autora narra a rotina dura e comovente de uma mulher
+                                                negra moradora da favela do Canindé, em São Paulo. Entre a coleta de
+                                                papel para alimentar os filhos e reflexões sobre desigualdade, Carolina
+                                                registra com autenticidade o Brasil das periferias na década de 1950.
+                                            </p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <table class="destaques">
+                            <tr>
+                                <td>
+                                    <div class="livro1">
+                                        <img src="img/LB1.jpg" width="200" height="270"><br>
+                                        <div>
+                                            <h4>Marília de Dirceu </h4>
+                                            <p>Tomás Antônio Gonzaga <br>
+                                                A saga de Fabiano, Sinhá Vitória e seus filhos revela a luta de uma
+                                                família de retirantes em meio à seca e à miséria do sertão nordestino. O
+                                                romance retrata a pobreza extrema e a luta pela dignidade, expondo a
+                                                dura realidade social de um Brasil desigual e esquecido.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro2">
+                                        <img src="img/LB2.jpg " width="200" height="270">
+                                        <div>
+                                            <h4>Noite na taverna </h4>
+                                            <p>Álvares de Azevedo <br>
+                                                Um grupo de meninos abandonados vive de pequenos crimes nas ruas de
+                                                Salvador nos anos 1930. Liderados por Pedro Bala, eles formam uma
+                                                verdadeira comunidade de sobrevivência, enfrentando a repressão policial
+                                                e a falta de oportunidades. Um retrato emocionante e crítico dos
+                                                marginalizados no Brasil.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="n_emprestado">Não Emprestado</h5>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="livro3">
+                                        <img src="img/LB3.jpg " width="200" height="270"><br>
+                                        <div>
+                                            <h4>O navio negreiro </h4>
+                                            <p>Castro Alves <br>
+                                                Ambientado em um cortiço do Rio de Janeiro no século XIX, o romance
+                                                apresenta a vida de imigrantes, negros e trabalhadores pobres em um
+                                                espaço de convivência intensa e conflitos sociais. A história revela a
+                                                luta por ascensão social, o preconceito racial e as tensões de uma
+                                                sociedade em transformação.</p>
+                                        </div>
+                                        <hr>
+                                        <h5 class="emprestado">Emprestado</h5>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                    <td>
+                        <h3>Romance:</h3>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <h3>Clássicos:</h3>
+                    </td>
+                </tr>
+                <td>
+                    <table class="destaques margem_bottom">
+                        <tr>
+                            <td>
+                                <div class="livro1">
+                                    <img src="img/LT1.webp " width="200" height="270"><br>
+                                    <div>
+                                        <h4>As Coisas que Deixamos Para Trás </h4>
+                                        <p>Lucy Score <br>
+                                            Dalva, uma prostituta marcada pelo abandono, e Lucy, uma mulher atormentada
+                                            pelo ciúme, se veem
+                                            presas em uma relação inesperada com Venâncio, um homem dividido entre a
+                                            culpa e o desejo. Com uma
+                                            narrativa intensa, o livro aborda amor, perda e redenção, explorando as
+                                            dores e os encontros que
+                                            mudam vidas.</p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro2">
+                                    <img src="img/LT2.jpg " width="200" height="270">
+                                    <div>
+                                        <h4>Aconteceu Naquele Verão </h4>
+                                        <p>Tessa Bailey <br>
+                                            João é um menino de 11 anos que lida com a iminente morte do avô, o bullying
+                                            escolar e os medos
+                                            típicos da infância com humor e doçura. Em um diário repleto de reflexões,
+                                            ele questiona o sentido
+                                            da vida e da morte, revelando a profundidade dos sentimentos infantis com
+                                            leveza e sensibilidade.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="n_emprestado">Não Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro3">
+                                    <img src="img/LT3.jpg " width="200" height="270"><br>
+                                    <div>
+                                        <h4>Mil beijos de garoto </h4>
+                                        <p>Tillie Cole <br>
+                                            Julia é uma jovem que foge de casa em busca de um novo começo após uma
+                                            infância marcada pela
+                                            violência e pela ausência de afeto. Em uma narrativa poética e delicada, ela
+                                            explora os caminhos
+                                            para a reconstrução de sua identidade e a esperança de encontrar
+                                            pertencimento no mundo.</p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="separaçao"></td>
+                <td>
+                    <table class="destaques margem_bottom">
+                        <tr>
+                            <td>
+                                <div class="livro1">
+                                    <img src="img/LV1.jpg " width="200" height="270"><br>
+                                    <div>
+                                        <h4>Grande Sertão: Veredas </h4>
+                                        <p>Guimarães Rosa <br>
+                                            Bentinho, narrador desconfiado e melancólico, relembra sua história de amor
+                                            com Capitu, marcada pela suspeita de traição. Em um enredo psicológico
+                                            sutil, o romance questiona a confiabilidade do narrador e discute temas como
+                                            ciúmes, memória e verdade, tornando-se um dos maiores clássicos da
+                                            literatura brasileira.</p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro2">
+                                    <img src="img/LV2.jpeg" width="200" height="270">
+                                    <div>
+                                        <h4>A moreninha </h4>
+                                        <p>Joaquim Manuel de Macedo <br>
+                                            Após a morte, Brás Cubas decide narrar sua vida com um olhar sarcástico e
+                                            crítico. Sem pudor, ele revela sua trajetória de egoísmo, privilégios e
+                                            fracassos, desafiando convenções literárias e expondo as hipocrisias da
+                                            sociedade carioca do século XIX com ironia mordaz.
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <h5 class="n_emprestado">Não Emprestado</h5>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="livro3">
+                                    <img src="img/LV3.jpeg " width="200" height="270"><br>
+                                    <div>
+                                        <h4>Vidas Secas </h4>
+                                        <p>Graciliano Ramos <br>
+                                            A história de amor entre Iracema, uma jovem indígena da tribo dos tabajaras,
+                                            e Martim, um guerreiro português, simboliza o encontro de culturas que deu
+                                            origem ao povo brasileiro. O romance mistura lirismo e idealização,
+                                            exaltando a beleza da natureza e o mito fundacional do Brasil.</p>
+                                    </div>
+                                     <hr>
+                                    <h5 class="emprestado">Emprestado</h5>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                </tr>
+            </table>
+        </section>
+                                    
+    </main>
+    <footer>
+        <div class="infos_geral">
+            <div class="navegaçao">
+                <h2>Navegue pelo site:</h2>
+                <div class="container">
+                    <a href="index.html"><p>Home</p></a>
+                    <a href="acervo_biblioteca.html"><p>Acervo da Biblioteca</p></a>
+                    <a href="produtos_literarios.html"><p>Produtos Literários</p></a>
+                    <a href="divulga_escritores.html"><p>Divulgação Escritores</p></a>
+                    <a href="assinatura_membros.html"><p>Assinatura de Membros</p></a>
+                </div>
+            </div>
+            <div class="contato">
+                <h2>Contato:</h2>
+                <div class="container">
+                    <img src="img/IconEndereço.svg"><p>Rua Emídio Piedade, 238 - Centro</p><br>
+                    <img src="img/IconTelefone.svg"><p>(14) 3332-2303</p><br>
+                    <img src="img/IconEmail.svg"><p>bibliotecascrp@gmail.com</p><br>
+                    <img src="img/IconHorário.svg"><p>Seg a sex, 8h às 17h30</p><br>
+                </div>
+            </div>
+            <div class="email">
+                <h2>Receba Novidades:</h2>
+                <div class="container">
+                    <form action="">
+                        <input type="text" placeholder="Nome">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">Quero Assinar!</button>
+                    </form>
+                                                       
+                </div>
+            </div>
+        </div>
+        <div class="direitos">
+            <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
+            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>    
+        </div>
+    </footer>
+</body>
+
+</html>
+

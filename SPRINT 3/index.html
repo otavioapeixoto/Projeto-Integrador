@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo da Biblioteca</title>
+    <link rel="shortcut icon" href="img/Logo Biblioteca Sem Fundo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*
+        CORES E FONTES:
+        MARROM: #402401
+        BEGE: #FFEAD8
+        AZUL: #00AFC1
+        LARANJA: #FF741D
+        VERDE: #15D22B
+        ROSA: #FF316A
+        TÍTULOS: font-family: "Averia Serif Libre", serif;
+        TEXTOS: font-family: "Comfortaa", sans-serif;
+        */
+        main h2{
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        table h3 {
+            color: #402401;
+            font-size: 30px;
+            font-family: "Averia Serif Libre", serif;
+            text-align: center;
+            padding: 15px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        .borda_esq{
+            border-top-left-radius: 25px;
+        }
+        .borda_dir{
+            border-top-right-radius: 25px;
+        }
+        .acervo{
+            background-color: #00AFC1;
+        }
+        .produtos{
+            background-color: #FF741D;
+            position: relative;
+        }
+        .escritores{
+            background-color: #15D22B;
+            position: relative;
+        }
+        .assinatura{
+            background-color: #FF316A;
+            position: relative;
+        }
+        .separaçao{
+            width: 60px;
+        }
+        .conteudo, .destaque{
+            background-color: #FFEAD8;
+            margin-top: 40px;
+            height: 290px;
+            vertical-align: bottom;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            padding: 30px 50px 0px 50px;
+        }
+        .conteudo{
+            margin-left: 40px;
+        }
+        .destaque{
+            margin-right: 40px;
+        }
+        .conteudo h4{
+            text-align: center;
+            font-size: 25px;
+            padding-bottom: 20px;
+        }
+        .conteudo p{
+            height: 173.89px;
+        }
+        .conteudo button{
+            width: 100%;
+            border: none;
+            border-radius: 25px;
+            font-size: 25px;
+            padding: 10px;
+            font-family: "Comfortaa", sans-serif;
+            color: #402401;
+            cursor: pointer;
+        }
+        .conteudo button:hover{
+            background-color: #402401;
+        }
+        .destaque h4{
+            text-align: center;
+            font-size: 17px;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+        .destaque img{
+            border-radius: 20px;
+            display: block;
+        }
+        .destaque p{
+            margin-top: 15px;
+            text-align: center;
+        }
+        .acervo button{
+            background-color: #00AFC1;
+        }
+        .acervo button:hover{
+            color: #00AFC1;
+        }
+        .acervo h4{
+            color: #00AFC1;
+        }
+        .produtos button{
+            background-color: #FF741D;
+        }
+        .produtos button:hover{
+            color: #FF741D;
+        }
+        .produtos h4{
+            color: #FF741D;
+        }
+        .escritores button{
+            background-color: #15D22B;
+        }
+        .escritores button:hover{
+            color: #15D22B;
+        }
+        .escritores h4{
+            color: #15D22B;
+        }
+        .assinatura button{
+            background-color: #FF316A;
+        }
+        .assinatura button:hover{
+            color: #FF316A;
+        }
+        .assinatura h4{
+            color: #FF316A;
+        }
+        .fundo_azul{
+            width: 100%;
+            height: 30px;
+            background-image: none;
+            background-color: #00AFC1;
+            position: absolute;
+            top: 1129px;
+        }
+        .fundo_lar{
+            width: 100%;
+            height: 50px;
+            background-image: none;
+            background-color: #FF741D;
+            position: absolute;
+            top: 1480px;
+        }
+        .fundo_ver{
+            width: 100%;
+            height: 50px;
+            background-image: none;
+            background-color: #15D22B;
+            position: absolute;
+            top: 1830px;
+        }
+        iframe{
+            width: 100%;
+            height: 350px;
+            border: none;
+            display: block;
+        }
+        .iframe h3{
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--ABERTURA CABEÇALHO-->
+    <header>
+        <div class="cabe">
+            <img src="img/Logo Biblioteca.svg" class="logo">
+            <h1>BIBLIOTECA SCRP</h1>
+            <div class="redes">
+                <a href=""><img src="img/LogoFace.svg"></a>
+                <a href=""><img src="img/LogoInsta.svg"></a>
+                <a href=""><img src="img/LogoWhats.svg"></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a>
+                    <ul>
+                        <a href="famosos_tiktok.html">
+                            <li>Famosinhos do TikTok</li>
+                        </a>
+                        <a href="novidades_biblioteca.html">
+                            <li>Novidades Biblioteca</li>
+                        </a>
+                        <a href="literatura_brasileira.html">
+                            <li>Literatura Brasileira</li>
+                        </a>
+                        <a href="literatura_estrangeira.html">
+                            <li>Literatura Estrangeira</li>
+                        </a>
+                        <a href="literatura_vestibular.html">
+                            <li>Literatura Vestibular</li>
+                        </a>
+                    </ul>
+                </li>
+                <a href="produtos_literarios.html">
+                    <li>Produtos Literários</li>
+                </a>
+                <a href="divulga_escritores.html">
+                    <li>Divulgação Escritores</li>
+                </a>
+                <a href="assinatura_membros.html">
+                    <li>Assinatura Membros</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <!--ABERTURA PRINCIPAL-->
+    <main>
+        <img src="img/banner_ind.png" width="100%" class="banner">
+        <h2>Navegue pela nossa biblioteca:</h2>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Um pouco sobre nossas páginas:</h3>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td>
+                        <h3>Destaques:</h3>
+                    </td>
+                </tr>
+                <!-- Primeira linha: Acervo + Destaque de Livro -->
+                <tr class="acervo">
+                    <td class="borda_esq">
+                        <div class="conteudo">
+                            <h4>Acervo da Biblioteca</h4>
+                            <p><strong>O que você irá encontrar nessa página:</strong><br>
+                                Nosso acervo é cuidadosamente selecionado para oferecer uma vasta gama de
+                                materiais que atendem às mais diversas necessidades de leitura e pesquisa, seja
+                                para estudar, pesquisar ou apenas se divertir, nosso acervo é um convite ao
+                                conhecimento e à imaginação.</p>
+                            <a href="acervo_biblioteca.html"><button><strong>Acesse a página cliclando aqui!</strong></button></a>    
+                        </div>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td class="borda_dir">
+                        <div class="destaque">
+                            <h4>Livro mais procurado:</h4>
+                            <img src="IMG/aculpadasestrelas.JPEG" alt="erro" width="200" height="200">
+                            <p>A Culpa é das Estrelas</p>
+                        </div>
+                    </td>
+                </tr>
+                <div class="fundo_azul"></div>
+                <!-- Segunda linha: Produtos + Produto mais vendido -->
+                <tr class="produtos">
+                    <td class="borda_esq">
+                        <div class="conteudo">
+                            <h4>Produtos Literários</h4>
+                            <p><strong>O que você irá encontrar nessa
+                                    página:</strong><br>
+                                Aqui você encontra uma variedade de produtos literários que tornam a sua
+                                experiência única. Nossa biblioteca é o lugar perfeito para descobrir novos
+                                títulos, explorar obras clássicas ou se aprofundar em temas de seu interesse.
+                                Estamos sempre atualizando nossas coleções para que você tenha acesso às
+                                melhores produções literárias. E além disso, você ainda pode comprar produtos
+                                dos seus autores favoritos!
+                            </p>
+                            <a href="produtos_literarios.html"><button><strong>Acesse a página cliclando aqui!</strong></button></a>    
+                        </div>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td class="borda_dir">
+                        <div class="destaque">
+                            <h4>Produto mais vendido:</h4>
+                            <img src="IMG/P6.jpeg" alt="erro" width="200" height="200">
+                            <p>Kit Literário Heartstopper</p>
+                        </div>
+                    </td>
+                </tr>
+                <div class="fundo_lar"></div>
+                <!-- Terceira linha: Escritores + Autora destaque -->
+                <tr class="escritores">
+                    <td class="borda_esq">
+                        <div class="conteudo">
+                            <h4>Divulgação Escritores</h4>
+                            <p><strong>O que você irá encontrar nessa
+                                    página:</strong><br>
+                                Apoiamos a literatura e os escritores de todas as partes, ajudando a divulgar a
+                                cultura do nosso país. Venha conhecer as produções locais e regionais e se
+                                envolver no universo da literatura de forma dinâmica e inspiradora.
+                            </p>
+                            <a href="divulga_escritores.html"><button><strong>Acesse a página cliclando aqui!</strong></button></a>    
+                        </div>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td class="borda_dir">
+                        <div class="destaque">
+                            <h4>Autora Destaque:</h4>
+                            <img src="IMG/claraalves.JPEG" alt="erro" width="200" height="200">
+                            <p>Clara Alves</p>
+                        </div>
+                    </td>
+                </tr>
+                <div class="fundo_ver"></div>
+                <!-- Terceira linha: Assinatura + Um benefício -->
+                <tr class="assinatura">
+                    <td class="borda_esq">
+                        <div class="conteudo">
+                            <h4>Assinatura Membros</h4>
+                            <p><strong>O que você irá encontrar nessa
+                                    página:</strong><br>
+                                Seja parte da nossa comunidade de leitores com a assinatura para membros! Ao se
+                                tornar assinante, você garante acesso a benefícios exclusivos, como empréstimos
+                                estendidos, reservas antecipadas de lançamentos, participação em clubes de
+                                leitura, eventos especiais com autores e descontos em nossos produtos
+                                literários. Além disso, contribui diretamente para a valorização da leitura e o
+                                fortalecimento da nossa biblioteca.
+                            </p>
+                            <a href="assinatura_membros.html"><button><strong>Acesse a página cliclando aqui</strong>!</button></a>    
+                        </div>
+                    </td>
+                    <td class="separaçao"></td>
+                    <td class="borda_dir">
+                        <div class="destaque">
+                            <h4>Principal Benefício:</h4>
+                            <img src="IMG/ASS_Benefício1.jpg" alt="erro" width="200" height="200">
+                            <p>Livro surpresa todo mês!</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="iframe">
+            <h2>Nos encontre aqui!</h2>
+            <h3>Rua Emídio Piedade, 238 - Centro, Santa Cruz do Rio Pardo - SP, 18900-003</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.7227660580975!2d-49.628165884224835!3d-22.90683973113888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c06a36ca2704c1%3A0x3394e531908f63ff!2sBiblioteca%20Municipal!5e1!3m2!1spt-BR!2sbr!4v1741890621359!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <!--ABERTURA RODAPÉ-->
+    <footer>
+        <div class="infos_geral">
+            <div class="navegaçao">
+                <h2>Navegue pelo site:</h2>
+                <div class="container">
+                    <a href="index.html"><p>Home</p></a>
+                    <a href="acervo_biblioteca.html"><p>Acervo da Biblioteca</p></a>
+                    <a href="produtos_literarios.html"><p>Produtos Literários</p></a>
+                    <a href="divulga_escritores.html"><p>Divulgação Escritores</p></a>
+                    <a href="assinatura_membros.html"><p>Assinatura de Membros</p></a>
+                </div>
+            </div>
+            <div class="contato">
+                <h2>Contato:</h2>
+                <div class="container">
+                    <img src="img/IconEndereço.svg"><p>Rua Emídio Piedade, 238 - Centro</p><br>
+                    <img src="img/IconTelefone.svg"><p>(14) 3332-2303</p><br>
+                    <img src="img/IconEmail.svg"><p>bibliotecascrp@gmail.com</p><br>
+                    <img src="img/IconHorário.svg"><p>Seg a sex, 8h às 17h30</p><br>
+                </div>
+            </div>
+            <div class="email">
+                <h2>Receba Novidades:</h2>
+                <div class="container">
+                    <form action="">
+                        <input type="text" placeholder="Nome">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">Quero Assinar!</button>
+                    </form>
+                                                       
+                </div>
+            </div>
+        </div>
+        <div class="direitos">
+            <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
+            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>    
+        </div>
+    </footer>
+</body>
+
+</html

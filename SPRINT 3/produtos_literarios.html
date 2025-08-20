@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Literários</title>
+    <link rel="shortcut icon" href="img/Logo Biblioteca Sem Fundo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #FFEAD8;
+            margin: 0;
+            padding: 0;
+        }
+        .banner-produtos {
+            width: 100vw;
+            max-width: 100vw;
+            min-width: 100vw;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 0 0 25px 25px;
+            margin: 0 auto 0 auto;
+            display: block;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+        main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+        .produtos_completo table {
+            background-color: #FF741D;
+            border-radius: 25px;
+            border-collapse: separate;
+            border-spacing: 0 20px;
+            margin: 40px auto;
+            border-spacing: 10px;
+        }
+        .produtos_completo td {
+            background-color: #FFEAD8;
+            border-radius: 20px;
+            padding: 15px;
+            border: 3px solid #FF741D;
+            vertical-align: top;
+            text-align: center;
+        }
+        .produtos_completo img {
+            width: 135px;
+            height: 135px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+        .produtos_completo p {
+            font-size: 14px;
+            margin: 0 0 8px 0;
+            color: #402401;
+            font-family: "Averia Serif Libre", serif;
+            font-weight: bold;
+        }
+        .produtos_completo .preco {
+            display: inline-block;
+            background: #FF741D;
+            color: #FFEAD8;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 7px;
+            padding: 6px 18px;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+        .produtos_completo hr {
+            background-color: #FF741D;
+            height: 2px;
+            border: none;
+            border-radius: 5px;
+            width: 80%;
+            margin: 10px auto;
+        }
+        @media (max-width: 1100px) {
+            .produtos_completo table, .produtos_completo tr, .produtos_completo td {
+                display: block;
+                width: 100%;
+                max-width: 350px;
+                margin: 0 auto 20px auto;
+            }
+            .produtos_completo table {
+                background: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="cabe">
+            <img src="img/Logo Biblioteca.svg" class="logo"> 
+            <h1>BIBLIOTECA SCRP</h1>
+            <div class="redes">
+                <a href=""><img src="img/LogoFace.svg"></a>
+                <a href=""><img src="img/LogoInsta.svg"></a>
+                <a href=""><img src="img/LogoWhats.svg"></a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a> 
+                    <ul>
+                        <a href="famosos_tiktok.html"><li>Famosinhos do TikTok</li></a>
+                        <a href="novidades_biblioteca.html"><li>Novidades Biblioteca</li></a>
+                        <a href="literatura_brasileira.html"><li>Literatura Brasileira</li></a>
+                        <a href="literatura_estrangeira.html"><li>Literatura Estrangeira</li></a>
+                        <a href="literatura_vestibular.html"><li>Literatura Vestibular</li></a>
+                    </ul>
+                </li>
+                <a href="produtos_literarios.html"><li>Produtos Literários</li></a>
+                <a href="divulga_escritores.html"><li>Divulgação Escritores</li></a>
+                <a href="assinatura_membros.html"><li>Assinatura Membros</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <img src="img/banner_ind.png" width="100%" class="banner">
+            <h2>Principais Produtos</h2>
+        </section>
+        <section class="produtos_completo">
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/P1.jpg" alt="Produto 1">
+                        <p>Botton do Solar</p>
+                        <hr>
+                        <span class="preco">R$4,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P2.jpg" alt="Produto 2">
+                        <p>Mini Ecobag “Palavra Literária”</p>
+                        <hr>
+                        <span class="preco">R$19,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P3.jpg" alt="Produto 3">
+                        <p>Meia O Auto Da Compadecida</p>
+                        <hr>
+                        <span class="preco">R$34,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P4.png" alt="Produto 4">
+                        <p>Marcador de Páginas</p>
+                        <hr>
+                        <span class="preco">R$8,00</span>
+                    </td>
+                    <td>
+                        <img src="img/P5.png" alt="Produto 5">
+                        <p>Caneca Biblioteca da Meia-Noite</p>
+                        <hr>
+                        <span class="preco">R$59,90</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/P6.jpeg" alt="Produto 6">
+                        <p>Kit Literário "Heartstopper"</p>
+                        <hr>
+                        <span class="preco">R$29,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P7.jpg" alt="Produto 7">
+                        <p>Camiseta Pequeno Príncipe</p>
+                        <hr>
+                        <span class="preco">R$59,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P8.png" alt="Produto 8">
+                        <p>Chaveiro Fridoca</p>
+                        <hr>
+                        <span class="preco">R$19,90</span>
+                    </td>
+                    <td>
+                        <img src="img/P9.jpg" alt="Produto 9">
+                        <p>Nécessaire Clarice Lispector</p>
+                        <hr>
+                        <span class="preco">R$29,00</span>
+                    </td>
+                    <td>
+                        <img src="img/P10.jpg" alt="Produto 10">
+                        <p>Cartão - Dom Quixote</p>
+                        <hr>
+                        <span class="preco">R$9,90</span>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="infos_geral">
+            <div class="navegaçao">
+                <h2>Navegue pelo site:</h2>
+                <div class="container">
+                    <a href="index.html"><p>Home</p></a>
+                    <a href="acervo_biblioteca.html"><p>Acervo da Biblioteca</p></a>
+                    <a href="produtos_literarios.html"><p>Produtos Literários</p></a>
+                    <a href="divulga_escritores.html"><p>Divulgação Escritores</p></a>
+                    <a href="assinatura_membros.html"><p>Assinatura de Membros</p></a>
+                </div>
+            </div>
+            <div class="contato">
+                <h2>Contato:</h2>
+                <div class="container">
+                    <img src="img/IconEndereço.svg"><p>Rua Emídio Piedade, 238 - Centro</p><br>
+                    <img src="img/IconTelefone.svg"><p>(14) 3332-2303</p><br>
+                    <img src="img/IconEmail.svg"><p>bibliotecascrp@gmail.com</p><br>
+                    <img src="img/IconHorário.svg"><p>Seg a sex, 8h às 17h30</p><br>
+                </div>
+            </div>
+            <div class="email">
+                <h2>Receba Novidades:</h2>
+                <div class="container">
+                    <form action="">
+                        <input type="text" placeholder="Nome">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">Quero Assinar!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="direitos">
+            <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
+            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>    
+        </div>
+    </footer>
+</body>
+</html>
