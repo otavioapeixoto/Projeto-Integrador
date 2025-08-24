@@ -5,126 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos Literários</title>
     <link rel="shortcut icon" href="img/Logo Biblioteca Sem Fundo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            background: #FFEAD8;
-            margin: 0;
-            padding: 0;
-        }
-        .banner-produtos {
-            width: 100vw;
-            max-width: 100vw;
-            min-width: 100vw;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 0 0 25px 25px;
-            margin: 0 auto 0 auto;
-            display: block;
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-        }
-        main h2 {
-            font-family: "Averia Serif Libre", serif;
-            background-color: #402401;
-            color: #FFEAD8;
-            text-align: center;
-            font-size: 40px;
-            padding: 20px;
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-        }
-        .produtos_completo table {
-            background-color: #FF741D;
-            border-radius: 25px;
-            border-collapse: separate;
-            border-spacing: 0 20px;
-            margin: 40px auto;
-            border-spacing: 10px;
-        }
-        .produtos_completo td {
-            background-color: #FFEAD8;
-            border-radius: 20px;
-            padding: 15px;
-            border: 3px solid #FF741D;
-            vertical-align: top;
-            text-align: center;
-        }
-        .produtos_completo img {
-            width: 135px;
-            height: 135px;
-            border-radius: 15px;
-            margin-bottom: 10px;
-        }
-        .produtos_completo p {
-            font-size: 14px;
-            margin: 0 0 8px 0;
-            color: #402401;
-            font-family: "Averia Serif Libre", serif;
-            font-weight: bold;
-        }
-        .produtos_completo .preco {
-            display: inline-block;
-            background: #FF741D;
-            color: #FFEAD8;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 7px;
-            padding: 6px 18px;
-            margin-top: 8px;
-            margin-bottom: 0;
-        }
-        .produtos_completo hr {
-            background-color: #FF741D;
-            height: 2px;
-            border: none;
-            border-radius: 5px;
-            width: 80%;
-            margin: 10px auto;
-        }
-        @media (max-width: 1100px) {
-            .produtos_completo table, .produtos_completo tr, .produtos_completo td {
-                display: block;
-                width: 100%;
-                max-width: 350px;
-                margin: 0 auto 20px auto;
-            }
-            .produtos_completo table {
-                background: none;
-            }
-        }
+
     </style>
 </head>
 <body>
     <header>
-        <div class="cabe">
-            <img src="img/Logo Biblioteca.svg" class="logo"> 
-            <h1>BIBLIOTECA SCRP</h1>
-            <div class="redes">
-                <a href=""><img src="img/LogoFace.svg"></a>
-                <a href=""><img src="img/LogoInsta.svg"></a>
-                <a href=""><img src="img/LogoWhats.svg"></a>
-            </div>
-        </div>
-        <nav class="menu">
-            <ul>
-                <a href="index.html"><li>Home</li></a>
-                <li><a href="acervo_biblioteca.html" class="a">Acervo da Biblioteca</a> 
-                    <ul>
-                        <a href="famosos_tiktok.html"><li>Famosinhos do TikTok</li></a>
-                        <a href="novidades_biblioteca.html"><li>Novidades Biblioteca</li></a>
-                        <a href="literatura_brasileira.html"><li>Literatura Brasileira</li></a>
-                        <a href="literatura_estrangeira.html"><li>Literatura Estrangeira</li></a>
-                        <a href="literatura_vestibular.html"><li>Literatura Vestibular</li></a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo Biblioteca Sem Fundo.svg" alt="Logo" width="30" height="30"
+                        class="d-inline-block align-text-middle">
+                    Biblioteca SCRP
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-home align-baseline" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-acervo" href="acervo_biblioteca.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Acervo Biblioteca
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="famosos_tiktok.html">Famosinhos do Tiktok</a></li>
+                                <li><a class="dropdown-item" href="novidades_biblioteca.html">Novidades na
+                                        Biblioteca</a></li>
+                                <li><a class="dropdown-item" href="literatura_brasileira.html">Literatura Brasileira</a>
+                                </li>
+                                <li><a class="dropdown-item" href="literatura_estrangeira.html">Literatura
+                                        Estrangeira</a></li>
+                                <li><a class="dropdown-item" href="literatura_vestibular.html">Literatura Vestibular</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-produtos" href="produtos_literarios.html">Produtos Literários</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-divulga" href="divulga_escritores.html">Divulgação Escritores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-assinatura" href="assinatura_membros.html">Assinatura Membros</a>
+                        </li>
                     </ul>
-                </li>
-                <a href="produtos_literarios.html"><li>Produtos Literários</li></a>
-                <a href="divulga_escritores.html"><li>Divulgação Escritores</li></a>
-                <a href="assinatura_membros.html"><li>Assinatura Membros</li></a>
-            </ul>
+                    <form class="d-flex pesquisar" role="search">
+                        <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+                        <button class="btn" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+
+            </div>
         </nav>
     </header>
 
@@ -204,41 +144,60 @@
     </main>
 
     <footer>
-        <div class="infos_geral">
-            <div class="navegaçao">
-                <h2>Navegue pelo site:</h2>
-                <div class="container">
-                    <a href="index.html"><p>Home</p></a>
-                    <a href="acervo_biblioteca.html"><p>Acervo da Biblioteca</p></a>
-                    <a href="produtos_literarios.html"><p>Produtos Literários</p></a>
-                    <a href="divulga_escritores.html"><p>Divulgação Escritores</p></a>
-                    <a href="assinatura_membros.html"><p>Assinatura de Membros</p></a>
+        <div class="container_fluid p-5 rodape_infos">
+            <div class="row gx-5">
+                <div class="col-xl-4 col-lg-6 col-md-12">
+                    <h2>Navegue pelo site:</h2>
+                    <div class="navegaçao p-4 mb-2">
+                        <a href="index.html">Home</a>
+                        <a href="acervo_biblioteca.html">Acervo da Biblioteca</a>
+                        <a href="produtos_literarios.html">Produtos Literários</a>
+                        <a href="divulga_escritores.html">Divulgação Escritores</a>
+                        <a href="assinatura_membros.html">Assinatura de Membros</a>
+                    </div>
                 </div>
-            </div>
-            <div class="contato">
-                <h2>Contato:</h2>
-                <div class="container">
-                    <img src="img/IconEndereço.svg"><p>Rua Emídio Piedade, 238 - Centro</p><br>
-                    <img src="img/IconTelefone.svg"><p>(14) 3332-2303</p><br>
-                    <img src="img/IconEmail.svg"><p>bibliotecascrp@gmail.com</p><br>
-                    <img src="img/IconHorário.svg"><p>Seg a sex, 8h às 17h30</p><br>
+                <div class="col-xl-4 col-lg-6 col-md-12">
+                    <h2>Contato:</h2>
+                    <div class="contato p-4 mb-2">
+                        <div class="mb-2">
+                            <img src="img/IconEndereço.svg">
+                            <p>Rua Emídio Piedade, 238 - Centro</p>
+                        </div>
+                        <div class="mb-2">
+                            <img src="img/IconTelefone.svg">
+                            <p>(14) 3332-2303</p>
+                        </div>
+                        <div class="mb-2">
+                            <img src="img/IconEmail.svg">
+                            <p>bibliotecascrp@gmail.com</p>
+                        </div>
+                        <div>
+                            <img src="img/IconHorário.svg">
+                            <p>Seg a sex, 8h às 17h30</p>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="email">
-                <h2>Receba Novidades:</h2>
-                <div class="container">
-                    <form action="">
-                        <input type="text" placeholder="Nome">
-                        <input type="email" placeholder="Email">
-                        <button type="submit">Quero Assinar!</button>
-                    </form>
+                <div class="col-xl-4 col-lg-12 col-md-12">
+                    <h2>Receba Novidades:</h2>
+                    <div class="novidades p-4 mb-2">
+                        <form action="">
+                            <input class="mb-2 form_nov" type="text" placeholder="Nome">
+                            <input class="mb-2 form_nov" type="email" placeholder="Email">
+                            <button type="submit" class="btn_nov">Quero Assinar!</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="direitos">
+        <div class="direitos p-3">
             <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
-            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>    
+            <br>
+            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 </html>
