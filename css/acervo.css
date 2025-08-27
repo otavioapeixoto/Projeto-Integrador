@@ -1,0 +1,127 @@
+main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+        }
+
+        .acervo_completo h2 {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+        }
+
+        .h2-destaque {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+
+        }
+
+        .acervo_completo .container-fluid {
+            background-color: #00AFC1;
+        }
+
+        .card-acervo,
+        .card-destaque {
+            background-color: #FFEAD8;
+            font-family: "Comfortaa", sans-serif;
+            width: 160px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .card-acervo {
+            width: 160px;
+        }
+
+        .card-destaque {
+            width: 300px;
+            text-align: justify;
+        }
+
+        .card-acervo img {
+            width: 160px;
+            height: 200px;
+            border-radius: 25px;
+        }
+
+        .card-destaque img {
+            width: 300px;
+            height: 400px;
+            border-radius: 25px;
+        }
+
+        .card-destaque .card-title {
+            font-size: 20px;
+        }
+
+        .card-acervo .card-title {
+            font-size: 15px;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card-acervo .card-title,
+        .card-destaque .card-title {
+            font-weight: bold;
+            color: #00AFC1;
+            text-align: center;
+            margin: 0px;
+        }
+
+        .card-acervo p {
+            font-size: 12px;
+            text-align: center;
+            color: #402401;
+        }
+
+        .emprestado {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0px;
+            background-color: #402401;
+            color: #00AFC1;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .n_emprestado {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0px;
+            background-color: #00AFC1;
+            color: #402401;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .card_infos {
+            height: 72px;
+        }
+
+        .destaques {
+            background-color: #00AFC1;
+            border-radius: 25px;
+            margin: 0px 20px;
+        }
+
+        h3 {
+            color: #402401;
+            font-family: "Averia Serif Libre", serif;
+        }
+
+        .card {
+            transition: all 0.4s;
+
+        }
+
+        .card:hover {
+            transform: scale(1.015);
+            box-shadow: 0px 0px 15px #402401;
+        }
