@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="img/Logo Biblioteca Sem Fundo.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/nav_rodape.css">
+    <link rel="stylesheet" href="css/acervo.css">
     <style>
         /*
         CORES E FONTES:
@@ -85,8 +85,8 @@
     <!--ABERTURA PRINCIPAL-->
 
     <main>
-        <img src="img/Banner.png" width="100%" class="banner">
-        <h2>Seleções da Biblioteca:</h2>
+        <img src="img/Banner_Tiktok.png" width="100%" class="banner">
+        <h2 class="m-0 h2-destaque">Destaques da Literatura Brasileira:</h2>
 
 
         <!--Navegação entre as páginas dentro do acervo-->
@@ -183,255 +183,182 @@
 
         <!--Destaques do Mês-->
         <section>
-            <h2>Conheça os Destaques do Mês:</h2>
-            </td>
-            <section>
-                <table class="tab_geral">
-                    <tr>
-                        <td>
-                            <h3>Empréstimos Populares:</h3>
-                        </td>
-                        <td class="separaçao"></td>
-                        <td>
-                            <h3>Reservas Recomendadas</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table class="destaques">
-                                <tr>
-                                    <td>
-                                        <div class="livro1">
-                                            <img src="img/ACB_Alquimista.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>O Alquimista</h4>
-                                                <p>Paulo Coelho<br>
-                                                    Santiago, um jovem pastor espanhol, sonha com um tesouro escondido
-                                                    nas pirâmides do Egito. Sua jornada em busca de realização pessoal e
-                                                    espiritualidade o leva a entender que o verdadeiro tesouro está no
-                                                    autoconhecimento e na capacidade de seguir os próprios sonhos. </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro2">
-                                            <img src="img/ACB_CulpaDasEstrelas.jpg" width="200" height="270">
-                                            <div>
-                                                <h4>A Culpa é das Estrelas</h4>
-                                                <p>John Green<br>
-                                                    Hazel Grace, uma adolescente com câncer, conhece Augustus Waters em
-                                                    um grupo de apoio. Juntos, vivem uma história de amor intensa e
-                                                    transformadora, lidando com a finitude da vida e as complexidades
-                                                    dos sentimentos enquanto enfrentam a doença.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="n_emprestado">Não Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro3">
-                                            <img src="img/ACB_PoderDoHábito.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>O Poder do Hábito</h4>
-                                                <p>Charles Duhigg<br>
-                                                    Este livro explora como os hábitos moldam nossas vidas, tanto no
-                                                    nível pessoal quanto organizacional. Duhigg apresenta uma análise de
-                                                    como nossos cérebros formam padrões automáticos e como podemos
-                                                    reprogramá-los para alcançar nossos objetivos.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
+            <div class="row">
+                <div class="col p-0">
+                    <h3 class="my-2">Empréstimos Populares:</h3>
+                </div>
+                <div class="col p-0">
+                    <h3 class="my-2">Reservas Recomendadas:</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_Alquimista.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Alquimista</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong></strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.
+                                </p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_CulpaDasEstrelas.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">A Culpa é das Estrelas</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
 
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="separaçao"></td>
-                        <td>
-                            <table class="destaques">
-                                <tr>
-                                    <td>
-                                        <div class="livro1">
-                                            <img src="img/ACB_1984.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>1984</h4>
-                                                <p> George Orwell<br>
-                                                    Winston Smith vive em uma sociedade totalitária sob o controle do
-                                                    Partido, que vigia todos os aspectos da vida. Ele começa a
-                                                    questionar o regime e a buscar a verdade, mas logo se vê em um
-                                                    dilema mortal sobre a liberdade e o controle. Uma reflexão profunda
-                                                    sobre a vigilância e a manipulação da realidade.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro2">
-                                            <img src="img/ACB_Hobbit.jpg" width="200" height="270">
-                                            <div>
-                                                <h4>O Hobbit</h4>
-                                                <p>J.R.R. Tolkien<br>
-                                                    Bilbo Bolseiro, um hobbit tranquilo, é arrastado para uma aventura
-                                                    extraordinária com anões e um mago, em busca de um tesouro guardado
-                                                    por um dragão. Ao longo da jornada, ele enfrenta perigos e se
-                                                    descobre mais corajoso do que jamais imaginou.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="n_emprestado">Não Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro3">
-                                            <img src="img/ACB_VantagensDeInvisivel.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>As Vantagens de Ser Invisível</h4>
-                                                <p>Stephen Chbosky<br>
-                                                    Charlie é um adolescente tímido e introvertido que, após um ano
-                                                    difícil, encontra novos amigos e começa a explorar os altos e baixos
-                                                    da vida adolescente. O livro aborda temas como amizade, amor, saúde
-                                                    mental e a busca por identidade, tudo sob uma perspectiva honesta e
-                                                    emocionante
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3>Coleção Especial</h3>
-                        </td>
-                        <td class="separaçao"></td>
-                        <td>
-                            <h3>Empréstimos para Crianças e Jovens:</h3>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <table class="destaques">
-                                <tr>
-                                    <td>
-                                        <div class="livro1">
-                                            <img src="img/ACB_DomCasmurro.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>Dom Casmurro</h4>
-                                                <p>Machado de Assis<br>
-                                                    Bentinho narra a história de seu amor platônico por Capitu e suas
-                                                    dúvidas sobre a fidelidade dela. A obra é um estudo psicológico e
-                                                    filosófico sobre ciúmes, confiança e as limitações da visão humana
-                                                    sobre a verdade, mantendo uma atmosfera de mistério.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro2">
-                                            <img src="img/ACB_GrandeGatsby.jpg" width="200" height="270">
-                                            <div>
-                                                <h4>O Grande Gatsby</h4>
-                                                <p>F. Scott Fitzgerald<br>
-                                                    Ambientado na década de 1920, o romance segue Nick Carraway, que se
-                                                    torna amigo de Jay Gatsby, um milionário misterioso que vive para
-                                                    recuperar o amor de Daisy Buchanan. A história reflete sobre a busca
-                                                    incessante por riqueza, amor e a farsa do "sonho americano".
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="n_emprestado">Não Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro3">
-                                            <img src="img/ACB_Frakenstein.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>Frakenstein</h4>
-                                                <p>Mary Shelley<br>
-                                                    Victor Frankenstein, um jovem cientista, cria um monstro a partir de
-                                                    partes de cadáveres, mas ao abandoná-lo, gera uma série de
-                                                    tragédias. A obra é uma reflexão sobre a responsabilidade da criação
-                                                    e os limites da ciência, além de explorar temas como a solidão e a
-                                                    busca por aceitação.
-                                            </div>
-                                            <hr>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_1984.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">1984</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_Hobbit.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Hobbit</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <h3 class="my-2">Coleção Especial:</h3>
+                </div>
+                <div class="col p-0">
+                    <h3 class="my-2">Empréstimos para Crianças e Jovens:</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_DomCasmurro.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">Dom Casmurro</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_GrandeGatsby.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Grande Gatsby</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
 
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <td class="separaçao"></td>
-                        <td>
-                            <table class="destaques">
-                                <tr>
-                                    <td>
-                                        <div class="livro1">
-                                            <img src="img/ACB_HarryPotter.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>Harry Potter</h4>
-                                                <p> J.K. Rowling<br>
-                                                    Quando Harry descobre que é um bruxo e recebe uma carta para estudar
-                                                    na Escola de Magia de Hogwarts, sua vida muda para sempre. Com novos
-                                                    amigos e desafios, Harry aprende sobre amizade, coragem e, acima de
-                                                    tudo, sobre o poder do amor e do sacrifício.
-                                            </div>
-                                            <hr>
-                                            </p>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro2">
-                                            <img src="img/ACB_PequenoPríncipe.jpg" width="200" height="270">
-                                            <div>
-                                                <h4>O Pequeno Príncipe</h4>
-                                                <p>Antoine de Saint-Exupéry<br>
-                                                    Um piloto perdido no deserto encontra um pequeno príncipe que lhe
-                                                    conta sobre suas viagens por diferentes planetas. Cada planeta e
-                                                    cada personagem que ele encontra trazem lições sobre a vida, amor e
-                                                    os valores mais importantes, ensinando que o essencial é invisível
-                                                    aos olhos.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="n_emprestado">Não Emprestado</h5>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="livro3">
-                                            <img src="img/ACB_DiarioBanana.jpg" width="200" height="270"><br>
-                                            <div>
-                                                <h4>Diário de um Banana </h4>
-                                                <p>Jeff Kinney<br>
-                                                    Greg Heffley registra as confusões e os dilemas de sua vida como um
-                                                    adolescente tentando se encaixar na escola, enquanto lida com sua
-                                                    família, amigos e as dificuldades típicas dessa fase da vida. O
-                                                    livro é uma mistura de comédia e reflexão sobre a adolescência.
-                                                </p>
-                                            </div>
-                                            <hr>
-                                            <h5 class="emprestado">Emprestado</h5>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_HarryPotter.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">Harry Potter</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_PequenoPríncipe.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Pequeno Príncipe</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!--ABERTURA RODAPÉ-->
     <footer>

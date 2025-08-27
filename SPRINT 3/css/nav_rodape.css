@@ -1,0 +1,162 @@
+       @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+       /*
+        CORES E FONTES:
+        MARROM: #402401
+        BEGE: #FFEAD8
+        AZUL: #00AFC1
+        LARANJA: #FF741D
+        VERDE: #15D22B
+        ROSA: #FF316A
+        TÍTULOS: font-family: "Averia Serif Libre", serif;
+        TEXTOS: font-family: "Comfortaa", sans-serif;
+        */
+       body {
+           background-color: #FFEAD8;
+       }
+
+       nav {
+           background-color: #FFEAD8;
+           font-family: "Averia Serif Libre", serif;
+           border-top: 3px #402401 solid;
+           border-bottom: 3px #402401 solid;
+
+       }
+
+       .nav-link,
+       .navbar-brand,
+       .dropdown-toggle,
+       .dropdown-item {
+           color: #402401;
+           transition: all 0.3s;
+       }
+
+       .nav-link:hover {
+           transition: all 0.3s;
+           transform: scale(1.05);
+       }
+
+       .nav-home:hover {
+           color: #402401;
+       }
+
+       .nav-acervo:hover {
+           color: #00AFC1;
+       }
+
+       .nav-produtos:hover {
+           color: #FF741D;
+       }
+
+       .nav-divulga:hover {
+           color: #15D22B;
+       }
+
+       .nav-assinatura:hover {
+           color: #FF316A;
+       }
+
+       .dropdown-menu {
+           background-color: #FFEAD8;
+           color: #402401;
+           border-color: #00AFC1;
+       }
+
+       .dropdown-item {
+           transition: all 0.3s;
+       }
+
+       .dropdown-item:hover {
+           color: #00AFC1;
+           background-color: #FFEAD8;
+           transition: all 0.3s;
+       }
+
+       .btn {
+           border: #402401 1px solid;
+           color: #402401;
+       }
+
+       .btn:hover {
+           border: #402401 1px solid;
+           background-color: #402401;
+           color: #FFEAD8;
+       }
+
+       .navbar-toggler {
+           border: #402401 1px solid;
+       }
+
+       .navbar-toggler-icon {
+           color: #402401;
+       }
+
+       .navbar-collapse {
+           justify-content: space-between;
+       }
+
+       .rodape_infos {
+           background-color: #402401;
+           font-family: "Averia Serif Libre", serif;
+           color: #FFEAD8;
+       }
+
+       .navegaçao,
+       .contato,
+       .novidades {
+           background-color: #FFEAD8;
+           color: #402401;
+           border-radius: 5px;
+           font-family: "Comfortaa", sans-serif;
+           font-size: medium;
+           height: 200px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           height: 200px;
+       }
+
+       .navegaçao a {
+           text-decoration: none;
+           color: #402401;
+           transition: all 0.5s;
+       }
+
+       .navegaçao a:hover {
+           font-weight: bolder;
+           transition: all 0.5s;
+       }
+
+       .contato img,
+       .contato p {
+           display: inline;
+       }
+
+       .form_nov,
+       .btn_nov {
+           width: 100%;
+           border-radius: 5px;
+           border: #402401 1px solid;
+           background-color: #FFEAD8;
+           font-size: small;
+           height: 35px;
+           color: #402401;
+           transition: all 0.3s;
+       }
+
+       .btn_nov:hover {
+           background-color: #402401;
+           color: #FFEAD8;
+           transition: all 0.3s;
+       }
+
+       .direitos {
+           background-color: #FFEAD8;
+           color: #402401;
+           font-family: "Comfortaa", sans-serif;
+           font-size: small;
+           text-align: center;
+       }
+
+       

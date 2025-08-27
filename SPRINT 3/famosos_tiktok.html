@@ -8,154 +8,8 @@
     <link rel="shortcut icon" href="img/Logo Biblioteca Sem Fundo.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        main h2 {
-            font-family: "Averia Serif Libre", serif;
-            background-color: #402401;
-            color: #FFEAD8;
-            text-align: center;
-            font-size: 40px;
-            padding: 20px;
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
-        }
-
-        table h3 {
-            color: #402401;
-            font-size: 30px;
-            font-family: "Averia Serif Libre", serif;
-            text-align: center;
-            padding: 15px 0px;
-            width: 735px;
-        }
-
-        .tab_geral {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        .separaçao {
-            width: 100px;
-        }
-
-        .destaques {
-            background-color: #00AFC1;
-            width: 735px;
-            border-radius: 25px;
-        }
-
-        .livro1,
-        .livro2,
-        .livro3 {
-            border-radius: 20px;
-            background-color: #FFEAD8;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-
-        .livro1 {
-            margin-left: 20px;
-            margin-right: 15px;
-        }
-
-        .livro3 {
-            margin-left: 15px;
-            margin-right: 20px;
-        }
-
-        .destaques h4 {
-            text-align: center;
-            font-size: 15px;
-            padding-bottom: 5px;
-            text-align: center;
-            color: #00AFC1;
-        }
-
-        .destaques div div {
-            font-size: 15px;
-            height: 310px;
-        }
-
-        .destaques img {
-            border-radius: 15px;
-        }
-
-        .destaques hr {
-            background-color: #402401;
-            height: 2px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .destaques h5 {
-            text-align: center;
-            font-size: 15px;
-            padding: 5px;
-            border-radius: 7px;
-            margin-top: 5px;
-        }
-
-        .emprestado {
-            background-color: #402401;
-            color: #00AFC1;
-        }
-
-        .n_emprestado {
-            background-color: #00AFC1;
-            color: #402401;
-        }
-
-        .borda {
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-        }
-
-        .acervo_completo table {
-            background-color: #00AFC1;
-            width: 100%;
-            display: block;
-        }
-
-        .acervo_completo td {
-            background-color: #00AFC1;
-        }
-
-        .acervo_completo td div {
-            background-color: #FFEAD8;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 20px;
-        }
-
-        .acervo_completo p {
-            height: 75px;
-            width: 120px;
-            font-size: 13px;
-            text-align: center;
-        }
-
-        .acervo_completo p b {
-            color: #00AFC1;
-            font-size: 14px;
-        }
-
-        .acervo_completo img {
-            width: 135px;
-            height: 180px;
-            border-radius: 15px;
-        }
-
-        .acervo_completo h5 {
-            margin-top: 5px;
-            padding: 5px;
-            border-radius: 5px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="css/nav_rodape.css">
+    <link rel="stylesheet" href="css/acervo.css">
 
 </head>
 
@@ -215,484 +69,501 @@
         </nav>
     </header>
     <main>
+        <img src="img/Banner_Tiktok.png" width="100%" class="banner">
+        <h2 class="m-0 h2-destaque">Destaques da Literatura Brasileira:</h2>
         <section>
-            <img src="img/banner_ind.png" width="100%" class="banner">
-            <h2>Destaques dos Famosos do Tiktok:</h2>
-            <table class="tab_geral">
-                <tr>
-                    <td>
-                        <h3>Mais emprestados:</h3>
-                    </td>
-                    <td class="separaçao"></td>
-                    <td>
-                        <h3>Romance</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <table class="destaques">
-                            <tr>
-                                <td>
-                                    <div class="livro1">
-                                        <img src="img/capalivro1.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4> A Canção de Aquiles</h4>
-                                            <p>Madeline Miller<br>
-                                                A história é uma reinterpretação
-                                                do mito grego de Aquiles e Pátroclo, focando no amor entre os dois
-                                                heróis durante a
-                                                Guerra de Troia. A narrativa explora temas de destino, amizade e o custo
-                                                da
-                                                imortalidade, criando uma história emocionalmente profunda e épica.</p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro2">
-                                        <img src="img/capalivro2.JPEG" width="200" height="270">
-                                        <div>
-                                            <h4>Seis Corvos</h4>
-                                            <p>Leigh Bardugo<br>
-                                                Em uma cidade dominada pela corrupção e
-                                                crime, seis criminosos com habilidades especiais são recrutados para uma
-                                                missão
-                                                impossível. Com personagens complexos e uma trama cheia de ação e
-                                                reviravoltas, o
-                                                livro mergulha em temas de lealdade, traição e sobrevivência.</p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="n_emprestado">Não Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro3">
-                                        <img src="img/capalivro3.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4>Romper o Círculo</h4>
-                                            <p>Collen Hoover<br>
-                                                Lily Bloom, uma jovem que enfrenta
-                                                um passado difícil e traumático, se envolve com um homem encantador, mas
-                                                com um
-                                                segredo sombrio. O livro aborda questões de abuso emocional, superação e
-                                                o poder da
-                                                escolha, gerando discussões poderosas sobre relacionamentos e
-                                                autossuficiência.
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
+            <div class="row">
+                <div class="col p-0">
+                    <h3 class="my-2">Empréstimos Populares:</h3>
+                </div>
+                <div class="col p-0">
+                    <h3 class="my-2">Reservas Recomendadas:</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_Alquimista.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Alquimista</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong></strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.
+                                </p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_CulpaDasEstrelas.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">A Culpa é das Estrelas</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
 
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="separaçao"></td>
-                    <td>
-                        <table class="destaques">
-                            <tr>
-                                <td>
-                                    <div class="livro1">
-                                        <img src="img/capalivro4.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4>Uma Corte de Rosas e Espinhos</h4>
-                                            <p> Sarah J. Maas<br>Feyre, uma jovem
-                                                caçadora, é levada para um reino mágico cheio de segredos e perigos após
-                                                matar uma
-                                                criatura faérica. Ao lado de um misterioso e encantador fae, ela precisa
-                                                lidar com
-                                                traições, magia e um amor proibido, tudo em um cenário fantástico que
-                                                mistura
-                                                romance e ação.</p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro2">
-                                        <img src="img/capalivro5.JPEG" width="200" height="270">
-                                        <div>
-                                            <h4>A Quarta Asa</h4>
-                                            <p>Rebecca Yarros<br>
-                                                ste romance combina drama, fantasia e um
-                                                toque de romance, explorando a jornada de personagens que enfrentam
-                                                dificuldades
-                                                emocionais enquanto lidam com uma missão de vida ou morte. A história se
-                                                desenrola
-                                                com desafios, segredos e revelações que envolvem o leitor a cada página.
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_1984.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">1984</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_Hobbit.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Hobbit</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-0">
+                    <h3 class="my-2">Coleção Especial:</h3>
+                </div>
+                <div class="col p-0">
+                    <h3 class="my-2">Empréstimos para Crianças e Jovens:</h3>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_DomCasmurro.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">Dom Casmurro</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_GrandeGatsby.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Grande Gatsby</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
 
-                                            </p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="n_emprestado">Não Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro3">
-                                        <img src="img/capalivro6.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4>Hipotese do Amor</h4>
-                                            <p>Ali Hazelwood<br>
-                                                A história gira em torno de uma
-                                                cientista, Olive, que, para enganar uma amiga, entra em um
-                                                relacionamento falso com
-                                                o charmoso Adam. A trama mistura comédia romântica e ciência, enquanto
-                                                eles começam
-                                                a se conhecer e a desenvolver um amor genuíno, em meio a um cenário
-                                                acadêmico.</p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3>Ficção</h3>
-                    </td>
-                    <td class="separaçao"></td>
-                    <td>
-                        <h3>Suspense:</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <table class="destaques">
-                            <tr>
-                                <td>
-                                    <div class="livro1">
-                                        <img src="img/capalivro7.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4>A Vida Invisível de Addie LaRueos</h4>
-                                            <p>V.E. Schwab<br>
-                                                Addie LaRue faz um
-                                                pacto com um demônio para ser livre, mas, como consequência, ela é
-                                                esquecida por
-                                                todos que encontra. Ela vive por séculos, sem ser lembrada por ninguém,
-                                                até que,
-                                                finalmente, um dia, alguém se lembra dela. O livro explora temas de
-                                                identidade,
-                                                desejo de imortalidade e a solidão que acompanha o tempo.</p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro2">
-                                        <img src="img/capalivro8.jpg" width="200" height="270">
-                                        <div>
-                                            <h4> Os Sete Maridos de Evelyn Hugo</h4>
-                                            <p>Taylor Jenkins Reid<br>
-                                                Evelyn Hugo, uma
-                                                atriz lendária de Hollywood, decide contar sua história para a
-                                                jornalista Monique.
-                                                Ao longo de suas revelações, Evelyn compartilha sua vida de amores,
-                                                escândalos e sua
-                                                busca pela verdadeira felicidade, explorando a complexidade das escolhas
-                                                que fazemos
-                                                ao longo da vida.</p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="n_emprestado">Não Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro3">
-                                        <img src="img/capalivro9.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4>Um de Nós Está Mentindo</h4>
-                                            <p>Karen M. McManus<br>Na escola de Bayview, cinco
-                                                estudantes se envolvem em uma investigação de assassinato após um dos
-                                                alunos ser
-                                                encontrado morto. Cada um dos cinco tem um segredo, e o suspense cresce
-                                                conforme os
-                                                mistérios se desenrolam, deixando o leitor em suspense até a última
-                                                página.
-                                        </div>
-                                        <hr>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
+                <div class="col p-0 destaques">
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_HarryPotter.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">Harry Potter</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                    <div class="card card-destaque p-0 m-3 my-4">
+                        <img src="img/ACB_PequenoPríncipe.jpg" class="card-img-top p-3" alt="...">
+                        <div class="card-body pt-0">
+                            <div class="card_ mb-b">
+                                <h5 class="card-title">O Pequeno Príncipe</h5>
+                                <p class="card-text mb-2">
+                                    <strong>Itamar Vieira Junior</strong><br>
+                                    Nas profundezas do sertão baiano, duas irmãs descobrem um segredo escondido na velha
+                                    mala de
+                                    sua avó. A partir daí, suas vidas se entrelaçam ainda mais em uma narrativa marcada
+                                    por
+                                    tradições ancestrais, laços familiares e a luta pela sobrevivência em um Brasil
+                                    rural
+                                    marcado por injustiças e resistência.</p>
+                            </div>
+                            <h5 class="n_emprestado">Disponível</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="acervo_completo">
+            <h2 class="borda m-0 mt-4">Acervo Completo:</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_GrandeSertao.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Grande Sertão: Veredas</h5>
+                                    <p class="card-text mb-2">João Guimarães Rosa</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
 
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                    <td class="separaçao"></td>
-                    <td>
-                        <table class="destaques">
-                            <tr>
-                                <td>
-                                    <div class="livro1">
-                                        <img src="img/capalivro13.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4>Mentirosos</h4>
-                                            <p> E. Lockhart<br>Cadence, a protagonista, retorna à ilha da
-                                                família após um acidente que a deixou com amnésia. À medida que ela
-                                                tenta lembrar o
-                                                que aconteceu, segredos obscuros e revelações sobre sua família emergem,
-                                                revelando
-                                                uma tragédia com um impacto profundo em seu passado.
-                                        </div>
-                                        </p>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro2">
-                                        <img src="img/capalivro12.JPEG" width="200" height="270">
-                                        <div>
-                                            <h4>O Homem de Giz</h4>
-                                            <p>.J. Tudor<br>
-                                                Em 1986, Eddie e seus amigos se comunicam
-                                                através de figuras de giz, mas quando um corpo é encontrado, eles
-                                                percebem que seus
-                                                jogos inocentes podem ter consequências muito mais sombrias. A história
-                                                alterna
-                                                entre o passado e o presente, revelando mistérios e segredos
-                                                perturbadores. </p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="n_emprestado">Não Emprestado</h5>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="livro3">
-                                        <img src="img/capalivro11.JPEG" width="200" height="270"><br>
-                                        <div>
-                                            <h4>Farsa de Amor a Espanhola</h4>
-                                            <p>Elena Armas<br>
-                                                Este romance de suspense
-                                                mistura elementos de romance e mistério, seguindo a história de uma
-                                                mulher que se vê
-                                                em um relacionamento complicado e um grande mistério envolvendo um homem
-                                                misterioso.
-                                                Ao longo da trama, a tensão aumenta à medida que segredos e mentiras são
-                                                desvendados. </p>
-                                        </div>
-                                        <hr>
-                                        <h5 class="emprestado">Emprestado</h5>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-            <section class="acervo_completo">
-                <h2 class="borda">Acervo Completo:</h2>
-                <!--1° linha do acervo-->
-                <table>
-                    <tr>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok1.JPEG">
-                                <p><b>Enquanto Não te Encontro</b><br> Pedro Rhuas<br></p>
-                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_Macunaima.png" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Macunaíma</h5>
+                                    <p c lass="card-text">Mário de Andrade</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok2.JPEG">
-                                <p><b>Um Milhão de Finais Felizes </b><br>Vitor Martins<br></p>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_Mayombe.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Mayombe</h5>
+                                    <p class="card-text">Pepetela</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok3.JPEG">
-                                <p><b>Quinze Dias</b><br>Vitor Martins<br></p>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_HoraDaEstrela.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">A Hora da Estrela</h5>
+                                    <p class="card-text">Clarice Lispector</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok4.JPEG">
-                                <p><b>Cinderela Está Morta</b><br>Kalynn Bayron<br></p>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_OsSertoes.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Os Sertões</h5>
+                                    <p class="card-text">Euclides da Cunha</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok5.JPEG">
-                                <p><b>As Vantagens de Ser Invisível</b><br>Stephen Chbosky<br></p>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_AutoDaCompadecida.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Auto da Compadecida</h5>
+                                    <p class="card-text">Ariano Suassuna</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok6.JPEG">
-                                <p><b>Os Dois Morrem no Final</b><br>Adam Silvera<br></p>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_TempoVento.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Tempo e o Vento</h5>
+                                    <p class="card-text">Érico Veríssimo</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok7.JPEG">
-                                <p><b>A Culpa é das Estrelas</b><br>John Green<br></p>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_MarMorto.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Mar Morto</h5>
+                                    <p class="card-text">Jorge Amado</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok8.JPEG">
-                                <p><b>Aristóteles e Dante</b><br>Benjamin Alire Sáenz<br></p>
-                                <hr>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_GabrielaCravoCanela.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Gabriela, Cravo e Canela</h5>
+                                    <p class="card-text">Jorge Amado</p>
+                                </div>
                                 <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                    </tr> <!-- FIM da 1° linha do acervo-->
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_Moreninha.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">A Moreninha</h5>
+                                    <p class="card-text">Joaquim Manuel de Macedo</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_MemóriasSargentoMilícias.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Memórias de um Sargento de Milícias</h5>
+                                    <p class="card-text">Manuel Antônio</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_InsubmissasLágrimasMulheres.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Insubmissas Lágrimas de Mulheres</h5>
+                                    <p class="card-text">Conceição Evaristo</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_PonciaVicencio.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Ponciá Vicêncio</h5>
+                                    <p class="card-text">Conceição Evaristo</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_ElesEramMuitosCavalos.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Eles Eram Muitos Cavalos</h5>
+                                    <p class="card-text">Luiz Ruffato</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_SolCabeça.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Sol na Cabeça</h5>
+                                    <p class="card-text">Geovani Martins</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_CançõesParaNinarAdultos.png" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Canções para Ninar Adultos</h5>
+                                    <p class="card-text">Daniel Munduruku</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_AvessoPele.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Avesso da Pele</h5>
+                                    <p class="card-text">Jeferson Tenório</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_SobrevivendoNoInferno.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Sobrevivendo no Inferno</h5>
+                                    <p class="card-text">Racionais MC's</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_QuarentaDias.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Quarenta Dias</h5>
+                                    <p class="card-text">Maria Valéria Rezende</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_AntesMundoAcabe.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Antes que o Mundo Acabe</h5>
+                                    <p class="card-text">Marcelo Carneiro da Cunha</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_Clarissa.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Clarissa</h5>
+                                    <p class="card-text">Erico Verissimo</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_FilhoEterno.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Filho Eterno</h5>
+                                    <p class="card-text">Cristovão Tezza</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_AsMeninas.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">As Meninas</h5>
+                                    <p class="card-text">Lygia Fagundes Telles</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-acervo p-0">
+                            <img src="img/LITBR_ACabeçaSanto.png" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">A Cabeça do Santo</h5>
+                                    <p class="card-text">Socorro Acioli</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-                    <tr> <!--2° linha do acervo-->
-                        <td>
-                            <div>
-                                <img src="img/capatiktok9.JPEG">
-                                <p><b>O Sol Também é Uma Estrela</b><br>Nicola Yoon<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok.JPEG">
-                                <p><b>Relatos de Um Gato Viajante</b><br>Hiro Arikawa<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok10.jpg">
-                                <p><b>1984</b><br>George Orwell<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok11.jpg">
-                                <p><b>Sombra e Ossos</b><br>Leigh Bardugo<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok12.jpg">
-                                <p><b>Confissão</b><br>Colleen Hoover<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok17.jfif">
-                                <p><b>Sem Amor</b><br>Alice Oseman<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok14.jpg">
-                                <p><b>Rádio Silencio</b><br>Alice Oseman<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capatiktok15.jfif">
-                                <p><b>Um Ano Solitário</b><br>Alice Oseman<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                    </tr> <!-- FIM da 2° linha do acervo-->
-
-
-                    <tr> <!--3° linha do acervo-->
-                        <td>
-                            <div>
-                                <img src="img/capalivro13.JPEG">
-                                <p><b>Mentirosos</b><br>E. Lockhart<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capalivro20.jfif">
-                                <p><b>Por Lugares Incríveis</b><br>Jennifer Niven<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capalivro21.jfif">
-                                <p><b> Cidade de Papel</b><br>John Green<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capalivro22.jpg">
-                                <p><b>O Amor Não é Obvio</b><br>Elayne Baeta<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capalivro23.jpg">
-                                <p><b>Sombria e Solitária Maldição</b><br>Brigid Kemmerer<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capalivro24.jfif">
-                                <p><b>Conectadas</b><br>Clara Alves<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capalivro25.jfif">
-                                <p><b>A biblioteca da meia-noite</b><br>Matt Haig<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/capalivro26.jpg">
-                                <p><b>Bem-vindos à Livraria Hyunam-dong</b><br>Hwang Bo-reum<br></p>
-                                <hr>
-                                <h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                    </tr> <!-- FIM da 3° linha do acervo-->
-                </table>
-            </section>
+        </section>
     </main>
     <footer>
         <div class="container_fluid p-5 rodape_infos">
