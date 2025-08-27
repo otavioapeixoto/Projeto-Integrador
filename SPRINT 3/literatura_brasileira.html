@@ -17,146 +17,74 @@
             text-align: center;
             font-size: 40px;
             padding: 20px;
-            border-bottom-left-radius: 25px;
-            border-bottom-right-radius: 25px;
         }
 
-        table h3 {
-            color: #402401;
-            font-size: 30px;
-            font-family: "Averia Serif Libre", serif;
-            text-align: center;
-            padding: 15px 0px;
-            width: 735px;
+        .acervo_completo h2 {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
         }
 
-        .tab_geral {
-            border-collapse: collapse;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .separaçao {
-            width: 100px;
-        }
-
-        .destaques {
+        .acervo_completo .container-fluid {
             background-color: #00AFC1;
-            width: 735px;
+        }
+
+        .card-livro {
+            background-color: #FFEAD8;
+            font-family: "Comfortaa", sans-serif;
+            width: 160px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .card-livro img {
+            width: 160px;
+            height: 200px;
             border-radius: 25px;
         }
 
-        .margem_bottom {
-            margin-bottom: 40px;
+        .col {
+            display: flex;
+            justify-content: center;
         }
 
-        .livro1,
-        .livro2,
-        .livro3 {
-            border-radius: 20px;
-            background-color: #FFEAD8;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding: 10px;
-        }
-
-        .livro1 {
-            margin-left: 20px;
-            margin-right: 15px;
-        }
-
-        .livro3 {
-            margin-left: 15px;
-            margin-right: 20px;
-        }
-
-        .destaques h4 {
-            text-align: center;
+        .card-livro .card-title {
             font-size: 15px;
-            padding-bottom: 5px;
-            text-align: center;
+            font-weight: bold;
             color: #00AFC1;
-        }
-
-        .destaques div div {
-            font-size: 15px;
-            height: 310px;
-        }
-
-        .destaques img {
-            border-radius: 15px;
-        }
-
-        hr{
-            background-color: #402401;
-            height: 2px;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .destaques h5 {
             text-align: center;
-            font-size: 15px;
-            padding: 5px;
-            border-radius: 7px;
-            margin-top: 5px;
+            margin: 0px;
         }
 
-        .emprestado {
-            background-color: #402401;
-            color: #00AFC1;
-        }
-
-        .n_emprestado {
-            background-color: #00AFC1;
+        .card-livro p {
+            font-size: 12px;
+            text-align: center;
             color: #402401;
         }
 
-        .borda {
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-        }
-        .acervo_completo div{
-            background-color: #00AFC1;
-        }
-        .acervo_completo table {
-            background-color: #00AFC1;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .acervo_completo td {
-            background-color: #00AFC1;
-        }
-
-        .acervo_completo td div {
-            background-color: #FFEAD8;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 20px;
-        }
-        .acervo_completo p{
-            height: 75px;
-            width: 120px;
-            font-size: 13px;
+        .emprestado {
+            font-size: 15px;
+            font-weight: bold;
             text-align: center;
-        }
-        .acervo_completo p b{
+            margin: 0px;
+            background-color: #402401;
             color: #00AFC1;
-            font-size: 14px;
-        }
-        .acervo_completo img{
-            width: 135px;
-            height: 180px;
-            border-radius: 15px;
-        }
-        .acervo_completo h5{
-            margin-top: 5px;
             padding: 5px;
             border-radius: 5px;
+        }
+
+        .n_emprestado {
+            font-size: 15px;
+            font-weight: bold;
             text-align: center;
+            margin: 0px;
+            background-color: #00AFC1;
+            color: #402401;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .card_infos {
+            height: 72px;
         }
     </style>
 
@@ -219,7 +147,7 @@
     </header>
     <main>
         <section>
-            <img src="img/banner_ind.png" width="100%" class="banner">
+            <img src="img/Banner.png" width="100%" class="banner">
             <h2>Destaques da Literatura Brasileira:</h2>
             <table class="tab_geral">
                 <tr>
@@ -465,189 +393,288 @@
                     </table>
                 </td>
                 </tr>
-            </table>            
+            </table>
         </section>
         <section class="acervo_completo">
-            <h2 class="borda">Acervo Completo:</h2>
-            <div>
-                <table>
-                    <tr>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_GrandeSertao.jpg">
-                                <p><b>Grande Sertão: Veredas</b><br>João Guimarães Rosa<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+            <h2 class="borda m-0">Acervo Completo:</h2>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_GrandeSertao.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Grande Sertão: Veredas</h5>
+                                    <p class="card-text mb-2">João Guimarães Rosa</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_Macunaima.png">
-                                <p><b>Macunaíma </b><br>Mário de Andrade<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_Macunaima.png" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Macunaíma</h5>
+                                    <p c lass="card-text">Mário de Andrade</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_Mayombe.jpg">
-                                <p><b>Mayombe</b><br>Pepetela<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_Mayombe.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Mayombe</h5>
+                                    <p class="card-text">Pepetela</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_HoraDaEstrela.jpg">
-                                <p><b>A Hora da Estrela</b><br>Clarice Lispector<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_HoraDaEstrela.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">A Hora da Estrela</h5>
+                                    <p class="card-text">Clarice Lispector</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_OsSertoes.jpg">
-                                <p><b>Os Sertões</b><br>Euclides da Cunha<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_OsSertoes.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Os Sertões</h5>
+                                    <p class="card-text">Euclides da Cunha</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_AutoDaCompadecida.jpg">
-                                <p><b>O Auto da Compadecida</b><br>Ariano Suassuna<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_AutoDaCompadecida.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Auto da Compadecida</h5>
+                                    <p class="card-text">Ariano Suassuna</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_TempoVento.jpg">
-                                <p><b>O Tempo e o Vento</b><br>Erico Verissimo<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_TempoVento.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Tempo e o Vento</h5>
+                                    <p class="card-text">Érico Veríssimo</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_Clarissa.jpg">
-                                <p><b>Clarissa</b><br>Erico Verissimo<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_MarMorto.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Mar Morto</h5>
+                                    <p class="card-text">Jorge Amado</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_MarMorto.jpg">
-                                <p><b>Mar Morto</b><br>Jorge Amado<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_GabrielaCravoCanela.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Gabriela, Cravo e Canela</h5>
+                                    <p class="card-text">Jorge Amado</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_GabrielaCravoCanela.jpg">
-                                <p><b>Gabriela, Cravo e Canela</b><br>Jorge Amado<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_Moreninha.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">A Moreninha</h5>
+                                    <p class="card-text">Joaquim Manuel de Macedo</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_Moreninha.jpg">
-                                <p><b>A Moreninha</b><br>Joaquim Manuel de Macedo<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_MemóriasSargentoMilícias.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Memórias de um Sargento de Milícias</h5>
+                                    <p class="card-text">Manuel Antônio</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_MemóriasSargentoMilícias.jpg">
-                                <p><b>Memórias de um Sargento de Milícias</b><br>Manuel Antônio<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_InsubmissasLágrimasMulheres.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Insubmissas Lágrimas de Mulheres</h5>
+                                    <p class="card-text">Conceição Evaristo</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_InsubmissasLágrimasMulheres.jpg">
-                                <p><b>Insubmissas Lágrimas de Mulheres</b><br>Conceição Evaristo<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_PonciaVicencio.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Ponciá Vicêncio</h5>
+                                    <p class="card-text">Conceição Evaristo</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_PonciaVicencio.jpg">
-                                <p><b>Ponciá Vicêncio</b><br>Conceição Evaristo<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_ElesEramMuitosCavalos.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Eles Eram Muitos Cavalos</h5>
+                                    <p class="card-text">Luiz Ruffato</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_ElesEramMuitosCavalos.jpg">
-                                <p><b>Eles Eram Muitos Cavalos</b><br>Luiz Ruffato<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_SolCabeça.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Sol na Cabeça</h5>
+                                    <p class="card-text">Geovani Martins</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_FilhoEterno.jpg">
-                                <p><b>O Filho Eterno</b><br>Cristovão Tezza<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_CançõesParaNinarAdultos.png" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Canções para Ninar Adultos</h5>
+                                    <p class="card-text">Daniel Munduruku</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_SolCabeça.jpg">
-                                <p><b>O Sol na Cabeça</b><br>Geovani Martins<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_AvessoPele.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">O Avesso da Pele</h5>
+                                    <p class="card-text">Jeferson Tenório</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_CançõesParaNinarAdultos.png">
-                                <p><b>Canções para Ninar Adultos</b><br>Daniel Munduruku<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_SobrevivendoNoInferno.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Sobrevivendo no Inferno</h5>
+                                    <p class="card-text">Racionais MC's</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_AvessoPele.jpg">
-                                <p><b>O Avesso da Pele</b><br>Jeferson Tenório<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_QuarentaDias.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Quarenta Dias</h5>
+                                    <p class="card-text">Maria Valéria Rezende</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_SobrevivendoNoInferno.jpg">
-                                <p><b>Sobrevivendo no Inferno</b><br>Racionais MC’s (livro)<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_AntesMundoAcabe.jpg" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">Antes que o Mundo Acabe</h5>
+                                    <p class="card-text">Marcelo Carneiro da Cunha</p>
+                                </div>
+                                <h5 class="emprestado">Emprestado</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_QuarentaDias.jpg">
-                                <p><b>Quarenta Dias</b><br>Maria Valéria Rezende<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
+                        </div>
+                    </div>
+                    <div class="col p-2">
+                        <div class="card card-livro p-0">
+                            <img src="img/LITBR_ACabeçaSanto.png" class="card-img-top p-3" alt="...">
+                            <div class="card-body pt-0">
+                                <div class="card_infos mb-b">
+                                    <h5 class="card-title">A Cabeça do Santo</h5>
+                                    <p class="card-text">Socorro Acioli</p>
+                                </div>
+                                <h5 class="n_emprestado">Disponível</h5>
+
                             </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_AntesMundoAcabe.jpg">
-                                <p><b>Antes que o Mundo Acabe</b><br>Marcelo Carneiro da Cunha<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_ACabeçaSanto.png">
-                                <p><b>A Cabeça do Santo</b><br>Socorro Acioli<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <img src="img/LITBR_AsMeninas.jpg">
-                                <p><b>As Meninas</b><br>Lygia Fagundes Telles<br></p>
-                                <hr><h5 class="emprestado">Emprestado</h5>
-                            </div>
-                        </td>
-                    </tr>
-                </table>    
+                        </div>
+                    </div>
+                </div>
             </div>
-            
+
+
         </section>
     </main>
     <footer>
@@ -698,9 +725,8 @@
             </div>
         </div>
         <div class="direitos p-3">
-            <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
-            <br>
-            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
+            <p class="m-0"> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
+            <p class="m-0">Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

@@ -11,6 +11,9 @@
         TÍTULOS: font-family: "Averia Serif Libre", serif;
         TEXTOS: font-family: "Comfortaa", sans-serif;
         */
+        body{
+            background-color: #FFEAD8;
+        }
         nav {
             background-color: #FFEAD8;
             font-family: "Averia Serif Libre", serif;
@@ -124,7 +127,7 @@
         }
 
         .contato img,
-        p {
+        .contato p {
             display: inline;
         }
 
