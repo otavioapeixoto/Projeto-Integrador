@@ -1,4 +1,13 @@
 
+        
+       main h2 {
+            font-family: "Averia Serif Libre", serif;
+            background-color: #402401;
+            color: #FFEAD8;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+        }
         .acervo_completo h2 {
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;

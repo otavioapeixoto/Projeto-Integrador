@@ -9,31 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nav_rodape.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const checkbox = document.getElementById('aceito');
-            const botao = document.getElementById('btn-enviar');
-            checkbox.addEventListener('change', function () {
-                if (checkbox.checked) {
-                    botao.disabled = false;
-                    botao.classList.remove('btn-disabled');
-                } else {
-                    botao.disabled = true;
-                    botao.classList.add('btn-disabled');
-                }
-            });
-        });
-    </script>
-
     <style>
-        button:disabled,
-        .btn-disabled {
-            background-color: #888 !important;
-            color: #fff !important;
-            cursor: not-allowed !important;
-            opacity: 0.7;
-        }
-
         main h2 {
             font-family: "Averia Serif Libre", serif;
             background-color: #402401;
@@ -56,49 +32,21 @@
             background-color: #402401;
         }
 
-        main h3 {
+        h3 {
             background-color: #FF316A;
+            color: #402401;
             padding: 15px;
             text-align: center;
             border-radius: 10px;
-            text-align: center;
-            width: 730px;
+            width: 80%;
+            font-family: "Comfortaa", sans-serif;
+            transition: all 0.4s;
+            margin: auto;
         }
 
-        .h3 {
-            margin-left: auto;
-            margin-right: auto;
-            width: 730px;
-            margin-bottom: 30px;
-        }
-
-        .tab_geral {
-            margin-left: auto;
-            margin-right: auto;
-            border-spacing: 30px;
-        }
-
-        .tab_geral table {
-            width: 650px;
-            background-color: #FFEAD8;
-            padding: 20px;
-            border-radius: 15px;
-            margin: 20px;
-        }
-
-        .tab_geral img {
-            margin-left: 20px;
-            border-radius: 5px;
-        }
-
-        .tab_geral h4 {
-            color: #FF316A;
-            font-size: 17px;
-        }
-
-        .beneficio {
-            background-color: #FF316A;
-            border-radius: 25px;
+        main h3:hover {
+            transform: scale(1.015);
+            box-shadow: 0px 0px 15px #402401;
         }
 
         fieldset {
@@ -169,6 +117,81 @@
             color: #FF316A;
             cursor: pointer;
         }
+
+        .escritores {
+            background-color: #FF316A;
+            border-radius: 20px;
+        }
+
+        .destaques {
+            background-color: #FF316A;
+            border-radius: 0px;
+        }
+
+        .escritores .card {
+            background-color: #FFEAD8;
+            font-family: "Comfortaa", sans-serif;
+            font-size: 13px;
+            color: #402401;
+        }
+
+        .escritores h5 {
+            font-family: "Averia Serif Libre", serif;
+            color: #FF316A;
+        }
+
+        .h2-destaque {
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }
+
+        .h2-parceiros {
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+
+        }
+
+        .card-acervo .card-title,
+        .card-destaque .card-title {
+            color: #FF316A;
+        }
+
+        .card {
+            text-align: center;
+            height: 100%;
+        }
+        .escritores_destaque {
+            text-align: justify;
+            font-size: 17px;
+        }
+
+        .card-destaque a:hover {
+            color: #FF316A;
+        }
+
+        form {
+            font-family: "Comfortaa", sans-serif;
+            font-size: 13px;
+        }
+
+        form h4 {
+            color: #402401;
+            font-size: 16px;
+        }
+
+        .card {
+            transition: all 0.4s;
+
+        }
+
+        .card:hover {
+            transform: scale(1.015);
+            box-shadow: 0px 0px 15px #402401;
+        }
+        .h2-membros {
+            border-radius: 25px;
+
+        }
     </style>
 </head>
 
@@ -231,87 +254,135 @@
     <!--ABERTURA PRINCIPAL-->
     <main>
         <!--Benefícios Inclusos-->
-        <section>
-            <img src="img/banner_ind.png" width="100%" class="banner">
-            <h2>Benefícios Inclusos:</h2>
-            <table class="tab_geral">
-                <tr>
-                    <td class="beneficio">
-                        <table> <!--Tabela com beneficio e uma foto do produto-->
-                            <tr>
-                                <td>
-                                    <h4><strong>Caixinha Literária Mensal &#128230;
-                                        </strong></h4>
-                                    <hr>
-                                    Receba em casa, todo mês, <strong>um livro surpresa</strong> escolhido e
-                                    embalado
-                                    com carinho e personalidade, de acordo com suas preferências literárias. Uma
-                                    nova
-                                    história para te surpreender e inspirar a cada mês!
-                                    !
-                                </td>
-                                <td><img src="img/ASS_Benefício1.jpg" width="150" height="150"></td>
-                            </tr>
-                        </table> <!--Final da tabela-->
-                    </td>
-                    <td class="beneficio">
-                        <table> <!--Tabela com beneficio e uma foto do produto-->
-                            <tr>
-                                <td>
-                                    <h4><strong>Colecionáveis Literários e Itens Exclusivos &#127912;
-                                        </strong></h4>
-                                    <hr>
-                                    Todo mês, você recebe <strong>um kit com itens colecionáveis</strong> que deixam a
-                                    experiência literária ainda mais especial! São marcadores personalizados, cards
-                                    ilustrados, mini-pôsteres e outros itens criativos para colecionar e se apaixonar.
-                                </td>
-                                <td><img src="img/ASS_Benefício2.jpg" width="150" height="150"></td>
-                            </tr>
-                        </table> <!--Final da tabela-->
-                    </td>
-                </tr>
-                <tr>
-                    <td class="beneficio">
-                        <table> <!--Tabela com beneficio e uma foto do produto-->
-                            <tr>
-                                <td>
-                                    <h4><strong>Clube de Leitura Exclusivo &#128218;
-                                        </strong></h4>
-                                    <hr>Participe de um <strong>clube de leitura só para assinantes!</strong>
-                                    Compartilhe suas opiniões, participe de discussões sobre o livro do mês e aproveite
-                                    encontros com outros leitores que compartilham a mesma paixão por histórias.
-                                </td>
-                                <td><img src="img/ASS_Benefício3.jpg" width="150" height="150"></td>
-                            </tr>
-                        </table> <!--Final da tabela-->
-                    </td>
-                    <td class="beneficio">
-                        <table> <!--Tabela com beneficio e uma foto do produto-->
-                            <tr>
-                                <td>
-                                    <h4><strong>Convites para Eventos e Oficinas Exclusivas &#128197;</strong></h4>
-                                    <hr>
-                                    Tenha acesso a <strong>eventos e oficinas criativas organizadas pela
-                                        biblioteca!</strong> Participe de encontros de leitura, oficinas de escrita,
-                                    sessões temáticas e viva experiências que vão além da leitura, conhecendo novos
-                                    leitores e autores.
-                                </td>
-                                <td><img src="img/ASS_Benefício4.jpg" width="150" height="150"></td>
-                            </tr>
-                        </table> <!--Final da tabela-->
-                    </td>
-                </tr>
-            </table>
-            <div class="h3">
-                <h3>Tudo por apenas R$59,90!</h3>
+        <img src="img/Banner_Assinatura.png" width="100%" class="banner">
+        <h2 class="m-0 h2-destaque">Benefícios Inclusos:</h2>
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12 col-xl-6 p-4">
+                    <div class="escritores p-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card m-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/ASS_Benefício1.jpg" class="img-fluid rounded-start"
+                                                width="100%" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title escritores_destaque">Caixinha Literária Mensal 📦
+                                                </h5>
+                                                <p class="card-text escritores_destaque">
+                                                    Receba em casa, todo mês, <strong>um livro surpresa</strong>
+                                                    escolhido e embalado com carinho e personalidade, de acordo com suas
+                                                    preferências literárias. Uma nova história para te surpreender e
+                                                    inspirar a cada mês!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-xl-6 p-4">
+                    <div class="escritores p-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card m-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/ASS_Benefício2.jpg" class="img-fluid rounded-start"
+                                                width="100%" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title escritores_destaque">Colecionáveis Literários e
+                                                    Itens Exclusivos 🎁</h5>
+                                                <p class="card-text escritores_destaque">
+                                                    Todo mês, você recebe um kit com <strong>itens
+                                                        colecionáveis</strong> que deixam a experiência literária ainda
+                                                    mais especial! São marcadores personalizados, cards ilustrados,
+                                                    mini-pôsteres e outros itens criativos para colecionar e se
+                                                    apaixonar.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section>
-            <h2>Se torne um membro agora!</h2>
-            <div class="h3">
-                <h3 style="margin-top: 30px;">Assine o formulário abaixo e desfrute das maravilhas da nossa assinatura!
-                </h3>
+
+            <div class="row">
+                <div class="col-md-12 col-xl-6 p-4">
+                    <div class="escritores p-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card m-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/ASS_Benefício3.jpg" class="img-fluid rounded-start"
+                                                width="100%" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title escritores_destaque">Clube de Leitura Exclusivo 📚
+                                                </h5>
+                                                <p class="card-text escritores_destaque">
+                                                    Participe de um <strong>clube de leitura só para
+                                                        assinantes</strong>! Compartilhe suas opiniões, participe de
+                                                    discussões sobre o livro do mês e aproveite encontros com outros
+                                                    leitores que compartilham a mesma paixão por histórias.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-xl-6 p-4">
+                    <div class="escritores p-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card m-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/ASS_Benefício4.jpg" class="img-fluid rounded-start"
+                                                width="100%" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title escritores_destaque">Convites para Eventos e
+                                                    Oficinas Exclusivas 🗓️</h5>
+                                                <p class="card-text escritores_destaque">
+                                                    Tenha acesso a <strong>eventos e oficinas criativas organizadas pela
+                                                        biblioteca</strong>! Participe de encontros de leitura, oficinas
+                                                    de escrita, sessões temáticas e viva experiências que vão além da
+                                                    leitura, conhecendo novos leitores e autores.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <h3>Tudo por apenas R$59,90!</h3>
+        </div>
+        <section>
+            <h2 class="my-4 h2-membros">Se torne um membro agora!</h2>
+            <h3 class="mb-4">Assine o formulário abaixo e desfrute das maravilhas da nossa assinatura!</h3>
             <form action="#" method="post">
                 <!--SEÇÃO DE DADOS PESSOAIS-->
                 <fieldset>
@@ -505,10 +576,7 @@
                     <em>Ao finalizar, você autoriza a cobrança mensal de R$ 59,90 no seu cartão. Cancelamento a qualquer
                         momento pelo seu painel de assinante.</em>
                 </fieldset>
-                <div class="margin_auto">
-                    <button type="submit" id="btn-enviar" class="btn-disabled" disabled>
-                        <strong>ENVIAR DADOS E SE INSCREVER!</strong>
-                    </button>
+                <div class="margin_auto"><button type="submit"><strong>ENVIAR DADOS E SE INSCREVER!</strong></button>
                 </div>
             </form>
         </section>

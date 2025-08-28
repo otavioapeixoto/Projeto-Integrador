@@ -15,7 +15,8 @@
             background-color: #15D22B;
             border-radius: 20px;
         }
-        .destaques{
+
+        .destaques {
             background-color: #15D22B;
             border-radius: 0px;
         }
@@ -37,26 +38,34 @@
             color: #402401;
             text-align: center;
         }
-        .h2-destaque{
+
+        .h2-destaque {
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
         }
-        .h2-parceiros{
+
+        .h2-parceiros {
             border-top-left-radius: 25px;
             border-top-right-radius: 25px;
-            
+
         }
+
         .card-acervo .card-title,
         .card-destaque .card-title {
             color: #15D22B;
         }
-        .card{
+
+        .card {
             text-align: center;
         }
-        .escritores .card{
+        .parceiros .card{
+            height: 100%;
+        }
+        .escritores_destaque {
             text-align: justify;
         }
-        .card-destaque a:hover{
+
+        .card-destaque a:hover {
             color: #15D22B;
         }
     </style>
@@ -123,8 +132,8 @@
     <!--ABERTURA PRINCIPAL-->
     <main>
         <img src="img/Banner_Escritores.png" width="100%" class="banner">
-        <h2 class="m-0 h2-destaque">Destaques da Literatura Brasileira:</h2>
-        <div class="container-fluid">
+        <h2 class="m-0 h2-destaque">Escritores destaques:</h2>
+        <div class="container-fluid ">
             <div class="row">
                 <div class="col-md-12 col-xl-6 p-4">
                     <div class="escritores p-4">
@@ -138,8 +147,9 @@
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h5 class="card-title">Pedro Rhuas</h5>
-                                                <p class="card-text">Pedro Rhuas, natural do Rio Grande do Norte e
+                                                <h5 class="card-title escritores_destaque">Pedro Rhuas</h5>
+                                                <p class="card-text escritores_destaque">Pedro Rhuas, natural do Rio
+                                                    Grande do Norte e
                                                     Ceará, é escritor, jornalista e
                                                     cantor. Seu romance de estreia, Enquanto eu não te encontro (2021),
                                                     tornou-se
@@ -187,13 +197,19 @@
                                 <div class="card m-0">
                                     <div class="row g-0">
                                         <div class="col-md-4">
-                                            <img src="img/claraalves.JPEG" class="img-fluid rounded-start"
-                                                width="100%" alt="...">
+                                            <img src="img/claraalves.JPEG" class="img-fluid rounded-start" width="100%"
+                                                alt="...">
                                         </div>
                                         <div class="col-md-8">
                                             <div class="card-body">
-                                                <h5 class="card-title">Clara Alves</h5>
-                                                <p class="card-text">Clara Alves, apaixonada por livros desde jovem, estudou jornalismo e trabalhou no mercado editorial antes de se dedicar integralmente à escrita. Autora do best-seller Conectadas (2019), que já vendeu mais de 100 mil exemplares, ela também publicou Romance Real (2022), traduzido para o inglês como London On My Mind. Vive no Rio de Janeiro e é conhecida por seus romances clichês LGBTQIAP+ que aquecem o coração.
+                                                <h5 class="card-title escritores_destaque">Clara Alves</h5>
+                                                <p class="card-text escritores_destaque">Clara Alves, apaixonada por
+                                                    livros desde jovem, estudou jornalismo e trabalhou no mercado
+                                                    editorial antes de se dedicar integralmente à escrita. Autora do
+                                                    best-seller Conectadas (2019), que já vendeu mais de 100 mil
+                                                    exemplares, ela também publicou Romance Real (2022), traduzido para
+                                                    o inglês como London On My Mind. Vive no Rio de Janeiro e é
+                                                    conhecida por seus romances clichês LGBTQIAP+ que aquecem o coração.
                                                 </p>
                                             </div>
                                         </div>
@@ -226,7 +242,7 @@
                 </div>
 
             </div>
-            
+
         </div>
         <!--Lista de Escritores Parceiros-->
         <h2 class="m-0 h2-parceiros">Escritores Parceiros:</h2>
@@ -252,75 +268,86 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 2 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_ViniciusFernandes.jpg" class="card-img-top p-3 m-auto"
+                                        alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Vinícius Fernandes</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                O garoto no alto da torre
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 3 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_Luisa Landre.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Luísa Landre</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Fios de sangue
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 4 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_LucasRocha.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Lucas Rocha</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Você tem a vida inteira
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 5 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_LucaGuadagnini.png" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Luca Guadagnini</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                As máscaras que deixamos para trás
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 6 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_RaquelAlves.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Raquel Alves</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Galáxia Desconhecida
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
@@ -331,96 +358,108 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <!-- Coluna da esquerda -->
                 <div class="col-md-12 m-0 p-0">
                     <div class="destaques p-3">
                         <div class="row g-3">
-                            <!-- Card 1 -->
+                            <!-- Card 7 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_Socorro Acioli.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Socorro Acioli</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                A cabeça do Santo
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 8 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_Raphael Montes.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Raphael Montes</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Suicidas
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 9 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_Iandê Albuquerque.jpg" class="card-img-top p-3 m-auto"
+                                        alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Iandê Albuquerque</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Para todas as pessoas intensas
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 10 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_André Ferrari.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">André Ferrari</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Você não precisa de ninguém para se sentir completo
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 11 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_Guilherme Pintto.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Guilherme Pinto</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Seja o amor da sua vida
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Card 12 -->
                             <div class="col-xxl-2 col-md-4">
                                 <div class="card card-destaque w-100">
-                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <img src="img/DIVES_Samantha Silvany.jpg" class="card-img-top p-3 m-auto" alt="...">
                                     <div class="card-body pt-0">
                                         <div class="card_ mb-b">
-                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <h5 class="card-title">Samantha Sitivany</h5>
                                             <p class="card-text mb-2">
                                                 <strong>Obra mais famosa:</strong><br>
-                                                Debaixo do meu chapéu
+                                                Verdades difíceis de engolir
                                             </p>
                                         </div>
                                         <a href="#" class="btn">Saiba mais aqui!</a>
