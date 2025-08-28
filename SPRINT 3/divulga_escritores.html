@@ -9,172 +9,55 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nav_rodape.css">
+    <link rel="stylesheet" href="css/acervo.css">
     <style>
-        main h2 {
+        .escritores {
+            background-color: #15D22B;
+            border-radius: 20px;
+        }
+        .destaques{
+            background-color: #15D22B;
+            border-radius: 0px;
+        }
+
+        .escritores .card {
+            background-color: #FFEAD8;
+            font-family: "Comfortaa", sans-serif;
+            font-size: 13px;
+            color: #402401;
+        }
+
+        .escritores h5 {
             font-family: "Averia Serif Libre", serif;
-            background-color: #402401;
-            color: #dcc7b4;
+            color: #15D22B;
+        }
+
+        .escritores h3 {
+            font-family: "Averia Serif Libre", serif;
+            color: #402401;
             text-align: center;
-            font-size: 40px;
-            padding: 20px;
+        }
+        .h2-destaque{
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
         }
-
-        hr {
-            background-color: #402401;
-            height: 2px;
-            border: none;
-            border-radius: 5px;
+        .h2-parceiros{
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            
         }
-
-        .table_geral {
-            width: 100%;
-            border-collapse: collapse;
+        .card-acervo .card-title,
+        .card-destaque .card-title {
+            color: #15D22B;
         }
-
-        .table1 {
-            background-color: #15D22B;
-            width: 730px;
-            height: 220px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            margin-left: 40px;
-            margin-right: 40px;
-            padding: 10px;
-        }
-
-        .table2 {
-            background-color: #FFEAD8;
-            height: 70px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            padding: 10px;
-        }
-
-        .table3 {
-            background-color: #FFEAD8;
-            width: 730px;
-            height: 220px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-top: 15px;
-            margin-bottom: 30px;
-            margin-left: 40px;
-            margin-right: 40px;
-            padding: 10px;
-        }
-
-        .table4 {
-            background-color: #15D22B;
-            height: 70px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            padding: 10px;
+        .card{
             text-align: center;
         }
-
-        .titulos_principais {
-            text-align: center;
-            margin-bottom: 10px;
+        .escritores .card{
+            text-align: justify;
         }
-
-
-        .acervo_completo table {
-            background-color: #15D22B;
-            width: 100%;
-            display: block;
-        }
-
-        .acervo_completo td {
-            background-color: #15D22B;
-        }
-
-        .acervo_completo td div {
-            background-color: #FFEAD8;
-            padding: 15px;
-            margin: 10px;
-            border-radius: 20px;
-            width: 227px;
-            text-align: center;
-        }
-
-        .acervo_completo p {
-            height: 60px;
-            width: 230px;
-            font-size: 13px;
-            text-align: center;
-        }
-
-        .acervo_completo p b {
-            color: #0d9920;
-            font-size: 14px;
-        }
-
-        .acervo_completo img {
-            width: 200px;
-            height: 200px;
-            border-radius: 5px;
-        }
-
-        .acervo_completo h5 {
-            margin-top: 5px;
-            padding: 5px;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .separaçao1 {
-            background-color: #15D22B;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-            width: 100%;
-        }
-
-        .botão {
-            background-color: #15D22B;
-            color: #402401;
-            font-family: "Averia Serif Libre", serif;
-            font-size: 18px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            width: 100%;
-        }
-
-        .img {
-            height: 180px;
-            width: 180px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-        }
-
-        .img2 {
-            height: 270px;
-            width: 200px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
+        .card-destaque a:hover{
+            color: #15D22B;
         }
     </style>
 </head>
@@ -239,217 +122,315 @@
 
     <!--ABERTURA PRINCIPAL-->
     <main>
-        <!--Escritores do Mês-->
+        <img src="img/Banner_Escritores.png" width="100%" class="banner">
+        <h2 class="m-0 h2-destaque">Destaques da Literatura Brasileira:</h2>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-xl-6 p-4">
+                    <div class="escritores p-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card m-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/DIVES_PedroRhuas.jpg" class="img-fluid rounded-start"
+                                                width="100%" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Pedro Rhuas</h5>
+                                                <p class="card-text">Pedro Rhuas, natural do Rio Grande do Norte e
+                                                    Ceará, é escritor, jornalista e
+                                                    cantor. Seu romance de estreia, Enquanto eu não te encontro (2021),
+                                                    tornou-se
+                                                    best-seller, consolidando-o como uma nova voz da literatura jovem
+                                                    brasileira. Em
+                                                    2023, ele lançou O Universo sabe o que faz e o romance O mar me
+                                                    levou a você. Rhuas
+                                                    também é conhecido pelo seu álbum Contador de História, com mais de
+                                                    500 mil
+                                                    reproduções no Spotify.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="my-2">Títulos Principais:</h3>
+                        <div class="row">
+                            <div class="card col-4 p-0">
+                                <img src="img/Enquanto Eu Não Te Encontro.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0">Enquanto eu não te encontro</h5>
+                                </div>
+                            </div>
+                            <div class="card col-4 p-0">
+                                <img src="img/O Universo Sabe o Que Faz.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0">O universo sabe o que faz</h5>
+                                </div>
+                            </div>
+                            <div class="card col-4 p-0">
+                                <img src="img/O Mar Me Levou a Você.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0">O mar me levou a você</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xl-6 p-4">
+                    <div class="escritores p-4">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card m-0">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img src="img/claraalves.JPEG" class="img-fluid rounded-start"
+                                                width="100%" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Clara Alves</h5>
+                                                <p class="card-text">Clara Alves, apaixonada por livros desde jovem, estudou jornalismo e trabalhou no mercado editorial antes de se dedicar integralmente à escrita. Autora do best-seller Conectadas (2019), que já vendeu mais de 100 mil exemplares, ela também publicou Romance Real (2022), traduzido para o inglês como London On My Mind. Vive no Rio de Janeiro e é conhecida por seus romances clichês LGBTQIAP+ que aquecem o coração.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="my-2">Títulos Principais:</h3>
+                        <div class="row">
+                            <div class="card col-4 p-0">
+                                <img src="img/Conectadas.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0">Conectadas</h5>
+                                </div>
+                            </div>
+                            <div class="card col-4 p-0">
+                                <img src="img/Romance Real certo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0">Romance real</h5>
+                                </div>
+                            </div>
+                            <div class="card col-4 p-0">
+                                <img src="img/A profecia da sereia.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title m-0">A professia da sereia</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <table class="table_geral">
-            <tr>
-                <td>
-                    <table class="table1">
-                        <td>
-
-                        </td>
-                        <td class="table2"><img src="img/DIVES_PedroRhuas.jpg" class="img"> <br></td>
-                        <td class="table2"><strong>PEDRO RHUAS</strong><br>
-                            Pedro Rhuas, natural do Rio Grande do Norte e Ceará, é escritor, jornalista e
-                            cantor. Seu romance de estreia, Enquanto eu não te encontro (2021), tornou-se
-                            best-seller, consolidando-o como uma nova voz da literatura jovem brasileira. Em
-                            2023, ele lançou O Universo sabe o que faz e o romance O mar me levou a você. Rhuas
-                            também é conhecido pelo seu álbum Contador de História, com mais de 500 mil
-                            reproduções no Spotify.</td>
-                    </table>
-                </td>
-                <td>
-                    <table class="table1">
-                        <td class="table2"><img src="img/DIVES_ClaraAlves.jpg" class="img"></td>
-                        <td class="table2"><strong>CLARA ALVES</strong><br>
-                            Clara Alves, apaixonada por livros desde jovem, estudou jornalismo e trabalhou no
-                            mercado editorial antes de se dedicar integralmente à escrita. Autora do best-seller
-                            Conectadas (2019), que já vendeu mais de 100 mil exemplares, ela também publicou
-                            Romance Real (2022), traduzido para o inglês como London On My Mind. Vive no Rio de
-                            Janeiro e é conhecida por seus romances clichês LGBTQIAP+ que aquecem o coração.</td>
-                    </table>
-                </td>
-               
-            <tr>
-                <td class="titulos_principais">
-                    <h3>TÍTULOS PRINCIPAIS</h3>
-                </td>
-                <td class="titulos_principais">
-                    <h3>TÍTULOS PRINCIPAIS</h3>
-                </td>
-            </tr>
-            </tr>
-        </table>
-
-
-        <table class="table_geral">
-            <tr>
-                <td>
-                    <table class="table3">
-                        <td>
-
-                        </td>
-                        <td class="table4"><img src="img/Enquanto Eu Não Te Encontro.jpg" class="img2"></td>
-                        <td class="table4"><img src="img/O Mar Me Levou a Você.jpg" class="img2"></td>
-                        <td class="table4"><img src="img/O Universo Sabe o Que Faz.jpg" class="img2"></td>
-                    </table>
-                </td>
-                <td>
-                    <table class="table3">
-                        <td class="table4"><img src="img/Conectadas.jpg" class="img2"></td>
-                        <td class="table4"><img src="img/Romance Real certo.png" class="img2"></td>
-                        <td class="table4"><img src="img/A profecia da sereia.jpg" class="img2"> </td>
-                    </table>
-                </td>
-            </table>
-
-
-
-
-
-
+            </div>
+            
+        </div>
         <!--Lista de Escritores Parceiros-->
-        <h2>Escritores Parceiros:</h2>
-        <section class="acervo_completo">
-            <h2 class="separaçao1"></h2>
-            <table>
-                <tr> <!--1° linhas da tabela-->
-                    <td>
-                        <div>
-                            <img src="img/DIVES_MariaFreitas.jpg" width="200px" height="200px">
-                            <p><b>Maria Freitas</b><br><strong> Obra mais famosa:</strong><br>Debaixo do meu chapéu<br>
-                            </p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/Maria-Freitas/author/B07F5GT3HV?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
+        <h2 class="m-0 h2-parceiros">Escritores Parceiros:</h2>
+        <section class="container-fluid parceiros">
+            <div class="row">
+                <!-- Coluna da esquerda -->
+                <div class="col-md-12 m-0 p-0">
+                    <div class="destaques p-3">
+                        <div class="row g-3">
+                            <!-- Card 1 -->
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_ViniciusFernandes.jpg" width="200px" height="200px">
-                            <p><b>Vinicius Fernandes</b><br> <strong>Obra mais famosa:</strong><br>O garoto no alto da
-                                torre<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/author/B08K9BGDGQ?ref_=ast_author_cabib"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Coluna da esquerda -->
+                <div class="col-md-12 m-0 p-0">
+                    <div class="destaques p-3">
+                        <div class="row g-3">
+                            <!-- Card 1 -->
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-md-4">
+                                <div class="card card-destaque w-100">
+                                    <img src="img/DIVES_MariaFreitas.jpg" class="card-img-top p-3 m-auto" alt="...">
+                                    <div class="card-body pt-0">
+                                        <div class="card_ mb-b">
+                                            <h5 class="card-title">Maria Freitas</h5>
+                                            <p class="card-text mb-2">
+                                                <strong>Obra mais famosa:</strong><br>
+                                                Debaixo do meu chapéu
+                                            </p>
+                                        </div>
+                                        <a href="#" class="btn">Saiba mais aqui!</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_Luisa Landre.jpg" width="200px" height="200px">
-                            <p><b>Luisa Landre</b><br><strong>Obra mais famosa:</strong><br>Fios de sangue<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/Luisa-Landre/author/B09MDTH1SK?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_LucasRocha.jpg" width="200px" height="200px">
-                            <p><b>Lucas Rocha</b><br><strong>Obra mais famosa:</strong><br>Você tem a vida inteira
-                                <br>
-                            </p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/author/B07T28SWGG?ref_=ast_author_cabib"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_LucaGuadagnini.png" width="200px" height="200px">
-                            <p><b>Luca Guadagnini</b><br><strong>Obra mais famosa:</strong><br>As máscaras que deixamos
-                                para trás<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/Luca-Guadagnini/author/B0DCNMVPTR?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_RaquelAlves.jpg" width="200px" height="200px">
-                            <p><b>Raquel Alves</b><br> <strong>Obra mais famosa:</strong><br>Galáxia Desconhecida<br>
-                            </p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/Raquel-Alves/author/B0CJTC87YT?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td> <!--FIM da 1° linhas da tabela-->
-                </tr>
-
-                <tr> <!--2° linhas da tabela-->
-                    <td>
-                        <div>
-                            <img src="img/DIVES_Socorro Acioli.jpg" width="200px" height="200px">
-                            <p><b>Socorro Acioli</b><br><strong>Obra mais famosa:</strong><br>A cabeça do Santo<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/author/B0095HTVW2?ref_=ast_author_cabib"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_Raphael Montes.jpg" width="200px" height="200px">
-                            <p><b>Raphael Montes</b><br><strong>Obra mais famosa:</strong><br>Suicidas<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/author/B00MCM897U?ref_=ast_author_cabib"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_Iandê Albuquerque.jpg" width="200px" height="200px">
-                            <p><b>Iandê Albuquerque</b><br><strong>Obra mais famosa:</strong><br>Para todas as pessoas
-                                intensas<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/Iand%C3%AA-Albuquerque/author/B07F9YM6S4?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_André Ferrari.jpg" width="200px" height="200px">
-                            <p><b>André Ferrari</b><br><strong>Obra mais famosa:</strong><br>Você não precisa de ninguém
-                                para se sentir completo<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/author/B08Y3NL4YC?ref_=ast_author_cabib"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_Guilherme Pintto.jpg" width="200px" height="200px">
-                            <p><b>Guilherme Pintto</b><br><strong>Obra mais famosa:</strong><br>Seja o amor da sua
-                                vida<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/author/B07FW489HG?ref_=ast_author_cabib"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                    <td>
-                        <div>
-                            <img src="img/DIVES_Samantha Silvany.jpg" width="200px" height="200px">
-                            <p><b>Samantha Silvany</b><br><strong>Obra mais famosa:</strong><br>Verdades difíceis de
-                                engolir<br></p>
-                            <hr>
-                            <h5><a href="https://www.amazon.com.br/stores/author/B07VK97L4X?ingress=0&visitId=b4481318-959e-4699-aca7-7502d6988389"
-                                    target="_blank"><button class="botão">Saiba mais sobre
-                                        <strong>Aqui!</strong></button></a></h5>
-                        </div>
-                    </td>
-                </tr> <!-- FIM da 2° linhas da tabela-->
-            </table>
-            <h2 class="separaçao1"></h2>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
