@@ -43,21 +43,18 @@
                         <li class="nav-item">
                             <a class="nav-link nav-home align-baseline" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-acervo" href="acervo_biblioteca.html" role="button"
+                        <li class="nav-item">
+                            <a href="acervo_biblioteca.html"><button type="button" class="btn-acervo">Acervo da Biblioteca</button></a>
+                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Acervo Biblioteca
-                            </a>
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="famosos_tiktok.html">Famosinhos do Tiktok</a></li>
-                                <li><a class="dropdown-item" href="novidades_biblioteca.html">Novidades na
-                                        Biblioteca</a></li>
-                                <li><a class="dropdown-item" href="literatura_brasileira.html">Literatura Brasileira</a>
-                                </li>
-                                <li><a class="dropdown-item" href="literatura_estrangeira.html">Literatura
-                                        Estrangeira</a></li>
-                                <li><a class="dropdown-item" href="literatura_vestibular.html">Literatura Vestibular</a>
-                                </li>
+                                <li><a class="dropdown-item" href="novidades_biblioteca.html">Novidades Biblioteca</a></li>
+                                <li><a class="dropdown-item" href="literatura_brasileira.html">Literatura Brasileira</a></li>
+                                <li><a class="dropdown-item" href="literatura_estrangeira.html">Literatura Estrangeira</a></li>
+                                <li><a class="dropdown-item" href="literatura_vestibular.html">Literatura Vestibular</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -215,7 +212,6 @@
             <h2 class="borda m-0 mt-4">Acervo Completo:</h2>
             <div class="container-fluid">
                 <div class="row">
-                    <h3 class="text-center my-1">UFPR</h3>
                     <div class="col p-2">
                         <div class="card card-acervo p-0">
                             <img src="img/LITBR_GrandeSertao.jpg" class="card-img-top p-3" alt="...">
@@ -319,7 +315,6 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-center my-1">UFPR</h3>
                     <div class="col p-2">
                         <div class="card card-acervo p-0">
                             <img src="img/LITBR_GabrielaCravoCanela.jpg" class="card-img-top p-3" alt="...">
@@ -424,7 +419,6 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="text-center my-1">UFPR</h3>
                     <div class="col p-2">
                         <div class="card card-acervo p-0">
                             <img src="img/LITBR_AvessoPele.jpg" class="card-img-top p-3" alt="...">
@@ -534,7 +528,7 @@
     <footer>
         <div class="container_fluid p-5 rodape_infos">
             <div class="row gx-5">
-                <div class="col-md-4 col-lg-6 col-md-12">
+                <div class="col-xl-4 col-lg-6 col-md-12">
                     <h2>Navegue pelo site:</h2>
                     <div class="navegaçao p-4 mb-2">
                         <a href="index.html">Home</a>
@@ -544,7 +538,7 @@
                         <a href="assinatura_membros.html">Assinatura de Membros</a>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-6 col-md-12">
+                <div class="col-xl-4 col-lg-6 col-md-12">
                     <h2>Contato:</h2>
                     <div class="contato p-4 mb-2">
                         <div class="mb-2">
@@ -566,7 +560,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-12 col-md-12">
+                <div class="col-xl-4 col-lg-12 col-md-12">
                     <h2>Receba Novidades:</h2>
                     <div class="novidades p-4 mb-2">
                         <form action="">
@@ -579,9 +573,8 @@
             </div>
         </div>
         <div class="direitos p-3">
-            <p> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
-            <br>
-            <p>Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
+            <p class="m-0"> &#174; Todos os direitos reservado a Biblioteca de Santa Cruz do Rio Pardo</p>
+            <p class="m-0">Projeto Acadêmico SESI-SENAI Santa Cruz do Rio do Pardo</p>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

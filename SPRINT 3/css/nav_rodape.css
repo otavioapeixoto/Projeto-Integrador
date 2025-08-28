@@ -20,18 +20,24 @@
            font-family: "Averia Serif Libre", serif;
            border-top: 3px #402401 solid;
            border-bottom: 3px #402401 solid;
-
        }
-
+       .btn-acervo{
+        background-color: #FFEAD8;
+        border: 0px;
+       }
+       .btn-acervo:hover{
+        color: #00AFC1;
+       }
        .nav-link,
        .navbar-brand,
        .dropdown-toggle,
-       .dropdown-item {
+       .dropdown-item,
+       .btn-acervo {
            color: #402401;
            transition: all 0.3s;
        }
 
-       .nav-link:hover {
+       .nav-link:hover, .btn-acervo:hover {
            transition: all 0.3s;
            transform: scale(1.05);
        }

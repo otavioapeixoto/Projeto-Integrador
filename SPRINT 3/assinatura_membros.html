@@ -9,7 +9,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nav_rodape.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('aceito');
+            const botao = document.getElementById('btn-enviar');
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    botao.disabled = false;
+                    botao.classList.remove('btn-disabled');
+                } else {
+                    botao.disabled = true;
+                    botao.classList.add('btn-disabled');
+                }
+            });
+        });
+    </script>
+
     <style>
+        button:disabled,
+        .btn-disabled {
+            background-color: #888 !important;
+            color: #fff !important;
+            cursor: not-allowed !important;
+            opacity: 0.7;
+            transition: all 0.4s;
+        }
         main h2 {
             font-family: "Averia Serif Libre", serif;
             background-color: #402401;
@@ -110,6 +134,7 @@
             align-items: center;
             margin: 0px 2% 25px 2%;
             font-size: 20px;
+            transition: all 0.4s;
         }
 
         form button:hover {
@@ -215,21 +240,18 @@
                         <li class="nav-item">
                             <a class="nav-link nav-home align-baseline" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle nav-acervo" href="acervo_biblioteca.html" role="button"
+                        <li class="nav-item">
+                            <a href="acervo_biblioteca.html"><button type="button" class="btn-acervo">Acervo da Biblioteca</button></a>
+                            <button type="button" class="btn dropdown-toggle dropdown-toggle-split"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Acervo Biblioteca
-                            </a>
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="famosos_tiktok.html">Famosinhos do Tiktok</a></li>
-                                <li><a class="dropdown-item" href="novidades_biblioteca.html">Novidades na
-                                        Biblioteca</a></li>
-                                <li><a class="dropdown-item" href="literatura_brasileira.html">Literatura Brasileira</a>
-                                </li>
-                                <li><a class="dropdown-item" href="literatura_estrangeira.html">Literatura
-                                        Estrangeira</a></li>
-                                <li><a class="dropdown-item" href="literatura_vestibular.html">Literatura Vestibular</a>
-                                </li>
+                                <li><a class="dropdown-item" href="novidades_biblioteca.html">Novidades Biblioteca</a></li>
+                                <li><a class="dropdown-item" href="literatura_brasileira.html">Literatura Brasileira</a></li>
+                                <li><a class="dropdown-item" href="literatura_estrangeira.html">Literatura Estrangeira</a></li>
+                                <li><a class="dropdown-item" href="literatura_vestibular.html">Literatura Vestibular</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -576,7 +598,7 @@
                     <em>Ao finalizar, você autoriza a cobrança mensal de R$ 59,90 no seu cartão. Cancelamento a qualquer
                         momento pelo seu painel de assinante.</em>
                 </fieldset>
-                <div class="margin_auto"><button type="submit"><strong>ENVIAR DADOS E SE INSCREVER!</strong></button>
+                <div class="margin_auto"><button type="submit" id="btn-enviar"><strong>ENVIAR DADOS E SE INSCREVER!</strong></button>
                 </div>
             </form>
         </section>
