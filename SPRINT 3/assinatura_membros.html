@@ -9,7 +9,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/nav_rodape.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('aceito');
+            const botao = document.getElementById('btn-enviar');
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    botao.disabled = false;
+                    botao.classList.remove('btn-disabled');
+                } else {
+                    botao.disabled = true;
+                    botao.classList.add('btn-disabled');
+                }
+            });
+        });
+    </script>
+
     <style>
+        button:disabled,
+        .btn-disabled {
+            background-color: #888 !important;
+            color: #fff !important;
+            cursor: not-allowed !important;
+            opacity: 0.7;
+        }
+
         main h2 {
             font-family: "Averia Serif Libre", serif;
             background-color: #402401;
@@ -20,16 +44,19 @@
             border-bottom-left-radius: 25px;
             border-bottom-right-radius: 25px;
         }
-        hr{
+
+        hr {
             height: 2px;
             border: none;
             border-radius: 5px;
             margin: 5px 0px;
         }
-        .tab_geral hr{
+
+        .tab_geral hr {
             background-color: #402401;
         }
-        main h3{
+
+        main h3 {
             background-color: #FF316A;
             padding: 15px;
             text-align: center;
@@ -37,17 +64,20 @@
             text-align: center;
             width: 730px;
         }
-        .h3{
+
+        .h3 {
             margin-left: auto;
             margin-right: auto;
             width: 730px;
             margin-bottom: 30px;
         }
-        .tab_geral{
+
+        .tab_geral {
             margin-left: auto;
             margin-right: auto;
             border-spacing: 30px;
         }
+
         .tab_geral table {
             width: 650px;
             background-color: #FFEAD8;
@@ -55,19 +85,23 @@
             border-radius: 15px;
             margin: 20px;
         }
-        .tab_geral img{
+
+        .tab_geral img {
             margin-left: 20px;
             border-radius: 5px;
         }
-        .tab_geral h4{
+
+        .tab_geral h4 {
             color: #FF316A;
             font-size: 17px;
         }
-        .beneficio{
+
+        .beneficio {
             background-color: #FF316A;
             border-radius: 25px;
         }
-        fieldset{
+
+        fieldset {
             border: #FF316A solid 5px;
             border-radius: 10px;
             padding: 5px 20px 10px 20px;
@@ -76,12 +110,16 @@
             margin-right: auto;
             margin-bottom: 25px;
         }
-        fieldset legend{
+
+        fieldset legend {
             color: #FF316A;
             font-size: 20px;
             padding: 0px 5px;
         }
-        main input, textarea, select{
+
+        main input,
+        textarea,
+        select {
             background-color: #FFEAD8;
             border: #FF316A 2px solid;
             border-radius: 5px;
@@ -90,24 +128,30 @@
             color: #402401;
             display: inline-block;
         }
-        label{
+
+        label {
             padding-right: 5px;
             display: inline-block;
         }
-        .margem_bottom{
+
+        .margem_bottom {
             margin-bottom: 10px;
         }
-        .preferencias input{
+
+        .preferencias input {
             margin-right: 0px;
         }
-        .preferencias hr{
+
+        .preferencias hr {
             background-color: #FF316A;
-            margin: 10px 0px;            
+            margin: 10px 0px;
         }
-        a{
+
+        a {
             color: #FF316A;
         }
-        main button{
+
+        main button {
             width: 96%;
             background-color: #FF316A;
             color: #402401;
@@ -119,7 +163,8 @@
             margin: 0px 2% 25px 2%;
             font-size: 20px;
         }
-        form button:hover{
+
+        form button:hover {
             background-color: #402401;
             color: #FF316A;
             cursor: pointer;
@@ -194,25 +239,27 @@
                     <td class="beneficio">
                         <table> <!--Tabela com beneficio e uma foto do produto-->
                             <tr>
-                                <td><h4><strong>Caixinha Literária Mensal &#128230;
+                                <td>
+                                    <h4><strong>Caixinha Literária Mensal &#128230;
                                         </strong></h4>
-                                        <hr>
-                                        Receba em casa, todo mês, <strong>um livro surpresa</strong> escolhido e
-                                        embalado
-                                        com carinho e personalidade, de acordo com suas preferências literárias. Uma
-                                        nova
-                                        história para te surpreender e inspirar a cada mês!
-                                        !
+                                    <hr>
+                                    Receba em casa, todo mês, <strong>um livro surpresa</strong> escolhido e
+                                    embalado
+                                    com carinho e personalidade, de acordo com suas preferências literárias. Uma
+                                    nova
+                                    história para te surpreender e inspirar a cada mês!
+                                    !
                                 </td>
                                 <td><img src="img/ASS_Benefício1.jpg" width="150" height="150"></td>
                             </tr>
-                        </table> <!--Final da tabela-->    
+                        </table> <!--Final da tabela-->
                     </td>
                     <td class="beneficio">
                         <table> <!--Tabela com beneficio e uma foto do produto-->
                             <tr>
-                                <td><h4><strong>Colecionáveis Literários e Itens Exclusivos &#127912;
-                                    </strong></h4>
+                                <td>
+                                    <h4><strong>Colecionáveis Literários e Itens Exclusivos &#127912;
+                                        </strong></h4>
                                     <hr>
                                     Todo mês, você recebe <strong>um kit com itens colecionáveis</strong> que deixam a
                                     experiência literária ainda mais especial! São marcadores personalizados, cards
@@ -227,8 +274,9 @@
                     <td class="beneficio">
                         <table> <!--Tabela com beneficio e uma foto do produto-->
                             <tr>
-                                <td><h4><strong>Clube de Leitura Exclusivo &#128218;
-                                    </strong></h4>
+                                <td>
+                                    <h4><strong>Clube de Leitura Exclusivo &#128218;
+                                        </strong></h4>
                                     <hr>Participe de um <strong>clube de leitura só para assinantes!</strong>
                                     Compartilhe suas opiniões, participe de discussões sobre o livro do mês e aproveite
                                     encontros com outros leitores que compartilham a mesma paixão por histórias.
@@ -240,7 +288,8 @@
                     <td class="beneficio">
                         <table> <!--Tabela com beneficio e uma foto do produto-->
                             <tr>
-                                <td><h4><strong>Convites para Eventos e Oficinas Exclusivas &#128197;</strong></h4>
+                                <td>
+                                    <h4><strong>Convites para Eventos e Oficinas Exclusivas &#128197;</strong></h4>
                                     <hr>
                                     Tenha acesso a <strong>eventos e oficinas criativas organizadas pela
                                         biblioteca!</strong> Participe de encontros de leitura, oficinas de escrita,
@@ -253,11 +302,16 @@
                     </td>
                 </tr>
             </table>
-            <div class="h3"><h3>Tudo por apenas R$59,90!</h3></div>
+            <div class="h3">
+                <h3>Tudo por apenas R$59,90!</h3>
+            </div>
         </section>
         <section>
             <h2>Se torne um membro agora!</h2>
-            <div class="h3"><h3 style="margin-top: 30px;">Assine o formulário abaixo e desfrute das maravilhas da nossa assinatura!</h3></div>
+            <div class="h3">
+                <h3 style="margin-top: 30px;">Assine o formulário abaixo e desfrute das maravilhas da nossa assinatura!
+                </h3>
+            </div>
             <form action="#" method="post">
                 <!--SEÇÃO DE DADOS PESSOAIS-->
                 <fieldset>
@@ -276,7 +330,8 @@
                 <!--SEÇÃO ENDEREÇO-->
                 <fieldset>
                     <legend><strong>Endereço</strong></legend>
-                    <label for="cep">CEP:</label><input type="number" id="cep" required="yes" placeholder="XXXXX-XXX" class="margem_bottom">
+                    <label for="cep">CEP:</label><input type="number" id="cep" required="yes" placeholder="XXXXX-XXX"
+                        class="margem_bottom">
                     <label for="estados">Estado:</label>
                     <select id="estados">
                         <option value="acre">AC</option>
@@ -322,38 +377,41 @@
                 <fieldset class="preferencias">
                     <legend><strong>Preferências Literárias</strong></legend>
                     <div> <!--Quais gêneros você mais gosta?-->
-                        <h4 class="margem_bottom"><strong>Quais gêneros você mais gosta?</strong><em>(Selecione quantos quiser)</em></h4>
-                            <input type="checkbox" id="genero1" name="genero" value="romance" />
-                            <label for="genero1">Romance</label>
-                            <input type="checkbox" id="genero2" name="genero" value="Mistério" />
-                            <label for="genero2">Mistério</label>
-                            <input type="checkbox" id="genero3" name="genero" value="Ficção" />
-                            <label for="genero3">Ficção</label>
-                            <input type="checkbox" id="genero4" name="genero" value="Fantasia" />
-                            <label for="genero4">Fantasia</label>
-                            <input type="checkbox" id="genero5" name="genero" value="Suspense " />
-                            <label for="genero5">Suspense </label>
-                            <input type="checkbox" id="genero6" name="genero" value="Terror " />
-                            <label for="genero6">Terror </label>
-                            <input type="checkbox" id="genero7" name="genero" value="Aventura" />
-                            <label for="genero7">Aventura</label>
-                            <input type="checkbox" id="genero8" name="genero" value="Clássicos" />
-                            <label for="genero8">Clássicos</label>
-                            <input type="checkbox" id="genero9" name="genero" value="Não-ficção" />
-                            <label for="genero9">Não-ficção</label>
-                            <input type="checkbox" id="genero10" name="genero" value="Autoajuda" />
-                            <label for="genero10">Autoajuda</label>
-                            <input type="checkbox" id="genero11" name="genero" value="Infantojuvenil" />
-                            <label for="genero11">Infantojuvenil</label>
-                            <input type="checkbox" id="genero12" name="genero" value="Mangás" />
-                            <label for="genero12">Mangás</label>
-                            <input type="checkbox" id="genero13" name="genero" value="Poesia" class="margem_bottom"/>
-                            <label for="genero13">Poesia</label><br>
-                        <label for="outros_generos_gosta">Outros: </label><input type="text" id="outros_generos_gosta" required="no" placeholder="Caso não esteja listado" >
+                        <h4 class="margem_bottom"><strong>Quais gêneros você mais gosta?</strong><em>(Selecione quantos
+                                quiser)</em></h4>
+                        <input type="checkbox" id="genero1" name="genero" value="romance" />
+                        <label for="genero1">Romance</label>
+                        <input type="checkbox" id="genero2" name="genero" value="Mistério" />
+                        <label for="genero2">Mistério</label>
+                        <input type="checkbox" id="genero3" name="genero" value="Ficção" />
+                        <label for="genero3">Ficção</label>
+                        <input type="checkbox" id="genero4" name="genero" value="Fantasia" />
+                        <label for="genero4">Fantasia</label>
+                        <input type="checkbox" id="genero5" name="genero" value="Suspense " />
+                        <label for="genero5">Suspense </label>
+                        <input type="checkbox" id="genero6" name="genero" value="Terror " />
+                        <label for="genero6">Terror </label>
+                        <input type="checkbox" id="genero7" name="genero" value="Aventura" />
+                        <label for="genero7">Aventura</label>
+                        <input type="checkbox" id="genero8" name="genero" value="Clássicos" />
+                        <label for="genero8">Clássicos</label>
+                        <input type="checkbox" id="genero9" name="genero" value="Não-ficção" />
+                        <label for="genero9">Não-ficção</label>
+                        <input type="checkbox" id="genero10" name="genero" value="Autoajuda" />
+                        <label for="genero10">Autoajuda</label>
+                        <input type="checkbox" id="genero11" name="genero" value="Infantojuvenil" />
+                        <label for="genero11">Infantojuvenil</label>
+                        <input type="checkbox" id="genero12" name="genero" value="Mangás" />
+                        <label for="genero12">Mangás</label>
+                        <input type="checkbox" id="genero13" name="genero" value="Poesia" class="margem_bottom" />
+                        <label for="genero13">Poesia</label><br>
+                        <label for="outros_generos_gosta">Outros: </label><input type="text" id="outros_generos_gosta"
+                            required="no" placeholder="Caso não esteja listado">
                     </div>
                     <hr>
                     <div> <!--Quais gêneros você não gosta ou prefere evitar?-->
-                        <h4 class="margem_bottom"><strong>Quais gêneros você não gosta ou prefere evitar?</strong><em>(Selecione quantos quiser)</em></h4>
+                        <h4 class="margem_bottom"><strong>Quais gêneros você não gosta ou prefere
+                                evitar?</strong><em>(Selecione quantos quiser)</em></h4>
                         <input type="checkbox" id="ngenero1" name="ngenero" value="romance" class="margem_bottom" />
                         <label for="ngenero1">Romance</label>
                         <input type="checkbox" id="ngenero2" name="ngenero" value="Mistério" />
@@ -385,13 +443,18 @@
                     </div>
                     <hr>
                     <div> <!--Autores Favoritos-->
-                        <label for="autoresfav"><h4 class="margem_bottom">Escreva seus autores favoritos, caso tenha algum:</h4></label><br>
+                        <label for="autoresfav">
+                            <h4 class="margem_bottom">Escreva seus autores favoritos, caso tenha algum:</h4>
+                        </label><br>
                         <textarea id="autoresfav" style="resize: none" required="no" rows="7" cols="50"
                             placeholder="Autores favoritos"></textarea>
                     </div>
                     <hr>
                     <div> <!--Livro que marcou a vida-->
-                        <label for="livrosfav"><h4 class="margem_bottom">Tem algum livro que marcou sua vida? Ou um que você nunca gostou?</h4></label><br>
+                        <label for="livrosfav">
+                            <h4 class="margem_bottom">Tem algum livro que marcou sua vida? Ou um que você nunca gostou?
+                            </h4>
+                        </label><br>
                         <textarea id="livrosfav" style="resize: none" required="no" rows="7" cols="50"
                             placeholder="Livros favoritos"></textarea>
                     </div>
@@ -419,7 +482,8 @@
                 <!--SEÇÃO DE FORMA DE PAGAMENTO-->
                 <fieldset class="preferencias">
                     <legend><strong>Forma de Pagamentos</strong></legend>
-                    <input type="radio" id="pagamentocartao" name="pagamento" value="cartaocrédito" class="margem_bottom"/>
+                    <input type="radio" id="pagamentocartao" name="pagamento" value="cartaocrédito"
+                        class="margem_bottom" />
                     <label for="pagamentocartao">Cartão de Crédito</label>
                     <input type="radio" id="pagamentopix" name="pagamento" value="pix" />
                     <label for="pagamentopix">Pix</label>
@@ -431,8 +495,8 @@
                 <!--SEÇÃO DE TERMOS DE CONTRATO-->
                 <fieldset class="preferencias">
                     <legend><strong>Termos de contrato</strong></legend>
-                    <input type="checkbox" id="aceito" name="termos" value="aceito o termo de contrato"
-                        required="yes" class="margem_bottom"/>
+                    <input type="checkbox" id="aceito" name="termos" value="aceito o termo de contrato" required="yes"
+                        class="margem_bottom" />
                     <label for="aceito">Li e aceito os <a href="">Termos de Contrato</a> e a <a href="">Política de
                             Privacidade</a></label>
                     <input type="checkbox" id="aceitaremails" name="termos" value="aceito receber emails" />
@@ -441,7 +505,11 @@
                     <em>Ao finalizar, você autoriza a cobrança mensal de R$ 59,90 no seu cartão. Cancelamento a qualquer
                         momento pelo seu painel de assinante.</em>
                 </fieldset>
-                <div class="margin_auto"><button type="submit"><strong>ENVIAR DADOS E SE INSCREVER!</strong></button></div>
+                <div class="margin_auto">
+                    <button type="submit" id="btn-enviar" class="btn-disabled" disabled>
+                        <strong>ENVIAR DADOS E SE INSCREVER!</strong>
+                    </button>
+                </div>
             </form>
         </section>
     </main>
